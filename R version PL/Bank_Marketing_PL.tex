@@ -1,0 +1,160 @@
+\documentclass[11pt]{article}\usepackage[]{graphicx}\usepackage[]{color}
+% maxwidth is the original width if it is less than linewidth
+% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{polski}
+\usepackage[a4paper, total={6.5in, 8.5in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+
+\urlstyle{rm}
+  
+\usepackage{setspace}
+\newtheorem{stat}{Statement}
+\newtheorem{theorem}{Theorem}
+\newtheorem{defi}{Definition}
+\newtheorem{lem}[stat]{Lemma}
+\newtheorem{ex}{Example}[section]
+\newtheorem{fact}{Fact}
+
+\frenchspacing
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+
+\title{Bank Marketing data (with social/economic context)}
+\author{Maciej Ma戼㸳ecki}
+\maketitle
+\abstract{W pliku Bank Marketing data.csv znajduj戼㸹 si攼㹡 dane charakteryzuj戼㸹ce klient昼㸳w pewnego banku oraz kampanie marketingowe skierowane do tych klient昼㸳w. Do戼㸳戼㸹czone s戼㸹 ponadto wska㤼㹦niki spo戼㸳eczne i ekonomiczne. Na podstawie tych danych nale戼㹦y zbudowa攼㸶 model prognozuj戼㸹cy szans攼㹡, 戼㹦e klient w wyniku prowadzonej kampanii za戼㸳o戼㹦y lokat攼㹡 terminow戼㸹.}
+\tableofcontents
+
+\newpage
+
+\section{Wprowadzenie}
+\subsection{Opis problemu}
+W ramach kampani marketingowej organizowanej przez pewien bank w latach mi攼㹡dzy majem 2008 rok, a listopadem 2010 roku, by戼㸳y zbierane informacje na temat klient昼㸳w tego banku. 
+Na podstawie tych danych planowane jest przewidzenie, czy i jakie rodzaj klient昼㸳w kupi lokat攼㹡 terminow戼㸹 w tym banku.
+
+\subsection{Opis danych}
+Nasze dane zawieraj戼㸹 21 column i 4119 wierszy z danymi. Kolumny mo戼㹦emy podzieli攼㸶 na 3 grupy:
+
+\textbf{I: Zmienne zwi戼㸹zane z danymi klienta bankowego:}
+
+\begin{enumerate}
+\item Wiek (age): wiek klienta.
+\item Praca (job): rodzaj pracy klienta.
+\item Stan cywilny (marital): stan cywilny klienta.
+\item Edukacja (education): edukacja klienta.
+\item Domy㤼㹣lnie (default): Klient wcze㤼㹣niej domy㤼㹣lnie mia戼㸳 kredyt.
+\item Mieszkanie (housing): Klient ma kredyt mieszkaniowy.
+\item Po戼㹦yczka (loan): Klient ma osobist戼㸹 po戼㹦yczk攼㹡.
+\end{enumerate}
+
+
+\textbf{II: Zmienne zwi戼㸹zane z ostatnim kontaktem bie戼㹦戼㸹cej kampanii marketingowej:}
+
+\begin{enumerate}
+\setcounter{enumi}{7}
+\item Kontakt (contact): Typ komunikacji kontaktowej (telefonicznej lub kom昼㸳rkowej).
+\item Miesi戼㸹c (month): Ostatni kontakt miesi戼㸹ca roku.
+\item Dzie昼㸱 tygodnia (day of week): dzie昼㸱 ostatniego kontaktu tygodnia.
+\item Czas trwania (duration): czas trwania ostatniego kontaktu w sekundach. Je㤼㹣li czas trwania wynosi 0, nigdy nie skontaktowali㤼㹣my si攼㹡 z klientem, aby za戼㸳o戼㹦y攼㸶 konto lokaty terminowej.
+\item Kampania (campaign): liczba kontakt昼㸳w wykonanych podczas tej kampanii i dla tego klienta
+\item Liczba dni (pdays): liczba dni, kt昼㸳re up戼㸳yn攼㹡戼㸳y od ostatniego kontaktu klienta z poprzedniej kampanii (warto㤼㹣攼㸶 liczbowa; 999 oznacza, 戼㹦e klient wcze㤼㹣niej si攼㹡 nie skontaktowa戼㸳)
+\item Poprzedni (previous): liczba kontakt昼㸳w wykonanych przed t戼㸹 kampani戼㸹 i dla tego klienta (numerycznie)
+\item Poutcome: wynik poprzedniej kampanii marketingowej (kategorycznie: 㠼㸴pora戼㹦ka㤼㸴, 㠼㸴nieistniej戼㸹ca㤼㸴, 㠼㸴sukces㤼㸴)
+\end{enumerate}
+
+\textbf{III: Atrybuty kontekstu spo戼㸳ecznego i gospodarczego:}
+
+\begin{enumerate}
+\setcounter{enumi}{15}
+\item Emp.var.rate: wska㤼㹦nik zmienno㤼㹣ci zatrudnienia - wska㤼㹦nik kwartalny 
+\item Cons.price.idx: wska㤼㹦nik cen konsumpcyjnych - wska㤼㹦nik miesi攼㹡czny 
+\item Cons.conf.idx: wska㤼㹦nik zaufania konsument昼㸳w - wska㤼㹦nik miesi攼㹡czny 
+\item Euribor3m: stawka 3-miesi攼㹡czna euribor - wska㤼㹦nik dzienny 
+\item Liczba zatrudnionych (nr employed): liczba pracownik昼㸳w - wska㤼㹦nik kwartalny 
+\end{enumerate}
+
+
+\textbf{Zmienna wyj㤼㹣ciowa (po戼㹦戼㸹dany cel):}
+
+\begin{enumerate}
+\setcounter{enumi}{20}
+\item y - czy klient subskrybowa戼㸳 lokat攼㹡? (dw昼㸳jkowy: 㠼㸴tak㤼㸴, 㠼㸴nie㤼㸴)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

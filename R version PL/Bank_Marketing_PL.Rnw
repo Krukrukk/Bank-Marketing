@@ -1,0 +1,135 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{polski}
+\usepackage[a4paper, total={6.5in, 8.5in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+
+\urlstyle{rm}
+  
+\usepackage{setspace}
+\newtheorem{stat}{Statement}
+\newtheorem{theorem}{Theorem}
+\newtheorem{defi}{Definition}
+\newtheorem{lem}[stat]{Lemma}
+\newtheorem{ex}{Example}[section]
+\newtheorem{fact}{Fact}
+
+\frenchspacing
+
+\begin{document}
+
+
+\title{Bank Marketing data (with social/economic context)}
+\author{Maciej Ma³ecki}
+\maketitle
+\abstract{W pliku Bank Marketing data.csv znajduj¹ siê dane charakteryzuj¹ce klientów pewnego banku oraz kampanie marketingowe skierowane do tych klientów. Do³¹czone s¹ ponadto wskaŸniki spo³eczne i ekonomiczne. Na podstawie tych danych nale¿y zbudowaæ model prognozuj¹cy szansê, ¿e klient w wyniku prowadzonej kampanii za³o¿y lokatê terminow¹.}
+\tableofcontents
+
+\newpage
+
+\section{Wprowadzenie}
+\subsection{Opis problemu}
+W ramach kampani marketingowej organizowanej przez pewien bank w latach miêdzy majem 2008 rok, a listopadem 2010 roku, by³y zbierane informacje na temat klientów tego banku. 
+Na podstawie tych danych planowane jest przewidzenie, czy i jakie rodzaj klientów kupi lokatê terminow¹ w tym banku.
+
+\subsection{Opis danych}
+Nasze dane zawieraj¹ 21 column i 4119 wierszy z danymi. Kolumny mo¿emy podzieliæ na 3 grupy:
+
+\textbf{I: Zmienne zwi¹zane z danymi klienta bankowego:}
+
+\begin{enumerate}
+\item Wiek (age): wiek klienta.
+\item Praca (job): rodzaj pracy klienta.
+\item Stan cywilny (marital): stan cywilny klienta.
+\item Edukacja (education): edukacja klienta.
+\item Domyœlnie (default): Klient wczeœniej domyœlnie mia³ kredyt.
+\item Mieszkanie (housing): Klient ma kredyt mieszkaniowy.
+\item Po¿yczka (loan): Klient ma osobist¹ po¿yczkê.
+\end{enumerate}
+
+
+\textbf{II: Zmienne zwi¹zane z ostatnim kontaktem bie¿¹cej kampanii marketingowej:}
+
+\begin{enumerate}
+\setcounter{enumi}{7}
+\item Kontakt (contact): Typ komunikacji kontaktowej (telefonicznej lub komórkowej).
+\item Miesi¹c (month): Ostatni kontakt miesi¹ca roku.
+\item Dzieñ tygodnia (day of week): dzieñ ostatniego kontaktu tygodnia.
+\item Czas trwania (duration): czas trwania ostatniego kontaktu w sekundach. Jeœli czas trwania wynosi 0, nigdy nie skontaktowaliœmy siê z klientem, aby za³o¿yæ konto lokaty terminowej.
+\item Kampania (campaign): liczba kontaktów wykonanych podczas tej kampanii i dla tego klienta
+\item Liczba dni (pdays): liczba dni, które up³ynê³y od ostatniego kontaktu klienta z poprzedniej kampanii (wartoœæ liczbowa; 999 oznacza, ¿e klient wczeœniej siê nie skontaktowa³)
+\item Poprzedni (previous): liczba kontaktów wykonanych przed t¹ kampani¹ i dla tego klienta (numerycznie)
+\item Poutcome: wynik poprzedniej kampanii marketingowej (kategorycznie: „pora¿ka”, „nieistniej¹ca”, „sukces”)
+\end{enumerate}
+
+\textbf{III: Atrybuty kontekstu spo³ecznego i gospodarczego:}
+
+\begin{enumerate}
+\setcounter{enumi}{15}
+\item Emp.var.rate: wskaŸnik zmiennoœci zatrudnienia - wskaŸnik kwartalny 
+\item Cons.price.idx: wskaŸnik cen konsumpcyjnych - wskaŸnik miesiêczny 
+\item Cons.conf.idx: wskaŸnik zaufania konsumentów - wskaŸnik miesiêczny 
+\item Euribor3m: stawka 3-miesiêczna euribor - wskaŸnik dzienny 
+\item Liczba zatrudnionych (nr employed): liczba pracowników - wskaŸnik kwartalny 
+\end{enumerate}
+
+
+\textbf{Zmienna wyjœciowa (po¿¹dany cel):}
+
+\begin{enumerate}
+\setcounter{enumi}{20}
+\item y - czy klient subskrybowa³ lokatê? (dwójkowy: „tak”, „nie”)
+
+
+
+
+
+<<echo=FALSE,message=FALSE, warning=FALSE>>=
+# Biblioteki
+# install.packages("rlist")
+# install.packages("hydroGOF")
+# install.packages("gridExtra")
+# install.packages("DescTools")
+library(rlist)
+library(hydroGOF)
+library(gridExtra)
+library(DescTools)
+library(ggplot2)
+library(dplyr)
+@
+
+<<echo=FALSE,message=FALSE>>= #wykonaj kod bez jego pokazywania
+
+
+@
+
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+
+@
+
+<<echo=FALSE,message=FALSE,cache=TRUE>>= # nie wyœwietlaj kodu, ale zapisz wykonane obliczenia w ramach tego kodu
+#
+#
+#
+@
+
+
+
+<<echo=FALSE,message=FALSE, warning=FALSE>>= # Wyœwietl tabele
+# library(kableExtra)
+# kable(mean_x, "latex", booktabs = F, caption='Caption') %>%
+#   kable_styling(latex_options = 'HOLD_position')
+@
+
+
+
+
+
+\end{document}
