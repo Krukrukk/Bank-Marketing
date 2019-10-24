@@ -12,6 +12,8 @@
 \usepackage{amsfonts}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tabularx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 
 \urlstyle{rm}
   
@@ -109,6 +111,7 @@ install.packages("ggimage")
 install.packages('pander')
 
 # Library
+library(rmarkdown)
 library(pander)
 library(tidyverse)
 library(kableExtra)
@@ -267,121 +270,6 @@ fun_boxplot(name_of_column, name_of_label)
 @
 
 
-
-
-
-
-\subsection{}
-
-<<echo=FALSE ,message=FALSE>>= 
-name_of_column <- 'age'
-name_of_label <- 'Age'
-@
-
-<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
-fun_barplot_numerical(name_of_column, name_of_label, 0, 90, 5)
-@
-
-<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
-fun_boxplot(name_of_column, name_of_label)
-@
-
-<<echo=FALSE,message=FALSE, warning=FALSE>>= # Wyœwietl tabele
-
-kable(summary(df_bank$age), "latex", booktabs = F, caption='Caption') %>%
-  kable_styling(latex_options = 'HOLD_position')
-@
-
-
-\subsection{}
-
-<<echo=FALSE ,message=FALSE>>= 
-name_of_column <- 'age'
-name_of_label <- 'Age'
-@
-
-<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
-fun_barplot_numerical(name_of_column, name_of_label, 0, 90, 5)
-@
-
-<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
-fun_boxplot(name_of_column, name_of_label)
-@
-
-<<echo=FALSE,message=FALSE, warning=FALSE>>= # Wyœwietl tabele
-library(kableExtra)
-kable(summary(df_bank$age), "latex", booktabs = F, caption='Caption') %>%
-  kable_styling(latex_options = 'HOLD_position')
-@
-
-
-
-\subsection{}
-
-<<echo=FALSE ,message=FALSE>>= 
-name_of_column <- 'age'
-name_of_label <- 'Age'
-@
-
-<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
-fun_barplot_numerical(name_of_column, name_of_label, 0, 90, 5)
-@
-
-<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
-fun_boxplot(name_of_column, name_of_label)
-@
-
-<<echo=FALSE,message=FALSE, warning=FALSE>>= # Wyœwietl tabele
-
-kable(summary(df_bank$age), "latex", booktabs = F, caption='Caption') %>%
-  kable_styling(latex_options = 'HOLD_position')
-@
-
-
-
-\subsection{}
-
-<<echo=FALSE ,message=FALSE>>= 
-name_of_column <- 'age'
-name_of_label <- 'Age'
-@
-
-<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
-fun_barplot_numerical(name_of_column, name_of_label, 0, 90, 5)
-@
-
-<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
-fun_boxplot(name_of_column, name_of_label)
-@
-
-<<echo=FALSE,message=FALSE, warning=FALSE>>= # Wyœwietl tabele
-
-kable(summary(df_bank$age), "latex", booktabs = F, caption='Caption') %>%
-  kable_styling(latex_options = 'HOLD_position')
-@
-
-
-
-\subsection{}
-
-<<echo=FALSE ,message=FALSE>>= 
-name_of_column <- 'age'
-name_of_label <- 'Age'
-@
-
-<<echo=FALSE,message=FALSE, warning=FALSE>>= # Wyœwietl tabele
-
-kable(summary(df_bank$age), "latex", booktabs = F, caption='Caption') %>%
-  kable_styling(latex_options = 'HOLD_position')
-@
-
-<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
-fun_barplot_numerical(name_of_column, name_of_label, 0, 90, 5)
-@
-
-<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
-fun_boxplot(name_of_column, name_of_label)
-@
 
 
 

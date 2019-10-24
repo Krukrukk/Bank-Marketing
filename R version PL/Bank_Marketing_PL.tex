@@ -62,6 +62,8 @@
 \usepackage{amsfonts}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tabularx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 
 \urlstyle{rm}
   
@@ -167,7 +169,31 @@ Nasze dane zawieraj戼㸹 21 column danych. Kolumny mo戼㹦emy podzieli攼㸶 n
 
 {\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in contrib.url(repos, "{}source"{}): trying to use CRAN without setting a mirror}}
 
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in contrib.url(repos, "{}source"{}): trying to use CRAN without setting a mirror}}\end{kframe}
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in contrib.url(repos, "{}source"{}): trying to use CRAN without setting a mirror}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: package or namespace load failed for 'rmarkdown' in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]):\\\#\#\ \ there is no package called 'digest'}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: package or namespace load failed for 'pander' in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]):\\\#\#\ \ there is no package called 'digest'}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: package or namespace load failed for 'tidyverse' in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]):\\\#\#\ \ there is no package called 'rlang'}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: package or namespace load failed for 'kableExtra' in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]):\\\#\#\ \ there is no package called 'digest'}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: package or namespace load failed for 'dplyr' in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]):\\\#\#\ \ there is no package called 'rlang'}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: package 'ggplot2' could not be loaded}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: package or namespace load failed for 'ggplot2' in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]):\\\#\#\ \ there is no package called 'rlang'}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: package 'ggplot2' could not be loaded}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: package 'ggplot2' could not be loaded}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: package 'ggplot2' could not be loaded}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: package or namespace load failed for 'cowplot' in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]):\\\#\#\ \ there is no package called 'rlang'}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in theme\_set(theme\_bw()): nie udało się znaleźć funkcji 'theme\_set'}}\end{kframe}
 \end{knitrout}
 
 
@@ -237,9 +263,15 @@ Jednak�e wiemy, �e w danych wyst�puj� warto�ci brakuj�ce i s� one opisa "unknown
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 
 
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: nie znaleziono obiektu 'Number\_of\_unknown'}}
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in df\_bank \%>\% summarise\_all(list(\textasciitilde{}sum(. == "{}unknown"{}))) \%>\% gather(key = "{}Feature"{}, : nie udało się znaleźć funkcji '\%>\%'}}
 
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in kable(table\_unknown, "{}latex"{}, booktabs = F, caption = "{}Liczba nieznanych warto<U+009C>ci w poszczegulnych kolumnach."{}): nie znaleziono obiektu 'table\_unknown'}}\end{kframe}
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in df\_bank \%>\% mutate\_if(is.character, list(\textasciitilde{}na\_if(., "{}unknown"{}))): nie udało się znaleźć funkcji '\%>\%'}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in eval(expr, envir, enclos): nie znaleziono obiektu 'df\_bank1'}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in eval(expr, envir, enclos): nie znaleziono obiektu 'number\_of\_empty\_row'}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in kable(table\_unknown, "{}latex"{}, booktabs = F, caption = "{}Liczba nieznanych warto<U+009C>ci w poszczegulnych kolumnach."{}) \%>\% : nie udało się znaleźć funkcji '\%>\%'}}\end{kframe}
 \end{knitrout}
 
 
@@ -257,231 +289,24 @@ W jakim wieku by�y osoby, z kt�rymi skontaktowano si� podczas tej kampani?
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 
 
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in dimnames(x) <- dnx: 'dimnames()' zastosowane do nie-tablicy}}\end{kframe}
-\end{knitrout}
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
-
-{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-10-1} 
-
-}
-
-\caption[Histogram wieku klient<U+663C><U+3E33>w w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od wzi<U+653C><U+3E61>cia lokaty d<U+623C><U+3E33>ugoterminowej]{Histogram wieku klient<U+663C><U+3E33>w w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od wzi<U+653C><U+3E61>cia lokaty d<U+623C><U+3E33>ugoterminowej.}\label{fig:unnamed-chunk-10}
-\end{figure}
-
-
-\end{knitrout}
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
-
-{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-11-1} 
-
-}
-
-\caption[Boxplot wieku klient<U+663C><U+3E33>w w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od wzi<U+653C><U+3E61>cia lokaty d<U+623C><U+3E33>ugoterminowej]{Boxplot wieku klient<U+663C><U+3E33>w w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od wzi<U+653C><U+3E61>cia lokaty d<U+623C><U+3E33>ugoterminowej.}\label{fig:unnamed-chunk-11}
-\end{figure}
-
-
-\end{knitrout}
-
-
-
-
-
-
-\subsection{}
-
-
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
-
-{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-13-1} 
-
-}
-
-\caption[New Figure]{New Figure}\label{fig:unnamed-chunk-13}
-\end{figure}
-
-
-\end{knitrout}
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
-
-{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-14-1} 
-
-}
-
-\caption[New Figure]{New Figure}\label{fig:unnamed-chunk-14}
-\end{figure}
-
-
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in kable(summary(df\_bank\$age), booktabs = F, caption = "{}Caption"{}) \%>\% : nie udało się znaleźć funkcji '\%>\%'}}\end{kframe}
 \end{knitrout}
 
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 
 
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in dimnames(x) <- dnx: 'dimnames()' zastosowane do nie-tablicy}}\end{kframe}
-\end{knitrout}
-
-
-\subsection{}
-
-
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
-
-{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-17-1} 
-
-}
-
-\caption[New Figure]{New Figure}\label{fig:unnamed-chunk-17}
-\end{figure}
-
-
-\end{knitrout}
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
-
-{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-18-1} 
-
-}
-
-\caption[New Figure]{New Figure}\label{fig:unnamed-chunk-18}
-\end{figure}
-
-
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in ggplot(data = df\_bank, aes\_string(x = column)): nie udało się znaleźć funkcji 'ggplot'}}\end{kframe}
 \end{knitrout}
 
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 
 
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in dimnames(x) <- dnx: 'dimnames()' zastosowane do nie-tablicy}}\end{kframe}
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in ggplot(data = df\_bank, aes\_string(x = "{}y"{}, y = column, fill = column)): nie udało się znaleźć funkcji 'ggplot'}}\end{kframe}
 \end{knitrout}
 
 
-
-\subsection{}
-
-
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
-
-{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-21-1} 
-
-}
-
-\caption[New Figure]{New Figure}\label{fig:unnamed-chunk-21}
-\end{figure}
-
-
-\end{knitrout}
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
-
-{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-22-1} 
-
-}
-
-\caption[New Figure]{New Figure}\label{fig:unnamed-chunk-22}
-\end{figure}
-
-
-\end{knitrout}
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in dimnames(x) <- dnx: 'dimnames()' zastosowane do nie-tablicy}}\end{kframe}
-\end{knitrout}
-
-
-
-\subsection{}
-
-
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
-
-{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-25-1} 
-
-}
-
-\caption[New Figure]{New Figure}\label{fig:unnamed-chunk-25}
-\end{figure}
-
-
-\end{knitrout}
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
-
-{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-26-1} 
-
-}
-
-\caption[New Figure]{New Figure}\label{fig:unnamed-chunk-26}
-\end{figure}
-
-
-\end{knitrout}
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in dimnames(x) <- dnx: 'dimnames()' zastosowane do nie-tablicy}}\end{kframe}
-\end{knitrout}
-
-
-
-\subsection{}
-
-
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in dimnames(x) <- dnx: 'dimnames()' zastosowane do nie-tablicy}}\end{kframe}
-\end{knitrout}
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
-
-{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-30-1} 
-
-}
-
-\caption[New Figure]{New Figure}\label{fig:unnamed-chunk-30}
-\end{figure}
-
-
-\end{knitrout}
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
-
-{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-31-1} 
-
-}
-
-\caption[New Figure]{New Figure}\label{fig:unnamed-chunk-31}
-\end{figure}
-
-
-\end{knitrout}
 
 
 
