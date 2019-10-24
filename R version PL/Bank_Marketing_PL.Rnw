@@ -1,7 +1,7 @@
 \documentclass[11pt]{article}
 
 \usepackage[T1]{fontenc}
-\usepackage{polski}
+\usepackage[polish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \selectlanguage{polish}
@@ -92,21 +92,21 @@ Nasze dane zawieraj¹ 21 column danych. Kolumny mo¿emy podzieliæ na 3 grupy:
 
 \subsection{Wstêpna eksploracja danych}
 <<echo=FALSE,message=FALSE, warning=FALSE>>=
-# # Library to install
-# install.packages('tidyverse')
-# install.packages("descr")
-# install.packages("tables")
-# install.packages("egg")
-# # Cross Tables
-# install.packages("gmodels")
-# # Additional packages for GGplot
-# install.packages("ggplot2")
-# install.packages("ggmosaic")
-# install.packages('corrplot')
-# install.packages('ggpubr')
-# install.packages('cowplot')
-# install.packages("ggimage")
-# install.packages('pander')
+# Library to install
+install.packages('tidyverse')
+install.packages("descr")
+install.packages("tables")
+install.packages("egg")
+# Cross Tables
+install.packages("gmodels")
+# Additional packages for GGplot
+install.packages("ggplot2")
+install.packages("ggmosaic")
+install.packages('corrplot')
+install.packages('ggpubr')
+install.packages('cowplot')
+install.packages("ggimage")
+install.packages('pander')
 
 # Library
 library(pander)
@@ -163,7 +163,7 @@ Jednak¿e wiemy, ¿e w danych wystêpuj¹ wartoœci brakuj¹ce i s¹ one opisa "unknown
 @
 
 
-<<echo=FALSE ,message=FALSE, warning=FALSE>>= 
+<<kable ,echo=FALSE ,message=FALSE, warning=FALSE>>= 
 number_of_unknown <- sum(df_bank == 'unknown')
 table_unknown <- df_bank %>%
     summarise_all(list(~sum(. =='unknown'))) %>%
@@ -180,9 +180,90 @@ kable(table_unknown, "latex", booktabs = F, caption='Liczba nieznanych wartoœci 
 @
 
 
+\section{Analiza eksploracyjna}
+<<echo=FALSE ,message=FALSE>>= 
+fun_barplot_categorical <- function(x_column, xlabel, fill_column='y'){
+    # x_column: (str) name of column with dataframe
+    # fill_column: (str) name of column with dataframe which we fill
+    # xlabel: (str) name of x label
+    gg1 <- ggplot(data = df_bank, aes_string(x = x_column , fill = fill_column)) +
+        geom_bar(position = "dodge2") +
+        theme(axis.text.x = element_text(angle = -35,  hjust = 0)) +
+        labs(x = xlabel, y = "Count")
+    
+    gg2 <- ggplot(data = df_bank, aes_string(x = x_column, fill = fill_column)) +
+        geom_bar(position = "fill") +
+        theme(axis.text.x = element_text(angle = -35,  hjust = 0)) +
+        labs(x = xlabel, y="Percent of population")
+    
+    
+    plot_grid(gg1, gg2,
+              nrow =2,
+              labels = c("a)", "b)"))
+}
+
+
+############@
+fun_barplot_numerical <- function(column, xlabel, min_limit_breaks=0, max_limit_breaks, bins=5){
+    # column: (str) name of column with dataframe
+    # xlabel: (str) name of x label
+    # limit_breaks: (int) x limit
+    ggplot(data = df_bank, aes_string(x=column)) +
+        geom_bar(fill = "steelblue") + 
+        facet_grid(y ~ ., scales = 'free_y') +
+        scale_x_continuous(breaks = seq(min_limit_breaks, max_limit_breaks, bins)) +
+        labs(x = xlabel, 
+             y = "Count")
+}
+
+
+############@
+fun_boxplot <- function(column, ylabel){
+    # column: (str) name of column with dataframe
+    # ylabel: (str) name of y label
+    ggplot(data = df_bank, aes_string(x = "y", y = column, fill = column)) +
+        stat_boxplot(geom = "errorbar", width = 0.6) +
+        geom_boxplot(fill = 'lightgray') +
+        labs(x = "Long-term deposit taken",
+             y = ylabel)
+}
+
+
+############@
+fun_crosstable <- function(column1, column2="y"){
+    # column1: (str) name of first column with dataframe to CrossTable
+    # column2: (str) name of second column with dataframe to CrossTable
+    return(CrossTable(df_bank[, column1], df_bank[, column2], 
+                      prop.r = T, 
+                      prop.c = F, 
+                      prop.t = F, 
+                      prop.chisq = F,
+                      dnn = c(column1, column2)))
+}
+@
+
+W tej sekcji zostanie omówiony ka¿dy parametr z osobna. Nastêpnie dane zostan¹ odpowiednio przygotowane do wykorzystania ich w modelach predykcyjnych.
+
+\subsection{Age}
+W jakim wieku by³y osoby, z którymi skontaktowano siê podczas tej kampani?
 
 <<echo=FALSE ,message=FALSE>>= 
+name_of_column <- 'age'
+name_of_label <- 'Age'
+@
 
+<<echo=FALSE,message=FALSE, warning=FALSE>>= # Wyœwietl tabele
+
+kable(summary(df_bank$age),  booktabs = F, caption='Caption') %>%
+  kable_styling(latex_options = 'HOLD_position')
+@
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='Histogram wieku klientów w zale¿noœci od wziêcia lokaty d³ugoterminowej.'>>= #Wyœwietl obrazek bez kodu
+fun_barplot_numerical(name_of_column, name_of_label, 0, 90, 5)
+@
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='Boxplot wieku klientów w zale¿noœci od wziêcia lokaty d³ugoterminowej.'>>= #Wyœwietl obrazek bez kodu
+fun_boxplot(name_of_column, name_of_label)
 @
 
 
@@ -190,11 +271,116 @@ kable(table_unknown, "latex", booktabs = F, caption='Liczba nieznanych wartoœci 
 
 
 
-\textbf{Nazwy kolumn}
-<<echo=TRUE ,message=FALSE>>= 
+\subsection{}
+
+<<echo=FALSE ,message=FALSE>>= 
+name_of_column <- 'age'
+name_of_label <- 'Age'
+@
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+fun_barplot_numerical(name_of_column, name_of_label, 0, 90, 5)
+@
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+fun_boxplot(name_of_column, name_of_label)
+@
+
+<<echo=FALSE,message=FALSE, warning=FALSE>>= # Wyœwietl tabele
+
+kable(summary(df_bank$age), "latex", booktabs = F, caption='Caption') %>%
+  kable_styling(latex_options = 'HOLD_position')
+@
+
+
+\subsection{}
+
+<<echo=FALSE ,message=FALSE>>= 
+name_of_column <- 'age'
+name_of_label <- 'Age'
+@
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+fun_barplot_numerical(name_of_column, name_of_label, 0, 90, 5)
+@
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+fun_boxplot(name_of_column, name_of_label)
+@
+
+<<echo=FALSE,message=FALSE, warning=FALSE>>= # Wyœwietl tabele
+library(kableExtra)
+kable(summary(df_bank$age), "latex", booktabs = F, caption='Caption') %>%
+  kable_styling(latex_options = 'HOLD_position')
+@
 
 
 
+\subsection{}
+
+<<echo=FALSE ,message=FALSE>>= 
+name_of_column <- 'age'
+name_of_label <- 'Age'
+@
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+fun_barplot_numerical(name_of_column, name_of_label, 0, 90, 5)
+@
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+fun_boxplot(name_of_column, name_of_label)
+@
+
+<<echo=FALSE,message=FALSE, warning=FALSE>>= # Wyœwietl tabele
+
+kable(summary(df_bank$age), "latex", booktabs = F, caption='Caption') %>%
+  kable_styling(latex_options = 'HOLD_position')
+@
+
+
+
+\subsection{}
+
+<<echo=FALSE ,message=FALSE>>= 
+name_of_column <- 'age'
+name_of_label <- 'Age'
+@
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+fun_barplot_numerical(name_of_column, name_of_label, 0, 90, 5)
+@
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+fun_boxplot(name_of_column, name_of_label)
+@
+
+<<echo=FALSE,message=FALSE, warning=FALSE>>= # Wyœwietl tabele
+
+kable(summary(df_bank$age), "latex", booktabs = F, caption='Caption') %>%
+  kable_styling(latex_options = 'HOLD_position')
+@
+
+
+
+\subsection{}
+
+<<echo=FALSE ,message=FALSE>>= 
+name_of_column <- 'age'
+name_of_label <- 'Age'
+@
+
+<<echo=FALSE,message=FALSE, warning=FALSE>>= # Wyœwietl tabele
+
+kable(summary(df_bank$age), "latex", booktabs = F, caption='Caption') %>%
+  kable_styling(latex_options = 'HOLD_position')
+@
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+fun_barplot_numerical(name_of_column, name_of_label, 0, 90, 5)
+@
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+fun_boxplot(name_of_column, name_of_label)
 @
 
 
@@ -203,6 +389,25 @@ kable(table_unknown, "latex", booktabs = F, caption='Liczba nieznanych wartoœci 
 
 
 
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+
+@
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+
+@
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+
+@
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+
+@
+
+<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+
+@
 
 
 
