@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.21)  24 OCT 2019 01:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.21)  24 OCT 2019 12:25
 entering extended mode
 **./Bank_Marketing_PL.tex
 (Bank_Marketing_PL.tex
@@ -63,11 +63,71 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
 Package: alltt 1997/06/16 v2.0g defines alltt environment
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(C:\Users\Maciek^M\AppData\Roaming\MiKTeX\2.9\tex\latex\polski\polski.sty
+Package: polski 2017/05/04 v1.3.4 Polish language package
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+
+! Package babel Error: Unknown language `polish'. Either you have
+(babel)                misspelled its name, it has not been installed,
+(babel)                or you requested it in a previous run. Fix its name,
+(babel)                install it or just rerun the file, respectively. In
+(babel)                some cases, you may need to remove the aux file.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 \selectlanguage{polish}
+                            
+You may proceed, but expect wrong results
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count88
@@ -75,54 +135,6 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box26
 \@float@everytoks=\toks18
 \@floatcapt=\box27
-)
-(C:\Users\Maciek^M\AppData\Roaming\MiKTeX\2.9\tex\latex\polski\polski.sty
-Package: polski 2017/05/04 v1.3.4 Polish language package
-
-   Inputenc package detected. Catcodes not changed.
-   Switching to Polish text encoding and Polish maths fonts.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot4enc.def"
-File: ot4enc.def 2017/04/05 v2.0i Standard LaTeX file
-Now handling font encoding OT4 ...
-... no UTF-8 mapping file for font encoding OT4
-)
-LaTeX Font Info:    Try loading font information for OT4+cmr on input line 360.
-
-
-(C:\Users\Maciek^M\AppData\Roaming\MiKTeX\2.9\tex\latex\polski\ot4cmr.fd
-File: ot4cmr.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT4/cmr/bx/n on input line 360.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT4/cmss/m/n on input line 360.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT4/cmr/m/it on input line 360.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT4/cmtt/m/n on input line 360.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT4/cmss/bx/n on input line 360.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT4/cmr/bx/it on input line 360.
-LaTeX Font Info:    Encoding `OT1' has changed to `OT4' for symbol font
-(Font)              `operators' in the math version `normal' on input line 360.
-
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT4/cmr/m/n on input line 360.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/plm/m/it on input line 360.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/plsy/m/n on input line 360.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/plex/m/n on input line 360.
-LaTeX Font Info:    Encoding `OT1' has changed to `OT4' for symbol font
-(Font)              `operators' in the math version `bold' on input line 360.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT4/cmr/bx/n on input line 360.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/plm/b/it on input line 360.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/plsy/b/n on input line 360.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
@@ -521,29 +533,31 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 (Bank_Marketing_PL.aux)
 \openout1 = `Bank_Marketing_PL.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 78.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 75.
- (C:\Users\Maciek^M\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 78.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+(C:\Users\Maciek^M\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count120
 \scratchdimen=\dimen137
@@ -604,7 +618,7 @@ G,.JBIG2,.JB2,.eps]
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 75.
+Package hyperref Info: Link coloring OFF on input line 78.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -613,43 +627,48 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count126
 )
-LaTeX Info: Redefining \ref on input line 75.
-LaTeX Info: Redefining \pageref on input line 75.
-LaTeX Info: Redefining \nameref on input line 75.
+LaTeX Info: Redefining \ref on input line 78.
+LaTeX Info: Redefining \pageref on input line 78.
+LaTeX Info: Redefining \nameref on input line 78.
 
 (Bank_Marketing_PL.out) (Bank_Marketing_PL.out)
 \@outlinefile=\write3
 \openout3 = `Bank_Marketing_PL.out'.
 
-LaTeX Font Info:    Try loading font information for OML+plm on input line 81.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 84.
 
-(C:\Users\Maciek^M\AppData\Roaming\MiKTeX\2.9\tex\latex\polski\omlplm.fd
-File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 81.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 84.
 
-
-(C:\Users\Maciek^M\AppData\Roaming\MiKTeX\2.9\tex\latex\polski\omsplsy.fd
-File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 81.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 84.
 
 
-(C:\Users\Maciek^M\AppData\Roaming\MiKTeX\2.9\tex\latex\polski\omxplex.fd
-File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 81.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 81.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 81.
-LaTeX Font Info:    Try loading font information for U+msa on input line 81.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 84.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 84.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 84.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 84.
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 81.
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -662,7 +681,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 \abstract
+l.84 \abstract
               {W pliku Bank Marketing data.csv znajduj戼㸹 si攼㹡 dane c...
 
 You may provide a definition with
@@ -676,7 +695,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 \abstract
+l.84 \abstract
               {W pliku Bank Marketing data.csv znajduj戼㸹 si攼㹡 dane c...
 
 You may provide a definition with
@@ -690,7 +709,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...W pliku Bank Marketing data.csv znajduj戼
+l.84 ...W pliku Bank Marketing data.csv znajduj戼
                                                   㸹 si攼㹡 dane charakte...
 
 You may provide a definition with
@@ -704,7 +723,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...liku Bank Marketing data.csv znajduj戼㸹
+l.84 ...liku Bank Marketing data.csv znajduj戼㸹
                                                    si攼㹡 dane charakteryz...
 
 You may provide a definition with
@@ -718,7 +737,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...ank Marketing data.csv znajduj戼㸹 si攼
+l.84 ...ank Marketing data.csv znajduj戼㸹 si攼
                                                   㹡 dane charakteryzuj戼�...
 
 You may provide a definition with
@@ -732,7 +751,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ... Marketing data.csv znajduj戼㸹 si攼㹡
+l.84 ... Marketing data.csv znajduj戼㸹 si攼㹡
                                                    dane charakteryzuj戼㸹c...
 
 You may provide a definition with
@@ -746,7 +765,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...ajduj戼㸹 si攼㹡 dane charakteryzuj戼
+l.84 ...ajduj戼㸹 si攼㹡 dane charakteryzuj戼
                                                   㸹ce klient昼㸳w pewneg...
 
 You may provide a definition with
@@ -760,7 +779,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...uj戼㸹 si攼㹡 dane charakteryzuj戼㸹
+l.84 ...uj戼㸹 si攼㹡 dane charakteryzuj戼㸹
                                                   ce klient昼㸳w pewnego b...
 
 You may provide a definition with
@@ -774,7 +793,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...��㹡 dane charakteryzuj戼㸹ce klient昼
+l.84 ...��㹡 dane charakteryzuj戼㸹ce klient昼
                                                   㸳w pewnego banku oraz ka...
 
 You may provide a definition with
@@ -788,7 +807,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...�� dane charakteryzuj戼㸹ce klient昼㸳
+l.84 ...�� dane charakteryzuj戼㸹ce klient昼㸳
                                                   w pewnego banku oraz kampa...
 
 You may provide a definition with
@@ -802,7 +821,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ... marketingowe skierowane do tych klient昼
+l.84 ... marketingowe skierowane do tych klient昼
                                                   㸳w. Do戼㸳戼㸹czone ...
 
 You may provide a definition with
@@ -816,7 +835,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...rketingowe skierowane do tych klient昼㸳
+l.84 ...rketingowe skierowane do tych klient昼㸳
                                                   w. Do戼㸳戼㸹czone s�...
 
 You may provide a definition with
@@ -830,7 +849,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...we skierowane do tych klient昼㸳w. Do戼
+l.84 ...we skierowane do tych klient昼㸳w. Do戼
                                                   㸳戼㸹czone s戼㸹 pon...
 
 You may provide a definition with
@@ -844,7 +863,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...skierowane do tych klient昼㸳w. Do戼㸳
+l.84 ...skierowane do tych klient昼㸳w. Do戼㸳
                                                   戼㸹czone s戼㸹 ponadt...
 
 You may provide a definition with
@@ -858,7 +877,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...erowane do tych klient昼㸳w. Do戼㸳戼
+l.84 ...erowane do tych klient昼㸳w. Do戼㸳戼
                                                   㸹czone s戼㸹 ponadto w...
 
 You may provide a definition with
@@ -872,7 +891,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...wane do tych klient昼㸳w. Do戼㸳戼㸹
+l.84 ...wane do tych klient昼㸳w. Do戼㸳戼㸹
                                                   czone s戼㸹 ponadto wska...
 
 You may provide a definition with
@@ -886,7 +905,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...ch klient昼㸳w. Do戼㸳戼㸹czone s戼
+l.84 ...ch klient昼㸳w. Do戼㸳戼㸹czone s戼
                                                   㸹 ponadto wska㤼㹦niki...
 
 You may provide a definition with
@@ -900,7 +919,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...klient昼㸳w. Do戼㸳戼㸹czone s戼㸹
+l.84 ...klient昼㸳w. Do戼㸳戼㸹czone s戼㸹
                                                    ponadto wska㤼㹦niki sp...
 
 You may provide a definition with
@@ -914,7 +933,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...o戼㸳戼㸹czone s戼㸹 ponadto wska㤼
+l.84 ...o戼㸳戼㸹czone s戼㸹 ponadto wska㤼
                                                   㹦niki spo戼㸳eczne i e...
 
 You may provide a definition with
@@ -928,7 +947,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...�㸳戼㸹czone s戼㸹 ponadto wska㤼㹦
+l.84 ...�㸳戼㸹czone s戼㸹 ponadto wska㤼㹦
                                                   niki spo戼㸳eczne i ekon...
 
 You may provide a definition with
@@ -942,7 +961,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...zone s戼㸹 ponadto wska㤼㹦niki spo戼
+l.84 ...zone s戼㸹 ponadto wska㤼㹦niki spo戼
                                                   㸳eczne i ekonomiczne. Na...
 
 You may provide a definition with
@@ -956,7 +975,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...e s戼㸹 ponadto wska㤼㹦niki spo戼㸳
+l.84 ...e s戼㸹 ponadto wska㤼㹦niki spo戼㸳
                                                   eczne i ekonomiczne. Na po...
 
 You may provide a definition with
@@ -970,7 +989,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...nomiczne. Na podstawie tych danych nale戼
+l.84 ...nomiczne. Na podstawie tych danych nale戼
                                                   㹦y zbudowa攼㸶 model p...
 
 You may provide a definition with
@@ -984,7 +1003,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...iczne. Na podstawie tych danych nale戼㹦
+l.84 ...iczne. Na podstawie tych danych nale戼㹦
                                                   y zbudowa攼㸶 model prog...
 
 You may provide a definition with
@@ -998,7 +1017,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...dstawie tych danych nale戼㹦y zbudowa攼
+l.84 ...dstawie tych danych nale戼㹦y zbudowa攼
                                                   㸶 model prognozuj戼㸹c...
 
 You may provide a definition with
@@ -1012,7 +1031,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...awie tych danych nale戼㹦y zbudowa攼㸶
+l.84 ...awie tych danych nale戼㹦y zbudowa攼㸶
                                                    model prognozuj戼㸹cy s...
 
 You may provide a definition with
@@ -1026,7 +1045,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...le戼㹦y zbudowa攼㸶 model prognozuj戼
+l.84 ...le戼㹦y zbudowa攼㸶 model prognozuj戼
                                                   㸹cy szans攼㹡, 戼㹦e...
 
 You may provide a definition with
@@ -1040,7 +1059,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...��㹦y zbudowa攼㸶 model prognozuj戼㸹
+l.84 ...��㹦y zbudowa攼㸶 model prognozuj戼㸹
                                                   cy szans攼㹡, 戼㹦e kl...
 
 You may provide a definition with
@@ -1054,7 +1073,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...owa攼㸶 model prognozuj戼㸹cy szans攼
+l.84 ...owa攼㸶 model prognozuj戼㸹cy szans攼
                                                   㹡, 戼㹦e klient w wyni...
 
 You may provide a definition with
@@ -1068,7 +1087,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...攼㸶 model prognozuj戼㸹cy szans攼㹡
+l.84 ...攼㸶 model prognozuj戼㸹cy szans攼㹡
                                                   , 戼㹦e klient w wyniku ...
 
 You may provide a definition with
@@ -1082,7 +1101,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...� model prognozuj戼㸹cy szans攼㹡, 戼
+l.84 ...� model prognozuj戼㸹cy szans攼㹡, 戼
                                                   㹦e klient w wyniku prowa...
 
 You may provide a definition with
@@ -1096,7 +1115,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...odel prognozuj戼㸹cy szans攼㹡, 戼㹦
+l.84 ...odel prognozuj戼㸹cy szans攼㹡, 戼㹦
                                                   e klient w wyniku prowadzo...
 
 You may provide a definition with
@@ -1110,7 +1129,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...klient w wyniku prowadzonej kampanii za戼
+l.84 ...klient w wyniku prowadzonej kampanii za戼
                                                   㸳o戼㹦y lokat攼㹡 te...
 
 You may provide a definition with
@@ -1124,7 +1143,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...ent w wyniku prowadzonej kampanii za戼㸳
+l.84 ...ent w wyniku prowadzonej kampanii za戼㸳
                                                   o戼㹦y lokat攼㹡 termi...
 
 You may provide a definition with
@@ -1138,7 +1157,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...w wyniku prowadzonej kampanii za戼㸳o戼
+l.84 ...w wyniku prowadzonej kampanii za戼㸳o戼
                                                   㹦y lokat攼㹡 terminow�...
 
 You may provide a definition with
@@ -1152,7 +1171,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...yniku prowadzonej kampanii za戼㸳o戼㹦
+l.84 ...yniku prowadzonej kampanii za戼㸳o戼㹦
                                                   y lokat攼㹡 terminow戼�...
 
 You may provide a definition with
@@ -1166,7 +1185,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...adzonej kampanii za戼㸳o戼㹦y lokat攼
+l.84 ...adzonej kampanii za戼㸳o戼㹦y lokat攼
                                                   㹡 terminow戼㸹.}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1179,7 +1198,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...onej kampanii za戼㸳o戼㹦y lokat攼㹡
+l.84 ...onej kampanii za戼㸳o戼㹦y lokat攼㹡
                                                    terminow戼㸹.}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1192,7 +1211,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...i za戼㸳o戼㹦y lokat攼㹡 terminow戼
+l.84 ...i za戼㸳o戼㹦y lokat攼㹡 terminow戼
                                                   㸹.}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1205,18 +1224,59 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...a戼㸳o戼㹦y lokat攼㹡 terminow戼㸹
+l.84 ...a戼㸳o戼㹦y lokat攼㹡 terminow戼㸹
                                                   .}
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 (Bank_Marketing_PL.toc
-LaTeX Font Info:    External font `plex10' loaded for size
+LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 2.
-LaTeX Font Info:    External font `plex10' loaded for size
+LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 2.
-LaTeX Font Info:    External font `plex10' loaded for size
+LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 2.
+
+
+! Package inputenc Error: Unicode character \GenericError {(inputenc)          
+      }{Package inputenc Error: Unicode character 攼 (U+653C)
+(inputenc) not set up for use with LaTeX}{See the inputenc package documentatio
+n for explanation.}{You may provide a definition with
+(inputenc) \DeclareUnicodeCharacter } (U+653C)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 ...}pna eksploracja danych}{3}{subsection.1.3}
+                                                  
+You may provide a definition with
+\GenericError { }{LaTeX Error: Can be used only in preamble}{See the LaTeX manu
+al or LaTeX Companion for explanation.}{Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.}
+
+
+! Package inputenc Error: Unicode character \GenericError {(inputenc)          
+      }{Package inputenc Error: Unicode character 㹡 (U+3E61)
+(inputenc) not set up for use with LaTeX}{See the inputenc package documentatio
+n for explanation.}{You may provide a definition with
+(inputenc) \DeclareUnicodeCharacter } (U+3E61)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 ...}pna eksploracja danych}{3}{subsection.1.3}
+                                                  
+You may provide a definition with
+\GenericError { }{LaTeX Error: Can be used only in preamble}{See the LaTeX manu
+al or LaTeX Companion for explanation.}{Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.}
+
 )
 \tf@toc=\write4
 \openout4 = `Bank_Marketing_PL.toc'.
@@ -1232,7 +1292,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.88 ...nizowanej przez pewien bank w latach mi攼
+l.91 ...nizowanej przez pewien bank w latach mi攼
                                                   㹡dzy majem 2008 rok, a l...
 
 You may provide a definition with
@@ -1246,7 +1306,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.88 ...owanej przez pewien bank w latach mi攼㹡
+l.91 ...owanej przez pewien bank w latach mi攼㹡
                                                   dzy majem 2008 rok, a list...
 
 You may provide a definition with
@@ -1260,7 +1320,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.88 ...em 2008 rok, a listopadem 2010 roku, by戼
+l.91 ...em 2008 rok, a listopadem 2010 roku, by戼
                                                   㸳y zbierane informacje n...
 
 You may provide a definition with
@@ -1274,7 +1334,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.88 ...2008 rok, a listopadem 2010 roku, by戼㸳
+l.91 ...2008 rok, a listopadem 2010 roku, by戼㸳
                                                   y zbierane informacje na t...
 
 You may provide a definition with
@@ -1288,7 +1348,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.88 ...��y zbierane informacje na temat klient昼
+l.91 ...��y zbierane informacje na temat klient昼
                                                   㸳w tego banku.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1301,7 +1361,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.88 ... zbierane informacje na temat klient昼㸳
+l.91 ... zbierane informacje na temat klient昼㸳
                                                   w tego banku.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1314,7 +1374,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 ...przewidzenie, czy i jakie rodzaj klient昼
+l.92 ...przewidzenie, czy i jakie rodzaj klient昼
                                                   㸳w kupi lokat攼㹡 term...
 
 You may provide a definition with
@@ -1328,7 +1388,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 ...ewidzenie, czy i jakie rodzaj klient昼㸳
+l.92 ...ewidzenie, czy i jakie rodzaj klient昼㸳
                                                   w kupi lokat攼㹡 termino...
 
 You may provide a definition with
@@ -1342,7 +1402,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 ...i jakie rodzaj klient昼㸳w kupi lokat攼
+l.92 ...i jakie rodzaj klient昼㸳w kupi lokat攼
                                                   㹡 terminow戼㸹 w tym b...
 
 You may provide a definition with
@@ -1356,7 +1416,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 ...akie rodzaj klient昼㸳w kupi lokat攼㹡
+l.92 ...akie rodzaj klient昼㸳w kupi lokat攼㹡
                                                    terminow戼㸹 w tym banku.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1369,7 +1429,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 ...klient昼㸳w kupi lokat攼㹡 terminow戼
+l.92 ...klient昼㸳w kupi lokat攼㹡 terminow戼
                                                   㸹 w tym banku.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1382,7 +1442,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 ...ent昼㸳w kupi lokat攼㹡 terminow戼㸹
+l.92 ...ent昼㸳w kupi lokat攼㹡 terminow戼㸹
                                                    w tym banku.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1395,8 +1455,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.92 Nasze dane zawieraj戼
-                           㸹 21 column i 4119 wierszy z danymi. Kolumny mo...
+l.95 Nasze dane zawieraj戼
+                           㸹 21 column danych. Kolumny mo戼㹦emy podziel...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1409,8 +1469,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.92 Nasze dane zawieraj戼㸹
-                               21 column i 4119 wierszy z danymi. Kolumny mo...
+l.95 Nasze dane zawieraj戼㸹
+                               21 column danych. Kolumny mo戼㹦emy podziel...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1423,7 +1483,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.92 ...umn i 4119 wierszy z danymi. Kolumny mo戼
+l.95 ...eraj戼㸹 21 column danych. Kolumny mo戼
                                                   㹦emy podzieli攼㸶 na 3...
 
 You may provide a definition with
@@ -1437,7 +1497,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.92 ... i 4119 wierszy z danymi. Kolumny mo戼㹦
+l.95 ...j戼㸹 21 column danych. Kolumny mo戼㹦
                                                   emy podzieli攼㸶 na 3 gr...
 
 You may provide a definition with
@@ -1451,7 +1511,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.92 ... z danymi. Kolumny mo戼㹦emy podzieli攼
+l.95 ...mn danych. Kolumny mo戼㹦emy podzieli攼
                                                   㸶 na 3 grupy:
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1464,7 +1524,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.92 ...danymi. Kolumny mo戼㹦emy podzieli攼㸶
+l.95 ...danych. Kolumny mo戼㹦emy podzieli攼㸶
                                                    na 3 grupy:
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1477,7 +1537,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.94 ...zwi戼㸹zane z danymi klienta bankowego:}
+l.97 ...zwi戼㸹zane z danymi klienta bankowego:}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1490,7 +1550,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.94 ...zwi戼㸹zane z danymi klienta bankowego:}
+l.97 ...zwi戼㸹zane z danymi klienta bankowego:}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1503,7 +1563,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.101 \item Domy㤼
+l.104 \item Domy㤼
                    㹣lnie (default): Klient wcze㤼㹣niej domy㤼㹣lnie m...
 
 You may provide a definition with
@@ -1517,7 +1577,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.101 \item Domy㤼㹣
+l.104 \item Domy㤼㹣
                       lnie (default): Klient wcze㤼㹣niej domy㤼㹣lnie m...
 
 You may provide a definition with
@@ -1531,7 +1591,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.101 ... Domy㤼㹣lnie (default): Klient wcze㤼
+l.104 ... Domy㤼㹣lnie (default): Klient wcze㤼
                                                   㹣niej domy㤼㹣lnie mia...
 
 You may provide a definition with
@@ -1545,7 +1605,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.101 ...my㤼㹣lnie (default): Klient wcze㤼㹣
+l.104 ...my㤼㹣lnie (default): Klient wcze㤼㹣
                                                   niej domy㤼㹣lnie mia戼...
 
 You may provide a definition with
@@ -1559,7 +1619,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.101 ... (default): Klient wcze㤼㹣niej domy㤼
+l.104 ... (default): Klient wcze㤼㹣niej domy㤼
                                                   㹣lnie mia戼㸳 kredyt.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1572,7 +1632,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.101 ...efault): Klient wcze㤼㹣niej domy㤼㹣
+l.104 ...efault): Klient wcze㤼㹣niej domy㤼㹣
                                                   lnie mia戼㸳 kredyt.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1585,7 +1645,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.101 ...ient wcze㤼㹣niej domy㤼㹣lnie mia戼
+l.104 ...ient wcze㤼㹣niej domy㤼㹣lnie mia戼
                                                   㸳 kredyt.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1598,7 +1658,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.101 ...t wcze㤼㹣niej domy㤼㹣lnie mia戼㸳
+l.104 ...t wcze㤼㹣niej domy㤼㹣lnie mia戼㸳
                                                    kredyt.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1611,7 +1671,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 \item Po戼
+l.106 \item Po戼
                  㹦yczka (loan): Klient ma osobist戼㸹 po戼㹦yczk攼㹡.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1624,7 +1684,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 \item Po戼㹦
+l.106 \item Po戼㹦
                     yczka (loan): Klient ma osobist戼㸹 po戼㹦yczk攼㹡.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1637,7 +1697,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 ...o戼㹦yczka (loan): Klient ma osobist戼
+l.106 ...o戼㹦yczka (loan): Klient ma osobist戼
                                                   㸹 po戼㹦yczk攼㹡.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1650,7 +1710,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 ...�㹦yczka (loan): Klient ma osobist戼㸹
+l.106 ...�㹦yczka (loan): Klient ma osobist戼㸹
                                                    po戼㹦yczk攼㹡.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1663,7 +1723,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 ...zka (loan): Klient ma osobist戼㸹 po戼
+l.106 ...zka (loan): Klient ma osobist戼㸹 po戼
                                                   㹦yczk攼㹡.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1676,7 +1736,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 ... (loan): Klient ma osobist戼㸹 po戼㹦
+l.106 ... (loan): Klient ma osobist戼㸹 po戼㹦
                                                   yczk攼㹡.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1689,7 +1749,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 ...: Klient ma osobist戼㸹 po戼㹦yczk攼
+l.106 ...: Klient ma osobist戼㸹 po戼㹦yczk攼
                                                   㹡.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1702,7 +1762,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 ...lient ma osobist戼㸹 po戼㹦yczk攼㹡
+l.106 ...lient ma osobist戼㸹 po戼㹦yczk攼㹡
                                                   .
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1715,7 +1775,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.107 ...e戼㹦戼㸹cej kampanii marketingowej:}
+l.110 ...e戼㹦戼㸹cej kampanii marketingowej:}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1728,7 +1788,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.107 ...e戼㹦戼㸹cej kampanii marketingowej:}
+l.110 ...e戼㹦戼㸹cej kampanii marketingowej:}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1741,7 +1801,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.107 ...e戼㹦戼㸹cej kampanii marketingowej:}
+l.110 ...e戼㹦戼㸹cej kampanii marketingowej:}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1754,7 +1814,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.107 ...e戼㹦戼㸹cej kampanii marketingowej:}
+l.110 ...e戼㹦戼㸹cej kampanii marketingowej:}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1767,7 +1827,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.107 ...e戼㹦戼㸹cej kampanii marketingowej:}
+l.110 ...e戼㹦戼㸹cej kampanii marketingowej:}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1780,7 +1840,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.107 ...e戼㹦戼㸹cej kampanii marketingowej:}
+l.110 ...e戼㹦戼㸹cej kampanii marketingowej:}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1793,7 +1853,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.111 ...cji kontaktowej (telefonicznej lub kom昼
+l.114 ...cji kontaktowej (telefonicznej lub kom昼
                                                   㸳rkowej).
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1806,7 +1866,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.111 ... kontaktowej (telefonicznej lub kom昼㸳
+l.114 ... kontaktowej (telefonicznej lub kom昼㸳
                                                   rkowej).
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1819,7 +1879,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.112 \item Miesi戼
+l.115 \item Miesi戼
                     㸹c (month): Ostatni kontakt miesi戼㸹ca roku.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1832,7 +1892,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.112 \item Miesi戼㸹
+l.115 \item Miesi戼㸹
                        c (month): Ostatni kontakt miesi戼㸹ca roku.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1845,7 +1905,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.112 ...戼㸹c (month): Ostatni kontakt miesi戼
+l.115 ...戼㸹c (month): Ostatni kontakt miesi戼
                                                   㸹ca roku.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1858,7 +1918,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.112 ...㸹c (month): Ostatni kontakt miesi戼㸹
+l.115 ...㸹c (month): Ostatni kontakt miesi戼㸹
                                                   ca roku.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1871,7 +1931,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.113 \item Dzie昼
+l.116 \item Dzie昼
                    㸱 tygodnia (day of week): dzie昼㸱 ostatniego kontakt...
 
 You may provide a definition with
@@ -1885,7 +1945,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.113 \item Dzie昼㸱
+l.116 \item Dzie昼㸱
                        tygodnia (day of week): dzie昼㸱 ostatniego kontakt...
 
 You may provide a definition with
@@ -1899,7 +1959,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.113 ...zie昼㸱 tygodnia (day of week): dzie昼
+l.116 ...zie昼㸱 tygodnia (day of week): dzie昼
                                                   㸱 ostatniego kontaktu ty...
 
 You may provide a definition with
@@ -1913,7 +1973,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.113 ...昼㸱 tygodnia (day of week): dzie昼㸱
+l.116 ...昼㸱 tygodnia (day of week): dzie昼㸱
                                                    ostatniego kontaktu tygod...
 
 You may provide a definition with
@@ -1927,7 +1987,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 ...ia ostatniego kontaktu w sekundach. Je㤼
+l.117 ...ia ostatniego kontaktu w sekundach. Je㤼
                                                   㹣li czas trwania wynosi ...
 
 You may provide a definition with
@@ -1941,7 +2001,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 ...ostatniego kontaktu w sekundach. Je㤼㹣
+l.117 ...ostatniego kontaktu w sekundach. Je㤼㹣
                                                   li czas trwania wynosi 0, ...
 
 You may provide a definition with
@@ -1955,7 +2015,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 ...ania wynosi 0, nigdy nie skontaktowali㤼
+l.117 ...ania wynosi 0, nigdy nie skontaktowali㤼
                                                   㹣my si攼㹡 z klientem,...
 
 You may provide a definition with
@@ -1969,7 +2029,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 ...a wynosi 0, nigdy nie skontaktowali㤼㹣
+l.117 ...a wynosi 0, nigdy nie skontaktowali㤼㹣
                                                   my si攼㹡 z klientem, ab...
 
 You may provide a definition with
@@ -1983,7 +2043,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 ... 0, nigdy nie skontaktowali㤼㹣my si攼
+l.117 ... 0, nigdy nie skontaktowali㤼㹣my si攼
                                                   㹡 z klientem, aby za戼�...
 
 You may provide a definition with
@@ -1997,7 +2057,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 ... nigdy nie skontaktowali㤼㹣my si攼㹡
+l.117 ... nigdy nie skontaktowali㤼㹣my si攼㹡
                                                    z klientem, aby za戼㸳o...
 
 You may provide a definition with
@@ -2011,7 +2071,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 ...li㤼㹣my si攼㹡 z klientem, aby za戼
+l.117 ...li㤼㹣my si攼㹡 z klientem, aby za戼
                                                   㸳o戼㹦y攼㸶 konto lo...
 
 You may provide a definition with
@@ -2025,7 +2085,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 ...��㹣my si攼㹡 z klientem, aby za戼㸳
+l.117 ...��㹣my si攼㹡 z klientem, aby za戼㸳
                                                   o戼㹦y攼㸶 konto lokat...
 
 You may provide a definition with
@@ -2039,7 +2099,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 ...�my si攼㹡 z klientem, aby za戼㸳o戼
+l.117 ...�my si攼㹡 z klientem, aby za戼㸳o戼
                                                   㹦y攼㸶 konto lokaty te...
 
 You may provide a definition with
@@ -2053,7 +2113,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 ... si攼㹡 z klientem, aby za戼㸳o戼㹦
+l.117 ... si攼㹡 z klientem, aby za戼㸳o戼㹦
                                                   y攼㸶 konto lokaty termi...
 
 You may provide a definition with
@@ -2067,7 +2127,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 ...��㹡 z klientem, aby za戼㸳o戼㹦y攼
+l.117 ...��㹡 z klientem, aby za戼㸳o戼㹦y攼
                                                   㸶 konto lokaty terminowej.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2080,7 +2140,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 ...�� z klientem, aby za戼㸳o戼㹦y攼㸶
+l.117 ...�� z klientem, aby za戼㸳o戼㹦y攼㸶
                                                    konto lokaty terminowej.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2093,7 +2153,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.115 \item Kampania (campaign): liczba kontakt昼
+l.118 \item Kampania (campaign): liczba kontakt昼
                                                   㸳w wykonanych podczas te...
 
 You may provide a definition with
@@ -2107,7 +2167,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.115 ...Kampania (campaign): liczba kontakt昼㸳
+l.118 ...Kampania (campaign): liczba kontakt昼㸳
                                                   w wykonanych podczas tej k...
 
 You may provide a definition with
@@ -2121,7 +2181,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 \item Liczba dni (pdays): liczba dni, kt昼
+l.119 \item Liczba dni (pdays): liczba dni, kt昼
                                                  㸳re up戼㸳yn攼㹡戼�...
 
 You may provide a definition with
@@ -2135,7 +2195,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ... Liczba dni (pdays): liczba dni, kt昼㸳
+l.119 ... Liczba dni (pdays): liczba dni, kt昼㸳
                                                   re up戼㸳yn攼㹡戼㸳y...
 
 You may provide a definition with
@@ -2149,7 +2209,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ...dni (pdays): liczba dni, kt昼㸳re up戼
+l.119 ...dni (pdays): liczba dni, kt昼㸳re up戼
                                                   㸳yn攼㹡戼㸳y od osta...
 
 You may provide a definition with
@@ -2163,7 +2223,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ... (pdays): liczba dni, kt昼㸳re up戼㸳
+l.119 ... (pdays): liczba dni, kt昼㸳re up戼㸳
                                                   yn攼㹡戼㸳y od ostatni...
 
 You may provide a definition with
@@ -2177,7 +2237,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ...ys): liczba dni, kt昼㸳re up戼㸳yn攼
+l.119 ...ys): liczba dni, kt昼㸳re up戼㸳yn攼
                                                   㹡戼㸳y od ostatniego k...
 
 You may provide a definition with
@@ -2191,7 +2251,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ...: liczba dni, kt昼㸳re up戼㸳yn攼㹡
+l.119 ...: liczba dni, kt昼㸳re up戼㸳yn攼㹡
                                                   戼㸳y od ostatniego kont...
 
 You may provide a definition with
@@ -2205,7 +2265,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ...iczba dni, kt昼㸳re up戼㸳yn攼㹡戼
+l.119 ...iczba dni, kt昼㸳re up戼㸳yn攼㹡戼
                                                   㸳y od ostatniego kontakt...
 
 You may provide a definition with
@@ -2219,7 +2279,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ...ba dni, kt昼㸳re up戼㸳yn攼㹡戼㸳
+l.119 ...ba dni, kt昼㸳re up戼㸳yn攼㹡戼㸳
                                                   y od ostatniego kontaktu k...
 
 You may provide a definition with
@@ -2233,7 +2293,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ... klienta z poprzedniej kampanii (warto㤼
+l.119 ... klienta z poprzedniej kampanii (warto㤼
                                                   㹣攼㸶 liczbowa; 999 oz...
 
 You may provide a definition with
@@ -2247,7 +2307,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ...ienta z poprzedniej kampanii (warto㤼㹣
+l.119 ...ienta z poprzedniej kampanii (warto㤼㹣
                                                   攼㸶 liczbowa; 999 oznac...
 
 You may provide a definition with
@@ -2261,7 +2321,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ...ta z poprzedniej kampanii (warto㤼㹣攼
+l.119 ...ta z poprzedniej kampanii (warto㤼㹣攼
                                                   㸶 liczbowa; 999 oznacza,...
 
 You may provide a definition with
@@ -2275,7 +2335,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ...z poprzedniej kampanii (warto㤼㹣攼㸶
+l.119 ...z poprzedniej kampanii (warto㤼㹣攼㸶
                                                    liczbowa; 999 oznacza, �...
 
 You may provide a definition with
@@ -2289,7 +2349,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ...to㤼㹣攼㸶 liczbowa; 999 oznacza, 戼
+l.119 ...to㤼㹣攼㸶 liczbowa; 999 oznacza, 戼
                                                   㹦e klient wcze㤼㹣ni...
 
 You may provide a definition with
@@ -2303,7 +2363,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ...��㹣攼㸶 liczbowa; 999 oznacza, 戼㹦
+l.119 ...��㹣攼㸶 liczbowa; 999 oznacza, 戼㹦
                                                   e klient wcze㤼㹣niej ...
 
 You may provide a definition with
@@ -2317,7 +2377,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ...��攼㸶 liczbowa; 999 oznacza, 戼㹦e 
+l.119 ...��攼㸶 liczbowa; 999 oznacza, 戼㹦e 
                                                   klient wcze㤼㹣niej si�...
 
 You may provide a definition with
@@ -2331,7 +2391,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ...�攼㸶 liczbowa; 999 oznacza, 戼㹦e 
+l.119 ...�攼㸶 liczbowa; 999 oznacza, 戼㹦e 
                                                   klient wcze㤼㹣niej si�...
 
 You may provide a definition with
@@ -2345,7 +2405,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ...wa; 999 oznacza, 戼㹦e klient wcze㤼
+l.119 ...wa; 999 oznacza, 戼㹦e klient wcze㤼
                                                   㹣niej si攼㹡 nie skont...
 
 You may provide a definition with
@@ -2359,7 +2419,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ... 999 oznacza, 戼㹦e klient wcze㤼㹣
+l.119 ... 999 oznacza, 戼㹦e klient wcze㤼㹣
                                                   niej si攼㹡 nie skontakt...
 
 You may provide a definition with
@@ -2373,7 +2433,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ...za, 戼㹦e klient wcze㤼㹣niej si攼
+l.119 ...za, 戼㹦e klient wcze㤼㹣niej si攼
                                                   㹡 nie skontaktowa戼㸳)
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2386,7 +2446,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ... 戼㹦e klient wcze㤼㹣niej si攼㹡
+l.119 ... 戼㹦e klient wcze㤼㹣niej si攼㹡
                                                    nie skontaktowa戼㸳)
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2399,7 +2459,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ...cze㤼㹣niej si攼㹡 nie skontaktowa戼
+l.119 ...cze㤼㹣niej si攼㹡 nie skontaktowa戼
                                                   㸳)
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2412,7 +2472,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 ...㤼㹣niej si攼㹡 nie skontaktowa戼㸳
+l.119 ...㤼㹣niej si攼㹡 nie skontaktowa戼㸳
                                                   )
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2425,7 +2485,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.117 ...m Poprzedni (previous): liczba kontakt昼
+l.120 ...m Poprzedni (previous): liczba kontakt昼
                                                   㸳w wykonanych przed t戼...
 
 You may provide a definition with
@@ -2439,7 +2499,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.117 ...oprzedni (previous): liczba kontakt昼㸳
+l.120 ...oprzedni (previous): liczba kontakt昼㸳
                                                   w wykonanych przed t戼㸹...
 
 You may provide a definition with
@@ -2453,7 +2513,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.117 ...czba kontakt昼㸳w wykonanych przed t戼
+l.120 ...czba kontakt昼㸳w wykonanych przed t戼
                                                   㸹 kampani戼㸹 i dla te...
 
 You may provide a definition with
@@ -2467,7 +2527,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.117 ...a kontakt昼㸳w wykonanych przed t戼㸹
+l.120 ...a kontakt昼㸳w wykonanych przed t戼㸹
                                                    kampani戼㸹 i dla tego ...
 
 You may provide a definition with
@@ -2481,7 +2541,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.117 ...�㸳w wykonanych przed t戼㸹 kampani戼
+l.120 ...�㸳w wykonanych przed t戼㸹 kampani戼
                                                   㸹 i dla tego klienta (nu...
 
 You may provide a definition with
@@ -2495,7 +2555,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.117 ...�w wykonanych przed t戼㸹 kampani戼㸹
+l.120 ...�w wykonanych przed t戼㸹 kampani戼㸹
                                                    i dla tego klienta (numer...
 
 You may provide a definition with
@@ -2509,7 +2569,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 ...ampanii marketingowej (kategorycznie: 㠼
+l.121 ...ampanii marketingowej (kategorycznie: 㠼
                                                   㸴pora戼㹦ka㤼㸴, 㠼...
 
 You may provide a definition with
@@ -2523,7 +2583,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 ...anii marketingowej (kategorycznie: 㠼㸴
+l.121 ...anii marketingowej (kategorycznie: 㠼㸴
                                                   pora戼㹦ka㤼㸴, 㠼㸴...
 
 You may provide a definition with
@@ -2537,7 +2597,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 ...rketingowej (kategorycznie: 㠼㸴pora戼
+l.121 ...rketingowej (kategorycznie: 㠼㸴pora戼
                                                   㹦ka㤼㸴, 㠼㸴nieistn...
 
 You may provide a definition with
@@ -2551,7 +2611,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 ...tingowej (kategorycznie: 㠼㸴pora戼㹦
+l.121 ...tingowej (kategorycznie: 㠼㸴pora戼㹦
                                                   ka㤼㸴, 㠼㸴nieistniej...
 
 You may provide a definition with
@@ -2565,7 +2625,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 ...wej (kategorycznie: 㠼㸴pora戼㹦ka㤼
+l.121 ...wej (kategorycznie: 㠼㸴pora戼㹦ka㤼
                                                   㸴, 㠼㸴nieistniej戼�...
 
 You may provide a definition with
@@ -2579,7 +2639,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 ... (kategorycznie: 㠼㸴pora戼㹦ka㤼㸴
+l.121 ... (kategorycznie: 㠼㸴pora戼㹦ka㤼㸴
                                                   , 㠼㸴nieistniej戼㸹ca...
 
 You may provide a definition with
@@ -2593,7 +2653,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 ...egorycznie: 㠼㸴pora戼㹦ka㤼㸴, 㠼
+l.121 ...egorycznie: 㠼㸴pora戼㹦ka㤼㸴, 㠼
                                                   㸴nieistniej戼㸹ca㤼�...
 
 You may provide a definition with
@@ -2607,7 +2667,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 ...rycznie: 㠼㸴pora戼㹦ka㤼㸴, 㠼㸴
+l.121 ...rycznie: 㠼㸴pora戼㹦ka㤼㸴, 㠼㸴
                                                   nieistniej戼㸹ca㤼㸴, ...
 
 You may provide a definition with
@@ -2621,7 +2681,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 ...��pora戼㹦ka㤼㸴, 㠼㸴nieistniej戼
+l.121 ...��pora戼㹦ka㤼㸴, 㠼㸴nieistniej戼
                                                   㸹ca㤼㸴, 㠼㸴sukces�...
 
 You may provide a definition with
@@ -2635,7 +2695,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 ...ora戼㹦ka㤼㸴, 㠼㸴nieistniej戼㸹
+l.121 ...ora戼㹦ka㤼㸴, 㠼㸴nieistniej戼㸹
                                                   ca㤼㸴, 㠼㸴sukces㤼㸴)
 
 You may provide a definition with
@@ -2649,7 +2709,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 ...�㹦ka㤼㸴, 㠼㸴nieistniej戼㸹ca㤼
+l.121 ...�㹦ka㤼㸴, 㠼㸴nieistniej戼㸹ca㤼
                                                   㸴, 㠼㸴sukces㤼㸴)
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2662,7 +2722,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 ...�ka㤼㸴, 㠼㸴nieistniej戼㸹ca㤼㸴
+l.121 ...�ka㤼㸴, 㠼㸴nieistniej戼㸹ca㤼㸴
                                                   , 㠼㸴sukces㤼㸴)
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2675,7 +2735,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 ...�㸴, 㠼㸴nieistniej戼㸹ca㤼㸴, 㠼
+l.121 ...�㸴, 㠼㸴nieistniej戼㸹ca㤼㸴, 㠼
                                                   㸴sukces㤼㸴)
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2688,7 +2748,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 ...�, 㠼㸴nieistniej戼㸹ca㤼㸴, 㠼㸴
+l.121 ...�, 㠼㸴nieistniej戼㸹ca㤼㸴, 㠼㸴
                                                   sukces㤼㸴)
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2701,7 +2761,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 ...nieistniej戼㸹ca㤼㸴, 㠼㸴sukces㤼
+l.121 ...nieistniej戼㸹ca㤼㸴, 㠼㸴sukces㤼
                                                   㸴)
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2714,7 +2774,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 ...istniej戼㸹ca㤼㸴, 㠼㸴sukces㤼㸴
+l.121 ...istniej戼㸹ca㤼㸴, 㠼㸴sukces㤼㸴
                                                   )
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2727,7 +2787,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.121 ...tekstu spo戼㸳ecznego i gospodarczego:}
+l.124 ...tekstu spo戼㸳ecznego i gospodarczego:}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2740,7 +2800,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.121 ...tekstu spo戼㸳ecznego i gospodarczego:}
+l.124 ...tekstu spo戼㸳ecznego i gospodarczego:}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2753,7 +2813,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 \item Emp.var.rate: wska㤼
+l.128 \item Emp.var.rate: wska㤼
                                  㹦nik zmienno㤼㹣ci zatrudnienia - wska�...
 
 You may provide a definition with
@@ -2767,7 +2827,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 \item Emp.var.rate: wska㤼㹦
+l.128 \item Emp.var.rate: wska㤼㹦
                                     nik zmienno㤼㹣ci zatrudnienia - wska�...
 
 You may provide a definition with
@@ -2781,7 +2841,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 \item Emp.var.rate: wska㤼㹦nik zmienno㤼
+l.128 \item Emp.var.rate: wska㤼㹦nik zmienno㤼
                                                   㹣ci zatrudnienia - wska�...
 
 You may provide a definition with
@@ -2795,7 +2855,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 ...Emp.var.rate: wska㤼㹦nik zmienno㤼㹣
+l.128 ...Emp.var.rate: wska㤼㹦nik zmienno㤼㹣
                                                   ci zatrudnienia - wska㤼�...
 
 You may provide a definition with
@@ -2809,7 +2869,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 ...ik zmienno㤼㹣ci zatrudnienia - wska㤼
+l.128 ...ik zmienno㤼㹣ci zatrudnienia - wska㤼
                                                   㹦nik kwartalny
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2822,7 +2882,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 ...zmienno㤼㹣ci zatrudnienia - wska㤼㹦
+l.128 ...zmienno㤼㹣ci zatrudnienia - wska㤼㹦
                                                   nik kwartalny
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2835,7 +2895,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 \item Cons.price.idx: wska㤼
+l.129 \item Cons.price.idx: wska㤼
                                    㹦nik cen konsumpcyjnych - wska㤼㹦nik...
 
 You may provide a definition with
@@ -2849,7 +2909,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 \item Cons.price.idx: wska㤼㹦
+l.129 \item Cons.price.idx: wska㤼㹦
                                       nik cen konsumpcyjnych - wska㤼㹦nik...
 
 You may provide a definition with
@@ -2863,7 +2923,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 ...ska㤼㹦nik cen konsumpcyjnych - wska㤼
+l.129 ...ska㤼㹦nik cen konsumpcyjnych - wska㤼
                                                   㹦nik miesi攼㹡czny
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2876,7 +2936,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 ...㤼㹦nik cen konsumpcyjnych - wska㤼㹦
+l.129 ...㤼㹦nik cen konsumpcyjnych - wska㤼㹦
                                                   nik miesi攼㹡czny
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2889,7 +2949,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 ...n konsumpcyjnych - wska㤼㹦nik miesi攼
+l.129 ...n konsumpcyjnych - wska㤼㹦nik miesi攼
                                                   㹡czny
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2902,7 +2962,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 ...onsumpcyjnych - wska㤼㹦nik miesi攼㹡
+l.129 ...onsumpcyjnych - wska㤼㹦nik miesi攼㹡
                                                   czny
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2915,7 +2975,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 \item Cons.conf.idx: wska㤼
+l.130 \item Cons.conf.idx: wska㤼
                                   㹦nik zaufania konsument昼㸳w - wska㤼...
 
 You may provide a definition with
@@ -2929,7 +2989,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 \item Cons.conf.idx: wska㤼㹦
+l.130 \item Cons.conf.idx: wska㤼㹦
                                      nik zaufania konsument昼㸳w - wska㤼...
 
 You may provide a definition with
@@ -2943,7 +3003,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 ....idx: wska㤼㹦nik zaufania konsument昼
+l.130 ....idx: wska㤼㹦nik zaufania konsument昼
                                                   㸳w - wska㤼㹦nik miesi...
 
 You may provide a definition with
@@ -2957,7 +3017,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 ...x: wska㤼㹦nik zaufania konsument昼㸳
+l.130 ...x: wska㤼㹦nik zaufania konsument昼㸳
                                                   w - wska㤼㹦nik miesi攼...
 
 You may provide a definition with
@@ -2971,7 +3031,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 ...��nik zaufania konsument昼㸳w - wska㤼
+l.130 ...��nik zaufania konsument昼㸳w - wska㤼
                                                   㹦nik miesi攼㹡czny
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2984,7 +3044,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 ...ik zaufania konsument昼㸳w - wska㤼㹦
+l.130 ...ik zaufania konsument昼㸳w - wska㤼㹦
                                                   nik miesi攼㹡czny
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2997,7 +3057,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 ...konsument昼㸳w - wska㤼㹦nik miesi攼
+l.130 ...konsument昼㸳w - wska㤼㹦nik miesi攼
                                                   㹡czny
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3010,7 +3070,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 ...sument昼㸳w - wska㤼㹦nik miesi攼㹡
+l.130 ...sument昼㸳w - wska㤼㹦nik miesi攼㹡
                                                   czny
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3023,7 +3083,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.128 \item Euribor3m: stawka 3-miesi攼
+l.131 \item Euribor3m: stawka 3-miesi攼
                                         㹡czna euribor - wska㤼㹦nik dzienny
 
 You may provide a definition with
@@ -3037,7 +3097,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.128 \item Euribor3m: stawka 3-miesi攼㹡
+l.131 \item Euribor3m: stawka 3-miesi攼㹡
                                            czna euribor - wska㤼㹦nik dzienny
 
 You may provide a definition with
@@ -3051,7 +3111,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.128 ...tawka 3-miesi攼㹡czna euribor - wska㤼
+l.131 ...tawka 3-miesi攼㹡czna euribor - wska㤼
                                                   㹦nik dzienny
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3064,7 +3124,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.128 ...ka 3-miesi攼㹡czna euribor - wska㤼㹦
+l.131 ...ka 3-miesi攼㹡czna euribor - wska㤼㹦
                                                   nik dzienny
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3077,7 +3137,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.129 ...ionych (nr employed): liczba pracownik昼
+l.132 ...ionych (nr employed): liczba pracownik昼
                                                   㸳w - wska㤼㹦nik kwart...
 
 You may provide a definition with
@@ -3091,7 +3151,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.129 ...ych (nr employed): liczba pracownik昼㸳
+l.132 ...ych (nr employed): liczba pracownik昼㸳
                                                   w - wska㤼㹦nik kwartalny
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3104,7 +3164,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.129 ...loyed): liczba pracownik昼㸳w - wska㤼
+l.132 ...loyed): liczba pracownik昼㸳w - wska㤼
                                                   㹦nik kwartalny
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3117,7 +3177,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.129 ...ed): liczba pracownik昼㸳w - wska㤼㹦
+l.132 ...ed): liczba pracownik昼㸳w - wska㤼㹦
                                                   nik kwartalny
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3130,7 +3190,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 ...wyj㤼㹣ciowa (po戼㹦戼㸹dany cel):}
+l.136 ...wyj㤼㹣ciowa (po戼㹦戼㸹dany cel):}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3143,7 +3203,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 ...wyj㤼㹣ciowa (po戼㹦戼㸹dany cel):}
+l.136 ...wyj㤼㹣ciowa (po戼㹦戼㸹dany cel):}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3156,7 +3216,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 ...wyj㤼㹣ciowa (po戼㹦戼㸹dany cel):}
+l.136 ...wyj㤼㹣ciowa (po戼㹦戼㸹dany cel):}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3169,7 +3229,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 ...wyj㤼㹣ciowa (po戼㹦戼㸹dany cel):}
+l.136 ...wyj㤼㹣ciowa (po戼㹦戼㸹dany cel):}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3182,7 +3242,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 ...wyj㤼㹣ciowa (po戼㹦戼㸹dany cel):}
+l.136 ...wyj㤼㹣ciowa (po戼㹦戼㸹dany cel):}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3195,7 +3255,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 ...wyj㤼㹣ciowa (po戼㹦戼㸹dany cel):}
+l.136 ...wyj㤼㹣ciowa (po戼㹦戼㸹dany cel):}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3208,7 +3268,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 \item y - czy klient subskrybowa戼
+l.140 \item y - czy klient subskrybowa戼
                                          㸳 lokat攼㹡? (dw昼㸳jkowy: �...
 
 You may provide a definition with
@@ -3222,7 +3282,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 \item y - czy klient subskrybowa戼㸳
+l.140 \item y - czy klient subskrybowa戼㸳
                                              lokat攼㹡? (dw昼㸳jkowy: �...
 
 You may provide a definition with
@@ -3236,7 +3296,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 ...y - czy klient subskrybowa戼㸳 lokat攼
+l.140 ...y - czy klient subskrybowa戼㸳 lokat攼
                                                   㹡? (dw昼㸳jkowy: 㠼�...
 
 You may provide a definition with
@@ -3250,7 +3310,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 ... czy klient subskrybowa戼㸳 lokat攼㹡
+l.140 ... czy klient subskrybowa戼㸳 lokat攼㹡
                                                   ? (dw昼㸳jkowy: 㠼㸴ta...
 
 You may provide a definition with
@@ -3264,7 +3324,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 ...ent subskrybowa戼㸳 lokat攼㹡? (dw昼
+l.140 ...ent subskrybowa戼㸳 lokat攼㹡? (dw昼
                                                   㸳jkowy: 㠼㸴tak㤼㸴,...
 
 You may provide a definition with
@@ -3278,7 +3338,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 ... subskrybowa戼㸳 lokat攼㹡? (dw昼㸳
+l.140 ... subskrybowa戼㸳 lokat攼㹡? (dw昼㸳
                                                   jkowy: 㠼㸴tak㤼㸴, �...
 
 You may provide a definition with
@@ -3292,7 +3352,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 ...wa戼㸳 lokat攼㹡? (dw昼㸳jkowy: 㠼
+l.140 ...wa戼㸳 lokat攼㹡? (dw昼㸳jkowy: 㠼
                                                   㸴tak㤼㸴, 㠼㸴nie㤼...
 
 You may provide a definition with
@@ -3306,7 +3366,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 ...��㸳 lokat攼㹡? (dw昼㸳jkowy: 㠼㸴
+l.140 ...��㸳 lokat攼㹡? (dw昼㸳jkowy: 㠼㸴
                                                   tak㤼㸴, 㠼㸴nie㤼㸴)
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3319,7 +3379,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 ...lokat攼㹡? (dw昼㸳jkowy: 㠼㸴tak㤼
+l.140 ...lokat攼㹡? (dw昼㸳jkowy: 㠼㸴tak㤼
                                                   㸴, 㠼㸴nie㤼㸴)
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3332,7 +3392,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 ...at攼㹡? (dw昼㸳jkowy: 㠼㸴tak㤼㸴
+l.140 ...at攼㹡? (dw昼㸳jkowy: 㠼㸴tak㤼㸴
                                                   , 㠼㸴nie㤼㸴)
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3345,7 +3405,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 ...㹡? (dw昼㸳jkowy: 㠼㸴tak㤼㸴, 㠼
+l.140 ...㹡? (dw昼㸳jkowy: 㠼㸴tak㤼㸴, 㠼
                                                   㸴nie㤼㸴)
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3358,7 +3418,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 ...? (dw昼㸳jkowy: 㠼㸴tak㤼㸴, 㠼㸴
+l.140 ...? (dw昼㸳jkowy: 㠼㸴tak㤼㸴, 㠼㸴
                                                   nie㤼㸴)
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3371,7 +3431,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 ...��㸳jkowy: 㠼㸴tak㤼㸴, 㠼㸴nie㤼
+l.140 ...��㸳jkowy: 㠼㸴tak㤼㸴, 㠼㸴nie㤼
                                                   㸴)
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3384,56 +3444,383 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 ...��jkowy: 㠼㸴tak㤼㸴, 㠼㸴nie㤼㸴
+l.140 ...��jkowy: 㠼㸴tak㤼㸴, 㠼㸴nie㤼㸴
                                                   )
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-! LaTeX Error: \begin{enumerate} on input line 135 ended by \end{document}.
+! Package inputenc Error: Unicode character 攼 (U+653C)
+(inputenc)                not set up for use with LaTeX.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.160 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+l.143 \subsection{Wst攼㹡pna eksploracja danych}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
+
+! Package inputenc Error: Unicode character 㹡 (U+3E61)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.143 \subsection{Wst攼㹡pna eksploracja danych}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 ...aj� 4119 wierszy oraz 21 kolumn o nast�pu
+                                                  j�cych nazwach:
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Package color Info: Redefining color shadecolor on input line 150.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
- (Bank_Marketing_PL.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
-Package rerunfilecheck Info: File `Bank_Marketing_PL.out' has not changed.
-(rerunfilecheck)             Checksum: E011A31AE3EC78A4020A3FCD924D2613;172.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
- )
-(\end occurred inside a group at level 1)
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 151.
 
-### semi simple group (level 1) entered at line 135 (\begingroup)
-### bottom level 
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package color Info: Redefining color shadecolor on input line 164.
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 166.
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 191
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmtt.fd"
+File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \hbox (4.99391pt too wide) in paragraph at lines 191--191
+[]\T1/lmtt/m/n/10 ##  $ education     : chr  "basic.9y" "high.school" "high.sch
+ool" "basic.9y" ...[] 
+ []
+
+
+Overfull \hbox (36.49382pt too wide) in paragraph at lines 191--191
+[]\T1/lmtt/m/n/10 ##  $ poutcome      : chr  "nonexistent" "nonexistent" "nonex
+istent" "nonexistent" ...[] 
+ []
+
+
+Overfull \hbox (25.99385pt too wide) in paragraph at lines 191--191
+[]\T1/lmtt/m/n/10 ##  $ cons.conf.idx : num  -46.2 -36.4 -41.8 -41.8 -42 -37.5 
+-37.5 -42 -42 -36.4 ...[] 
+ []
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 Czy w danych znajduj� si� wa
+                                  rto�ci typu \verb+NaN+ lub \verb+Na+ ?
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 Czy w danych znajduj� si� warto�
+                                      ci typu \verb+NaN+ lub \verb+Na+ ?
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Package color Info: Redefining color shadecolor on input line 197.
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 Jednak�
+             e wiemy, �e w danych wyst�puj� warto�ci brakuj�ce i s� one opis...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 Jednak�e wiemy, �
+                       e w danych wyst�puj� warto�ci brakuj�ce i s� one opis...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 Jednak�e wiemy, �e w danych wyst�pu
+                                         j� warto�ci brakuj�ce i s� one opis...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 Jednak�e wiemy, �e w danych wyst�puj� warto�
+                                                  ci brakuj�ce i s� one opis...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 ...opisa "unknown". W danych znajduje si� 12
+                                                  30  rekord�w z warto�ci� "...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 ...nych znajduje si� 1230  rekord�w z warto�
+                                                  ci� "unknown" rozmieszczon...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 ...�ci� "unknown" rozmieszczonych w 1029 r�
+                                                  nych wierszach. To stanowi...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 ...ch wierszy w naszej badzie danych, wi�c n
+                                                  ie mo�emy pozwoli� sobie n...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 ...rszy w naszej badzie danych, wi�c nie mo�
+                                                  emy pozwoli� sobie na usun...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 ...adzie danych, wi�c nie mo�emy pozwoli� so
+                                                  bie na usuni�cie tych wszy...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 ...i�c nie mo�emy pozwoli� sobie na usuni�ci
+                                                  e tych wszystkich informac...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 ...ch informacji. W tabeli 1 znajduj� si� in
+                                                  formacje na temat liczny n...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 ...ormacje na temat liczny nieznanych warto�
+                                                  ci  w ka�dej z kolumn z os...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 ...a temat liczny nieznanych warto�ci  w ka�
+                                                  dej z kolumn z osobna.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Package color Info: Redefining color shadecolor on input line 210.
+
+Overfull \hbox (25.99385pt too wide) in paragraph at lines 215--215
+[]\T1/lmtt/b/n/10 ## Error in kable(table_unknown, "latex", booktabs = F, capti
+on = "Liczba nieznanych
+ []
+
+
+Overfull \hbox (31.24384pt too wide) in paragraph at lines 215--215
+\T1/lmtt/b/n/10 warto<U+009C>ci w poszczegulnych kolumnach."): nie znaleziono o
+biektu 'table_unknown'[] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 251.
+[3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 251.
+ (Bank_Marketing_PL.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 251.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 251.
+Package rerunfilecheck Info: File `Bank_Marketing_PL.out' has not changed.
+(rerunfilecheck)             Checksum: 856261A3D5358DC466DDEAFDD8C335D3;247.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 251.
+ ) 
 Here is how much of TeX's memory you used:
- 7262 strings out of 492970
- 105373 string characters out of 3135845
- 202675 words of memory out of 3000000
- 10980 multiletter control sequences out of 15000+200000
- 16559 words of font info for 52 fonts, out of 3000000 for 9000
+ 7527 strings out of 492970
+ 108687 string characters out of 3135845
+ 205360 words of memory out of 3000000
+ 11222 multiletter control sequences out of 15000+200000
+ 53926 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,6n,31p,569b,426s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Maciek^M/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/p
-l/plrm.enc}<C:/Users/Maciek^M/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/pl/
-plbx10.pfb><C:/Users/Maciek^M/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/pl/
-plbx12.pfb><C:/Users/Maciek^M/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/pl/
-plr10.pfb><C:/Users/Maciek^M/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/pl/p
-lr12.pfb><C:/Users/Maciek^M/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/pl/pl
-r17.pfb>
-Output written on Bank_Marketing_PL.pdf (2 pages, 55706 bytes).
+ 28i,6n,31p,1227b,363s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Fil
+es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
+c}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
+m/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/lm/lmtt10.pfb>
+Output written on Bank_Marketing_PL.pdf (3 pages, 210132 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 107 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

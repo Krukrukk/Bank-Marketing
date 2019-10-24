@@ -1,9 +1,12 @@
 \documentclass[11pt]{article}
 
+\usepackage[T1]{fontenc}
+\usepackage{polski}
 \usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\selectlanguage{polish}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage{polski}
 \usepackage[a4paper, total={6.5in, 8.5in}]{geometry}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -39,7 +42,7 @@ W ramach kampani marketingowej organizowanej przez pewien bank w latach miêdzy m
 Na podstawie tych danych planowane jest przewidzenie, czy i jakie rodzaj klientów kupi lokatê terminow¹ w tym banku.
 
 \subsection{Opis danych}
-Nasze dane zawieraj¹ 21 column i 4119 wierszy z danymi. Kolumny mo¿emy podzieliæ na 3 grupy:
+Nasze dane zawieraj¹ 21 column danych. Kolumny mo¿emy podzieliæ na 3 grupy:
 
 \textbf{I: Zmienne zwi¹zane z danymi klienta bankowego:}
 
@@ -85,29 +88,122 @@ Nasze dane zawieraj¹ 21 column i 4119 wierszy z danymi. Kolumny mo¿emy podzieliæ
 \begin{enumerate}
 \setcounter{enumi}{20}
 \item y - czy klient subskrybowa³ lokatê? (dwójkowy: „tak”, „nie”)
+\end{enumerate}
 
-
-
-
-
+\subsection{Wstêpna eksploracja danych}
 <<echo=FALSE,message=FALSE, warning=FALSE>>=
-# Biblioteki
-# install.packages("rlist")
-# install.packages("hydroGOF")
-# install.packages("gridExtra")
-# install.packages("DescTools")
-library(rlist)
-library(hydroGOF)
+# # Library to install
+# install.packages('tidyverse')
+# install.packages("descr")
+# install.packages("tables")
+# install.packages("egg")
+# # Cross Tables
+# install.packages("gmodels")
+# # Additional packages for GGplot
+# install.packages("ggplot2")
+# install.packages("ggmosaic")
+# install.packages('corrplot')
+# install.packages('ggpubr')
+# install.packages('cowplot')
+# install.packages("ggimage")
+# install.packages('pander')
+
+# Library
+library(pander)
+library(tidyverse)
+library(kableExtra)
 library(gridExtra)
 library(DescTools)
-library(ggplot2)
 library(dplyr)
+library(descr, quietly = T)
+library(tables, quietly = T)
+library(knitr)
+#
+library(ggplot2)
+library(egg)
+library(gmodels) 
+library(ggmosaic) 
+library(corrplot) 
+library(ggpubr) 
+library(cowplot)
+theme_set(theme_bw())
+
+######################## Importing data ########################
+setwd('C:/Users/Maciek^M/OneDrive/Desktop/Projekty/Bank-Marketing/R version PL')
+df_bank <- read.csv(file = "Date/Bank_Marketing_data.csv", 
+                    sep = ";",
+                    stringsAsFactors = F)
 @
 
-<<echo=FALSE,message=FALSE>>= #wykonaj kod bez jego pokazywania
+
+Badane dane zawieraj¹ 4119 wierszy oraz 21 kolumn o nastêpuj¹cych nazwach:
+<<echo=FALSE ,message=FALSE>>= 
+dim <- dim(df_bank)
+# dim[1] # number of row
+# dim[2] # number of column
+@
+<<echo=FALSE ,message=FALSE>>= 
+names(df_bank) #names of columns
+@
+
+Struktura danych:
+<<echo=TRUE ,message=FALSE>>= 
+str(df_bank)
+@
+
+Czy w danych znajduj¹ siê wartoœci typu \verb+NaN+ lub \verb+Na+ ?
+<<echo=FALSE ,message=FALSE>>= 
+any(is.na(df_bank))
+@
+
+Jednak¿e wiemy, ¿e w danych wystêpuj¹ wartoœci brakuj¹ce i s¹ one opisa "unknown". W danych znajduje siê 1230  rekordów z wartoœci¹ "unknown" rozmieszczonych w 1029 ró¿nych wierszach. To stanowi $24.98\% $ wszystkich wierszy w naszej badzie danych, wiêc nie mo¿emy pozwoliæ sobie na usuniêcie tych wszystkich informacji. W tabeli 1 znajduj¹ siê informacje na temat liczny nieznanych wartoœci  w ka¿dej z kolumn z osobna.
+
+<<echo=FALSE ,message=FALSE>>= 
+
+@
+
+
+<<echo=FALSE ,message=FALSE, warning=FALSE>>= 
+number_of_unknown <- sum(df_bank == 'unknown')
+table_unknown <- df_bank %>%
+    summarise_all(list(~sum(. =='unknown'))) %>%
+    gather(key = 'Feature', value = 'Number of unknown')  %>%
+    arrange(desc(Number_of_unknown))
+
+df_bank1 <- df_bank %>%
+    mutate_if(is.character, list(~na_if(., "unknown")))
+number_of_empty_row <- dim(df_bank)[1] - dim(df_bank1[complete.cases(df_bank1), ])[1]
+per_unknown <- round(number_of_empty_row/dim(df_bank)[1]*100, 2)
+
+kable(table_unknown, "latex", booktabs = F, caption='Liczba nieznanych wartoœci w poszczegulnych kolumnach.') %>%
+    kable_styling(latex_options = 'HOLD_position')
+@
+
+
+
+<<echo=FALSE ,message=FALSE>>= 
+
+@
+
+
+
+
+
+
+\textbf{Nazwy kolumn}
+<<echo=TRUE ,message=FALSE>>= 
+
 
 
 @
+
+
+
+
+
+
+
+
 
 
 <<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
@@ -123,8 +219,8 @@ library(dplyr)
 
 
 <<echo=FALSE,message=FALSE, warning=FALSE>>= # Wyœwietl tabele
-# library(kableExtra)
-# kable(mean_x, "latex", booktabs = F, caption='Caption') %>%
+# 
+# kable(CrossTable(df_bank$y), "latex", booktabs = F, caption='Caption') %>%
 #   kable_styling(latex_options = 'HOLD_position')
 @
 
