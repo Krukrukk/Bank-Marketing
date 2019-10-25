@@ -29,3 +29,15 @@ readr
 purrr
 stringr
 forcats
+rmarkdown
+caret
+gplots
+ROCR
+plotROC
+pROC
+PRROC
+ParamHelpers
+mlr
+randomForest
+kernlab
+xgboost

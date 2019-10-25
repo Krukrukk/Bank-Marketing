@@ -7,7 +7,7 @@
 \selectlanguage{polish}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage[a4paper, total={6.5in, 8.5in}]{geometry}
+\usepackage[a4paper, total={6.5in, 9in}]{geometry}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage[hidelinks]{hyperref}
@@ -95,20 +95,31 @@ Nasze dane zawieraj¹ 21 column danych. Kolumny mo¿emy podzieliæ na 3 grupy:
 \subsection{Wstêpna eksploracja danych}
 <<echo=FALSE,message=FALSE, warning=FALSE>>=
 # Library to install
-install.packages('tidyverse')
-install.packages("descr")
-install.packages("tables")
-install.packages("egg")
-# Cross Tables
-install.packages("gmodels")
-# Additional packages for GGplot
-install.packages("ggplot2")
-install.packages("ggmosaic")
-install.packages('corrplot')
-install.packages('ggpubr')
-install.packages('cowplot')
-install.packages("ggimage")
-install.packages('pander')
+# install.packages('tidyverse')
+# install.packages("descr")
+# install.packages("tables")
+# install.packages("egg")
+# # Cross Tables
+# install.packages("gmodels")
+# # Additional packages for GGplot
+# install.packages("ggplot2")
+# install.packages("ggmosaic")
+# install.packages('corrplot')
+# install.packages('ggpubr')
+# install.packages('cowplot')
+# install.packages("ggimage")
+# install.packages('pander')
+# # Machine Learning
+# install.packages('caret')
+# install.packages("ROCR")
+# install.packages("plotROC") #patch for ggplot
+# install.packages("pROC")
+# install.packages("PRROC")
+# install.packages("xgboost")
+# install.packages("mlr")
+# install.packages("randomForest")
+# install.packages("kernlab")
+# install.packages("MLmetrics")
 
 # Library
 library(rmarkdown)
@@ -130,6 +141,17 @@ library(corrplot)
 library(ggpubr) 
 library(cowplot)
 theme_set(theme_bw())
+#
+library(caret) 
+library(ROCR) 
+library(plotROC) 
+library(pROC)
+library(PRROC) 
+library(mlr)
+library(randomForest)
+library(kernlab)
+library(xgboost)
+library(tidyverse)
 
 ######################## Importing data ########################
 setwd('C:/Users/Maciek^M/OneDrive/Desktop/Projekty/Bank-Marketing/R version PL')
@@ -178,13 +200,13 @@ df_bank1 <- df_bank %>%
 number_of_empty_row <- dim(df_bank)[1] - dim(df_bank1[complete.cases(df_bank1), ])[1]
 per_unknown <- round(number_of_empty_row/dim(df_bank)[1]*100, 2)
 
-kable(table_unknown, "latex", booktabs = F, caption='Liczba nieznanych wartoœci w poszczegulnych kolumnach.') %>%
-    kable_styling(latex_options = 'HOLD_position')
+table_unknown
 @
-
+\newpage
 
 \section{Analiza eksploracyjna}
 <<echo=FALSE ,message=FALSE>>= 
+###### Function 
 fun_barplot_categorical <- function(x_column, xlabel, fill_column='y'){
     # x_column: (str) name of column with dataframe
     # fill_column: (str) name of column with dataframe which we fill
@@ -192,11 +214,15 @@ fun_barplot_categorical <- function(x_column, xlabel, fill_column='y'){
     gg1 <- ggplot(data = df_bank, aes_string(x = x_column , fill = fill_column)) +
         geom_bar(position = "dodge2") +
         theme(axis.text.x = element_text(angle = -35,  hjust = 0)) +
+        scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9"))+
+        scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))+
         labs(x = xlabel, y = "Count")
     
     gg2 <- ggplot(data = df_bank, aes_string(x = x_column, fill = fill_column)) +
         geom_bar(position = "fill") +
         theme(axis.text.x = element_text(angle = -35,  hjust = 0)) +
+        scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9"))+
+        scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))+
         labs(x = xlabel, y="Percent of population")
     
     
@@ -207,16 +233,21 @@ fun_barplot_categorical <- function(x_column, xlabel, fill_column='y'){
 
 
 ############@
-fun_barplot_numerical <- function(column, xlabel, min_limit_breaks=0, max_limit_breaks, bins=5){
-    # column: (str) name of column with dataframe
+fun_histogram <- function(main_column, xlabel, xmin=0, xmax=20, bins=50){
+    # main_column: (str) name of column with dataframe
     # xlabel: (str) name of x label
     # limit_breaks: (int) x limit
-    ggplot(data = df_bank, aes_string(x=column)) +
-        geom_bar(fill = "steelblue") + 
+    gg <- ggplot(df_bank, aes_string(x=main_column, color="y", fill="y")) +
+        geom_histogram(aes(y=..density..), position="identity", alpha=0.5, bins = 70)+
+        geom_density(alpha=0.2)+
         facet_grid(y ~ ., scales = 'free_y') +
-        scale_x_continuous(breaks = seq(min_limit_breaks, max_limit_breaks, bins)) +
+        scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9"))+
+        scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))+
+        scale_x_continuous(breaks = seq(xmin, xmax, bins)) +
         labs(x = xlabel, 
-             y = "Count")
+             y = "Density")+
+        theme_classic()
+    return(gg)
 }
 
 
@@ -224,9 +255,11 @@ fun_barplot_numerical <- function(column, xlabel, min_limit_breaks=0, max_limit_
 fun_boxplot <- function(column, ylabel){
     # column: (str) name of column with dataframe
     # ylabel: (str) name of y label
-    ggplot(data = df_bank, aes_string(x = "y", y = column, fill = column)) +
+    ggplot(data = df_bank, aes_string(x = "y", y = column)) +
         stat_boxplot(geom = "errorbar", width = 0.6) +
-        geom_boxplot(fill = 'lightgray') +
+        geom_boxplot(aes(fill = y)) +
+        scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9"))+
+        scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))+
         labs(x = "Long-term deposit taken",
              y = ylabel)
 }
@@ -243,12 +276,94 @@ fun_crosstable <- function(column1, column2="y"){
                       prop.chisq = F,
                       dnn = c(column1, column2)))
 }
+
+#############################################################
+fun_important_feature_ggplot = function(model){
+    # Function do present most importent variable in us model
+    # model: model used to plot variable importances
+    if (class(model)[1] == "ranger"){
+        imp_df = model$variable.importance %>% 
+            data.frame("Overall" = .) %>% 
+            rownames_to_column() %>% 
+            rename(variable = rowname) %>% 
+            arrange(-Overall)
+    } else {
+        imp_df = varImp(model) %>%
+            rownames_to_column() %>% 
+            rename(variable = rowname) %>% 
+            arrange(-Overall)
+    }
+    
+    # first panel (half most important variables)
+    gg1 = ggplot(data = imp_df, aes(x = reorder(variable, Overall), weight = Overall, fill = -Overall)) +
+        geom_bar() +
+        coord_flip() +
+        labs(x = "Variables",
+             y = "Importance") +
+        theme(legend.position = "none")
+    
+    imp_range = ggplot_build(gg1)[["layout"]][["panel_params"]][[1]][["x.range"]]
+    imp_gradient = scale_fill_gradient(limits = c(-imp_range[2], -imp_range[1]),
+                                       low = "#132B43", 
+                                       high = "#56B1F7")
+    
+    
+    return(gg1 + imp_gradient)
+}
+
+#################
+fun_ROC_PR_curve_ggplot = function(df) {
+    # df: dataset generate by generateThreshVsPerfData
+    # info in data: 
+    #learner - type of model
+    #ppv - precision
+    #tpr - recall
+    #tnr - specificity
+    #threshold 
+    
+    data <- df$data
+    
+    roc_curve_test <- data %>%
+        mutate(tnr = 1-tnr) %>%
+        ggplot()+
+        aes(x = tnr, y = tpr, colour = learner)+
+        geom_line(size=1) +
+        xlab("Spenificity") +
+        ylab("Sensitivity")+
+        ggtitle("ROC Curve", subtitle = "Validation dataset")
+    
+    pr_curve_test <- ggplot(data, aes(x = tpr, y = ppv, colour = learner))+
+        geom_line(size=1) +
+        xlab("Recall") +
+        ylab("Precision")+
+        ggtitle("PR Curve", subtitle = "Validation dataset")
+    
+    curves_test = ggarrange(roc_curve_test, pr_curve_test, 
+                            common.legend = T,
+                            legend = "bottom")
+    
+    return(curves_test)
+}
+
+
 @
 
 W tej sekcji zostanie omówiony ka¿dy parametr z osobna. Nastêpnie dane zostan¹ odpowiednio przygotowane do wykorzystania ich w modelach predykcyjnych.
 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 \subsection{Age}
-W jakim wieku by³y osoby, z którymi skontaktowano siê podczas tej kampani?
+Przedzia³ wiekowy osób bior¹cych kredyt szacuje siê miedzy 18 rokiem ¿ycia, a 88 rokiem ¿ycia. Jednak¿e mo¿na zauwa¿yæ,
+¿e osoby które ukoñczy³y 60 rok ¿ycia z wiêksz¹ chêci¹ bra³y lokaty, ni¿ tego nie robi³y. Œredni wiek utrzymuje siê na poziomie 40 lat.
+Wiedz¹c, ¿e osoby odk³adaj¹ na lokaty fundusze wtedy, kiedy dobrze zaczynaj¹ zarabniaæ to podzieli³bym ludzi ze wzglêdu na wiek.
+ Miêdzy wiekiem [MIN, 30] <- young, [30,65] <- worker, [65, MAX] <- pensioner. Taki podzia³ powinien u³atwiæ analizê przysz³ych algorytmów.
 
 <<echo=FALSE ,message=FALSE>>= 
 name_of_column <- 'age'
@@ -256,30 +371,48 @@ name_of_label <- 'Age'
 @
 
 <<echo=FALSE,message=FALSE, warning=FALSE>>= # Wyœwietl tabele
-
-kable(summary(df_bank$age),  booktabs = F, caption='Caption') %>%
-  kable_styling(latex_options = 'HOLD_position')
+summary(df_bank$age)
 @
 
-<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='Histogram wieku klientów w zale¿noœci od wziêcia lokaty d³ugoterminowej.'>>= #Wyœwietl obrazek bez kodu
-fun_barplot_numerical(name_of_column, name_of_label, 0, 90, 5)
+<<echo=FALSE, message=FALSE, fig.height=2.9,fig.width=8,fig.align='center',fig.pos='H',fig.cap='Histogram wieku klientów w zale¿noœci od wziêcia lokaty d³ugoterminowej.'>>= #Wyœwietl obrazek bez kodu
+fun_histogram(name_of_column, name_of_label, 15, 88, 5)
 @
 
-<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='Boxplot wieku klientów w zale¿noœci od wziêcia lokaty d³ugoterminowej.'>>= #Wyœwietl obrazek bez kodu
+<<echo=FALSE, message=FALSE, fig.height=2.9,fig.width=8,fig.align='center',fig.pos='H',fig.cap='Boxplot wieku klientów w zale¿noœci od wziêcia lokaty d³ugoterminowej.'>>= #Wyœwietl obrazek bez kodu
 fun_boxplot(name_of_column, name_of_label)
 @
 
+<<echo=FALSE, message=FALSE, warning=FALSE>>=
+df_bank <- df_bank %>%
+    mutate(age_categorical = if_else(age < 65 , if_else(age >= 30, 'worker', 'young'), "pensioner")) %>%
+    select(-age)
+@
 
+%---------------------------------------------------------------------------------------------------------------------------------------%
+%---------------------------------------------------------------------------------------------------------------------------------------%
 
-
-
-
-
-
+\subsection{Job}
+W tej kolumnie mamy 39 wartoœci nieznanych, co stanowi ledwo 1\% ca³ego zbioru, wiêc pozbywamy siê wierszy, które zawieraj¹ tê informacjê.
 
 <<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
-
+name_of_column <- 'job'
+name_of_label <- 'Job'
+fun_barplot_categorical(name_of_column, name_of_label)
 @
+
+
+<<echo=FALSE, message=FALSE, warning=FALSE>>=
+fun_crosstable(name_of_column)
+@
+
+
+
+
+
+
+
+
+
 
 <<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
 

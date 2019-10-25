@@ -223,13 +223,13 @@ fun_ROC_PR_curve_ggplot = function(df) {
         mutate(tnr = 1-tnr) %>%
         ggplot()+
         aes(x = tnr, y = tpr, colour = learner)+
-        geom_line() +
+        geom_line(size=1) +
         xlab("Spenificity") +
         ylab("Sensitivity")+
         ggtitle("ROC Curve", subtitle = "Validation dataset")
     
     pr_curve_test <- ggplot(data, aes(x = tpr, y = ppv, colour = learner))+
-        geom_line() +
+        geom_line(size=1) +
         xlab("Recall") +
         ylab("Precision")+
         ggtitle("PR Curve", subtitle = "Validation dataset")
@@ -646,6 +646,9 @@ cv.logistic <- crossval(learner = logistic_learner,
 logistic_model <- train(logistic_learner, trainTask)
 summary(getLearnerModel(logistic_model))
 log_pred <- predict(logistic_model, testTask)
+a <- calculateROCMeasures(log_pred)
+
+log_pred
 
 
 #-------------------------------------------------------------------------- @
@@ -682,6 +685,7 @@ rf_model <- train(rf_tuned_learner, trainTask)
 summary(getLearnerModel(rf_model))
 
 rf_pred <- predict(rf_model, testTask)
+calculateROCMeasures(rf_pred)
 
 
 #-------------------------------------------------------------------------- @
@@ -716,6 +720,8 @@ ksvm_model <- train(ksvm_tuner_learner, trainTask)
 summary(getLearnerModel(ksvm_model))
 
 ksvm_pred <- predict(ksvm_model, testTask)
+calculateROCMeasures(ksvm_pred)
+
 
 #-------------------------------------------------------------------------- @
 #------------------------------ 2.4 XGBoost ------------------------------- @
@@ -765,7 +771,7 @@ xgb_model <- train(xgb_tuned_learner, trainTask)
 summary(getLearnerModel(xgb_model))
 
 xgb_pred <- predict(xgb_model, testTask)
-
+calculateROCMeasures(xgb_pred)
 
 ####################################################### Benchmark experiment #######################################
 
@@ -774,11 +780,22 @@ list_of_models <- list(logistic_learner,
                      ksvm_tuner_learner, 
                      xgb_tuned_learner)
 rdesc = makeResampleDesc("CV", iters = 10)
-list_of_measures = list(acc, ppv, tpr, tnr, auc, f1)
+list_of_measures = list(acc, ppv, tpr, tnr, auc, aucpr, f1)
 
 set.seed(2019)
 table_of_measure = benchmark(list_of_models, testTask, rdesc, measures = list_of_measures)
+table_of_measure = data.frame(table_of_measure)
+table_of_measure  <- table_of_measure %>%
+    group_by(learner.id) %>%
+    summarise(mean(acc), mean(ppv), mean(tpr), mean(tnr), mean(auc), mean(f1))
 
+AUCPR = c( pr.curve(testTask$env$data$y, log_pred$data$response)[[2]],
+          pr.curve(testTask$env$data$y, rf_pred$data$response)[[2]],
+          pr.curve(testTask$env$data$y, ksvm_pred$data$response)[[2]],
+          pr.curve(testTask$env$data$y, xgb_pred$data$response)[[2]])
+
+table_of_measure %>%
+    mutate(aucpr = AUCPR)
 ####################################################### ROC Curve & PR Curve ########################################
 list_of_pred <- list(logistic = log_pred, 
                      random_forest = rf_pred,
@@ -786,7 +803,8 @@ list_of_pred <- list(logistic = log_pred,
                      XGBoost = xgb_pred)
 list_of_measures = list(acc, ppv, tpr, tnr)
 set.seed(2019)
-score_test = generateThreshVsPerfData(obj = list_of_pred, measures = list_of_measures)
+score_test = generateThreshVsPerfData(obj = list_of_pred, 
+                                      measures = list_of_measures)
 score_test$data
 fun_ROC_PR_curve_ggplot(score_test)
 
