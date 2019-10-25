@@ -401,6 +401,7 @@ fun_barplot_categorical(name_of_column, name_of_label)
 @
 
 %---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
 %---------------------------------------------------------------------------------------------------------------------------------------%
 
 \subsection{Marital status}
@@ -512,6 +513,191 @@ df_bank <- df_bank %>%
 
 
 
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Has credit in default?}
+W tej kolumnie znajduj¹ siê informacje na temat posiadania kredytu. Sytuacja jest ta sama co w przypadku kredytu hipotecznego.
+Nie mo¿emy pozwoliæ sobie na usuniêcie tak du¿ej liczny wierszy (2.5\%), a pod³aczenie do jakieœ innej opcji nie wchodzi w grê.
+Wykonamy test chisq w zelu zbadania niezale¿noœci miêdzy 2 zmiennymi.
+<<echo=FALSE, message=FALSE, fig.height=6, fig.width=8, fig.align='center', fig.pos='H',  fig.cap='Barplot typu a) przedstwiaj¹cy jak wiele osób za³o¿y³o lokatê w zale¿noœci od domyœlnie posiadanego kredytu; b) przedstwiaj¹cy stosunek procentowy osób, które za³o¿y³y lokatê z zale¿noœci od domyœlnie posiadanego kredytu.'>>= 
+
+name_of_column <- 'loan'
+name_of_label <- 'Education level'
+fun_barplot_categorical(name_of_column, name_of_label)
+@
+
+<<echo=FALSE, message=FALSE>>= #Wyœwietl obrazek bez kodu
+chisq.test(df_bank$loan, df_bank$y)
+@
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Contact communication type}
+Osoby, z którymi próbowano siê skontaktowaæ na telefon komórkowy stanowi¹ 64.4\% ca³ej badanej spo³ecznoœci i co 6 osoba z nich wzie³a lokatê d³ugoterminow¹.
+<<echo=FALSE, message=FALSE, fig.height=6, fig.width=8, fig.align='center', fig.pos='H',  fig.cap='Barplot typu a) przedstwiaj¹cy jak wiele osób za³o¿y³o lokatê w zale¿noœci od domyœlnie posiadanego kredytu; b) przedstwiaj¹cy stosunek procentowy osób, które za³o¿y³y lokatê z zale¿noœci od domyœlnie posiadanego kredytu.'>>= 
+name_of_column <- 'contact'
+name_of_label <- 'Contact'
+fun_barplot_categorical(name_of_column, name_of_label)
+
+@
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Last contact month of year}
+Ciekaw¹ sutuacj¹ jest fact, ¿e w zestawieniu w ogóle nie mamy tranzakcji ze stycznia oraz z lutego.
+
+<<echo=FALSE, message=FALSE, fig.height=6, fig.width=8, fig.align='center', fig.pos='H',  fig.cap='Barplot typu a) przedstwiaj¹cy jak wiele osób za³o¿y³o lokatê w zale¿noœci od domyœlnie posiadanego kredytu; b) przedstwiaj¹cy stosunek procentowy osób, które za³o¿y³y lokatê z zale¿noœci od domyœlnie posiadanego kredytu.'>>= 
+name_of_column <- 'month'
+name_of_label <- 'Month'
+fun_barplot_categorical(name_of_column, name_of_label)
+@
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Last contact day of the week}
+W ka¿dym roboczym dniu tygodnia jest wykonywane mniej wiêcej tyle samo po³¹czeñ z klientami,
+wiêc nie jesteœmy w stanie wyci¹gn¹æ ¿adnych wiêkszych wniosków, z obserwacji samych wykresów.
+<<echo=FALSE, message=FALSE, fig.height=6, fig.width=8, fig.align='center', fig.pos='H',  fig.cap='Barplot typu a) przedstwiaj¹cy jak wiele osób za³o¿y³o lokatê w zale¿noœci od domyœlnie posiadanego kredytu; b) przedstwiaj¹cy stosunek procentowy osób, które za³o¿y³y lokatê z zale¿noœci od domyœlnie posiadanego kredytu.'>>= 
+name_of_column <- 'day_of_week'
+name_of_label <- 'Day of week'
+fun_barplot_categorical(name_of_column, name_of_label)
+
+@
+
+
+\subsection{Last contact duration, in seconds}
+Czas trwania ostatniego kontaktu jest atrybutem, który ma du¿y wp³yw na cel wyjœciowy (y)
+Wa¿na uwaga: ten atrybut ma du¿y wp³yw na cel wyjœciowy. Jednak czas trwania nie jest znany przed wykonaniem po³¹czenia.
+Ponadto po zakoñczeniu po³¹czenia "y" jest oczywiœcie znane. W zwi¹zku z tym  nale¿y j¹ odrzuciæ, jeœli chcemy stworzenie realistycznego modelu predykcyjnego.
+<<echo=FALSE, message=FALSE>>=
+df_bank = df_bank %>% 
+    select(-duration)
+@
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{}
+
+<<echo=FALSE, message=FALSE, fig.height=6, fig.width=8, fig.align='center', fig.pos='H',  fig.cap='Barplot typu a) przedstwiaj¹cy jak wiele osób za³o¿y³o lokatê w zale¿noœci od domyœlnie posiadanego kredytu; b) przedstwiaj¹cy stosunek procentowy osób, które za³o¿y³y lokatê z zale¿noœci od domyœlnie posiadanego kredytu.'>>= 
+
+
+@
+
+<<echo=FALSE, message=FALSE>>=
+
+@
+
+
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{}
+
+<<echo=FALSE, message=FALSE, fig.height=6, fig.width=8, fig.align='center', fig.pos='H',  fig.cap='Barplot typu a) przedstwiaj¹cy jak wiele osób za³o¿y³o lokatê w zale¿noœci od domyœlnie posiadanego kredytu; b) przedstwiaj¹cy stosunek procentowy osób, które za³o¿y³y lokatê z zale¿noœci od domyœlnie posiadanego kredytu.'>>= 
+
+
+@
+
+<<echo=FALSE, message=FALSE>>=
+
+@
+
+
+
+
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{}
+
+<<echo=FALSE, message=FALSE, fig.height=6, fig.width=8, fig.align='center', fig.pos='H',  fig.cap='Barplot typu a) przedstwiaj¹cy jak wiele osób za³o¿y³o lokatê w zale¿noœci od domyœlnie posiadanego kredytu; b) przedstwiaj¹cy stosunek procentowy osób, które za³o¿y³y lokatê z zale¿noœci od domyœlnie posiadanego kredytu.'>>= 
+
+
+@
+
+<<echo=FALSE, message=FALSE>>=
+
+@
+
+
+
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{}
+
+<<echo=FALSE, message=FALSE, fig.height=6, fig.width=8, fig.align='center', fig.pos='H',  fig.cap='Barplot typu a) przedstwiaj¹cy jak wiele osób za³o¿y³o lokatê w zale¿noœci od domyœlnie posiadanego kredytu; b) przedstwiaj¹cy stosunek procentowy osób, które za³o¿y³y lokatê z zale¿noœci od domyœlnie posiadanego kredytu.'>>= 
+
+
+@
+
+<<echo=FALSE, message=FALSE>>=
+
+@
+
+
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{}
+
+<<echo=FALSE, message=FALSE, fig.height=6, fig.width=8, fig.align='center', fig.pos='H',  fig.cap='Barplot typu a) przedstwiaj¹cy jak wiele osób za³o¿y³o lokatê w zale¿noœci od domyœlnie posiadanego kredytu; b) przedstwiaj¹cy stosunek procentowy osób, które za³o¿y³y lokatê z zale¿noœci od domyœlnie posiadanego kredytu.'>>= 
+
+
+@
+
+<<echo=FALSE, message=FALSE>>=
+
+@
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Contact communication type?}
+
+<<echo=FALSE, message=FALSE, fig.height=6, fig.width=8, fig.align='center', fig.pos='H',  fig.cap='Barplot typu a) przedstwiaj¹cy jak wiele osób za³o¿y³o lokatê w zale¿noœci od domyœlnie posiadanego kredytu; b) przedstwiaj¹cy stosunek procentowy osób, które za³o¿y³y lokatê z zale¿noœci od domyœlnie posiadanego kredytu.'>>= 
+
+
+@
+
+<<echo=FALSE, message=FALSE>>=
+
+@
 
 
 

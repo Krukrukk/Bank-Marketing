@@ -297,6 +297,7 @@ W tej kolumnie mamy 39 wartoœci nieznanych, co stanowi ledwo 1\% ca³ego zbioru, 
 \end{knitrout}
 
 %---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
 %---------------------------------------------------------------------------------------------------------------------------------------%
 
 \subsection{Marital status}
@@ -437,6 +438,180 @@ Wykonamy test chisq w zelu zbadania niezale¿noœci miêdzy 2 zmiennymi.
 \end{knitrout}
 Poziom istotnoœci(p-value) na poziomie 56.8\% œwiadczy o du¿ej zale¿noœci miêdzy danymi, wiêc tej zmiennej ró¿nie¿ nie bêdê bra³ pod uwagê.
 
+
+
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Has credit in default?}
+W tej kolumnie znajduj¹ siê informacje na temat posiadania kredytu. Sytuacja jest ta sama co w przypadku kredytu hipotecznego.
+Nie mo¿emy pozwoliæ sobie na usuniêcie tak du¿ej liczny wierszy (2.5\%), a pod³aczenie do jakieœ innej opcji nie wchodzi w grê.
+Wykonamy test chisq w zelu zbadania niezale¿noœci miêdzy 2 zmiennymi.
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in FUN(X[[i]], ...): nie znaleziono obiektu 'loan'}}\end{kframe}
+\end{knitrout}
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in chisq.test(df\_bank\$loan, df\_bank\$y): 'x' and 'y' must have the same length}}\end{kframe}
+\end{knitrout}
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Contact communication type}
+Osoby, z którymi próbowano siê skontaktowaæ na telefon komórkowy stanowi¹ 64.4\% ca³ej badanej spo³ecznoœci i co 6 osoba z nich wzie³a lokatê d³ugoterminow¹.
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
+
+{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-28-1} 
+
+}
+
+\caption[Barplot typu a) przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od domy<U+393C><U+3E63>lnie posiadanego kredytu]{Barplot typu a) przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od domy<U+393C><U+3E63>lnie posiadanego kredytu; b) przedstwiaj<U+623C><U+3E39>cy stosunek procentowy os<U+663C><U+3E33>b, kt<U+663C><U+3E33>re za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>y lokat<U+653C><U+3E61> z zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od domy<U+393C><U+3E63>lnie posiadanego kredytu.}\label{fig:unnamed-chunk-28}
+\end{figure}
+
+
+\end{knitrout}
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Last contact month of year}
+Ciekaw¹ sutuacj¹ jest fact, ¿e w zestawieniu w ogóle nie mamy tranzakcji ze stycznia oraz z lutego.
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
+
+{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-29-1} 
+
+}
+
+\caption[Barplot typu a) przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od domy<U+393C><U+3E63>lnie posiadanego kredytu]{Barplot typu a) przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od domy<U+393C><U+3E63>lnie posiadanego kredytu; b) przedstwiaj<U+623C><U+3E39>cy stosunek procentowy os<U+663C><U+3E33>b, kt<U+663C><U+3E33>re za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>y lokat<U+653C><U+3E61> z zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od domy<U+393C><U+3E63>lnie posiadanego kredytu.}\label{fig:unnamed-chunk-29}
+\end{figure}
+
+
+\end{knitrout}
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Last contact day of the week}
+W ka¿dym roboczym dniu tygodnia jest wykonywane mniej wiêcej tyle samo po³¹czeñ z klientami,
+wiêc nie jesteœmy w stanie wyci¹gn¹æ ¿adnych wiêkszych wniosków, z obserwacji samych wykresów.
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
+
+{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-30-1} 
+
+}
+
+\caption[Barplot typu a) przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od domy<U+393C><U+3E63>lnie posiadanego kredytu]{Barplot typu a) przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od domy<U+393C><U+3E63>lnie posiadanego kredytu; b) przedstwiaj<U+623C><U+3E39>cy stosunek procentowy os<U+663C><U+3E33>b, kt<U+663C><U+3E33>re za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>y lokat<U+653C><U+3E61> z zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od domy<U+393C><U+3E63>lnie posiadanego kredytu.}\label{fig:unnamed-chunk-30}
+\end{figure}
+
+
+\end{knitrout}
+
+
+\subsection{Last contact duration, in seconds}
+Czas trwania ostatniego kontaktu jest atrybutem, który ma du¿y wp³yw na cel wyjœciowy (y)
+Wa¿na uwaga: ten atrybut ma du¿y wp³yw na cel wyjœciowy. Jednak czas trwania nie jest znany przed wykonaniem po³¹czenia.
+Ponadto po zakoñczeniu po³¹czenia "y" jest oczywiœcie znane. W zwi¹zku z tym  nale¿y j¹ odrzuciæ, jeœli chcemy stworzenie realistycznego modelu predykcyjnego.
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{}
+
+
+
+
+
+
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{}
+
+
+
+
+
+
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{}
+
+
+
+
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Contact communication type?}
 
 
 
