@@ -52,12 +52,11 @@ library(mlr)
 library(randomForest)
 library(kernlab)
 library(xgboost)
-library(MLmetrics) 
 library(tidyverse)
 
 
 ######################## Importing data ########################
-setwd('C:/Users/Maciek^M/OneDrive/Desktop/Projekty')
+setwd('C:/Users/Maciek^M/OneDrive/Desktop/Projekty/Bank-Marketing/R version PL/')
 df_bank <- read.csv(file = "Date/Bank_Marketing_data.csv", 
                     sep = ";",
                     stringsAsFactors = F)
@@ -208,6 +207,39 @@ fun_important_feature_ggplot = function(model){
     return(gg1 + imp_gradient)
 }
 
+#################
+fun_ROC_PR_curve_ggplot = function(df) {
+    # df: dataset generate by generateThreshVsPerfData
+    # info in data: 
+    #learner - type of model
+    #ppv - precision
+    #tpr - recall
+    #tnr - specificity
+    #threshold 
+    
+    data <- df$data
+    
+    roc_curve_test <- data %>%
+        mutate(tnr = 1-tnr) %>%
+        ggplot()+
+        aes(x = tnr, y = tpr, colour = learner)+
+        geom_line() +
+        xlab("Spenificity") +
+        ylab("Sensitivity")+
+        ggtitle("ROC Curve", subtitle = "Validation dataset")
+    
+    pr_curve_test <- ggplot(data, aes(x = tpr, y = ppv, colour = learner))+
+        geom_line() +
+        xlab("Recall") +
+        ylab("Precision")+
+        ggtitle("PR Curve", subtitle = "Validation dataset")
+    
+    curves_test = ggarrange(roc_curve_test, pr_curve_test, 
+                            common.legend = T,
+                            legend = "bottom")
+    
+    return(curves_test)
+}
 
 
 ###############################################################################################
@@ -720,7 +752,8 @@ xgb_tuned_params <- tuneParams(
     task = trainTask,
     resampling = resample_desc,
     par.set = xgb_params,
-    control = xgb_control)
+    control = xgb_control,
+    measures = f1)
 
 xgb_tuned_learner <- setHyperPars(
     learner = xgb_learner,
@@ -745,31 +778,9 @@ list_of_measures = list(ppv, tpr, tnr)
 
 score_test = generateThreshVsPerfData(obj = list_of_pred, measures = list_of_measures)
 
-# Precision/recall graph
-plotROCCurves(df, measures = list(tpr, ppv), diagonal = FALSE)
+score_test$data
 
-# Sensitivity/specificity plot
-plotROCCurves(df, measures = list(tnr, tpr), diagonal = FALSE)
-
-
-
-
-score_test[[1]]
-
-
-
-calculateConfusionMatrix(xgb_pred)
-
-calculateROCMeasures(xgb_pred)
-df = generateThreshVsPerfData(xgb_pred, measures = list(acc, f1))
-
-df
-
-plotThreshVsPerf(df)
-plotROCCurves(df)
-
-
-
+fun_ROC_PR_curve_ggplot(score_test)
 
 
 #---- 2.1 Logistic regresion ---- @
