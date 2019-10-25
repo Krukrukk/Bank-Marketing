@@ -57,7 +57,7 @@
 \selectlanguage{polish}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage[a4paper, total={6.5in, 9in}]{geometry}
+\usepackage[a4paper, total={6.5in, 9.5in}]{geometry}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage[hidelinks]{hyperref}
@@ -290,80 +290,152 @@ W tej kolumnie mamy 39 wartoœci nieznanych, co stanowi ledwo 1\% ca³ego zbioru, 
 
 }
 
-\caption[New Figure]{New Figure}\label{fig:unnamed-chunk-13}
+\caption[Barplot typu a)  przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b  za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od zawodu, b) przedstwiaj<U+623C><U+3E39>cy stosunek procentowy os<U+663C><U+3E33>b,  kt<U+663C><U+3E33>re za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>y lokat<U+653C><U+3E61> z zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od pracy]{Barplot typu a)  przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b  za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od zawodu, b) przedstwiaj<U+623C><U+3E39>cy stosunek procentowy os<U+663C><U+3E33>b,  kt<U+663C><U+3E33>re za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>y lokat<U+653C><U+3E61> z zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od pracy.}\label{fig:unnamed-chunk-13}
+\end{figure}
+
+
+\end{knitrout}
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Marital status}
+Sytuacja taka sama jak przy kolumnie 'job'. Mamy tutaj nieznane wartoœci, ale stanowi¹ one tylko 0.3\% wszystkich danych, wiêc równie¿ usuwamy te wiersze.
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
+
+{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-14-1} 
+
+}
+
+\caption[Barplot typu a) przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od stanu cywilnego]{Barplot typu a) przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od stanu cywilnego; b) przedstwiaj<U+623C><U+3E39>cy stosunek procentowy os<U+663C><U+3E33>b, kt<U+663C><U+3E33>re za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>y lokat<U+653C><U+3E61> z zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od stanu cywilnego.}\label{fig:unnamed-chunk-14}
 \end{figure}
 
 
 \end{knitrout}
 
 
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Education}
+Pula klientów bêd¹cymi 'illiterate' zawieta tylko jedn¹ osobê, wiêc statystycznie taka obserwacja nic nam nie daje.
+Natomiast w tym przypadku mamy problem z nieznanymi wartoœciami. Po pierwsze stanowi¹ one 4.1\% wszystkich badanych.
+Najbardziej podobne proporcje danych miêdzy 'yes' i 'no' ma categoria klientów, którzu ukoñczyli uniwersytet, wiêc wszystkich klientów 'unknown'
+dodam do tej puli klientów.
+
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{verbatim}
-## 
-##  
-##    Cell Contents
-## |-------------------------|
-## |                       N |
-## |           N / Row Total |
-## |-------------------------|
-## 
-##  
-## Total Observations in Table:  4119 
-## 
-##  
-##               | y 
-##           job |        no |       yes | Row Total | 
-## --------------|-----------|-----------|-----------|
-##        admin. |       879 |       133 |      1012 | 
-##               |     0.869 |     0.131 |     0.246 | 
-## --------------|-----------|-----------|-----------|
-##   blue-collar |       823 |        61 |       884 | 
-##               |     0.931 |     0.069 |     0.215 | 
-## --------------|-----------|-----------|-----------|
-##  entrepreneur |       140 |         8 |       148 | 
-##               |     0.946 |     0.054 |     0.036 | 
-## --------------|-----------|-----------|-----------|
-##     housemaid |        99 |        11 |       110 | 
-##               |     0.900 |     0.100 |     0.027 | 
-## --------------|-----------|-----------|-----------|
-##    management |       294 |        30 |       324 | 
-##               |     0.907 |     0.093 |     0.079 | 
-## --------------|-----------|-----------|-----------|
-##       retired |       128 |        38 |       166 | 
-##               |     0.771 |     0.229 |     0.040 | 
-## --------------|-----------|-----------|-----------|
-## self-employed |       146 |        13 |       159 | 
-##               |     0.918 |     0.082 |     0.039 | 
-## --------------|-----------|-----------|-----------|
-##      services |       358 |        35 |       393 | 
-##               |     0.911 |     0.089 |     0.095 | 
-## --------------|-----------|-----------|-----------|
-##       student |        63 |        19 |        82 | 
-##               |     0.768 |     0.232 |     0.020 | 
-## --------------|-----------|-----------|-----------|
-##    technician |       611 |        80 |       691 | 
-##               |     0.884 |     0.116 |     0.168 | 
-## --------------|-----------|-----------|-----------|
-##    unemployed |        92 |        19 |       111 | 
-##               |     0.829 |     0.171 |     0.027 | 
-## --------------|-----------|-----------|-----------|
-##       unknown |        35 |         4 |        39 | 
-##               |     0.897 |     0.103 |     0.009 | 
-## --------------|-----------|-----------|-----------|
-##  Column Total |      3668 |       451 |      4119 | 
-## --------------|-----------|-----------|-----------|
-## 
-## 
-\end{verbatim}
-\end{kframe}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
+
+{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-16-1} 
+
+}
+
+\caption[Barplot typu a) przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od poziomu wykszta<U+623C><U+3E33>cenia]{Barplot typu a) przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od poziomu wykszta<U+623C><U+3E33>cenia; b) przedstwiaj<U+623C><U+3E39>cy stosunek procentowy os<U+663C><U+3E33>b, kt<U+663C><U+3E33>re za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>y lokat<U+653C><U+3E61> z zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od poziomu wykszta<U+623C><U+3E33>cenia.}\label{fig:unnamed-chunk-16}
+\end{figure}
+
+
 \end{knitrout}
 
 
 
 
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Has credit in default?}
+Ta kolumna nie przedstawia wystarczaj¹cej iloœci danych o osóbach, które domyœlnie wzie³y ten kredyt.
+Z tego powodu ta kolumna nie bêdzie mia³a ¿adnego wiêkszego wp³ywu na nasze modele, dlatego j¹ usuwamy.
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
+
+{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-18-1} 
+
+}
+
+\caption[Barplot typu a) przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od posiadania kredytu]{Barplot typu a) przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od posiadania kredytu; b) przedstwiaj<U+623C><U+3E39>cy stosunek procentowy os<U+663C><U+3E33>b, kt<U+663C><U+3E33>re za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>y lokat<U+653C><U+3E61> z zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od posiadania kredytu.}\label{fig:unnamed-chunk-18}
+\end{figure}
 
 
+\end{knitrout}
+
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Has personal loan?}
+W tej kolumnie znajduj¹ siê informacje na temat posiadania kredytu hipotecznego (kredytu na dom). Iloœæ danych nieznanych odpowiada, 2,5\% wszystkich obserwacji,
+Nie mo¿emy pozwoliæ sobie na usuniêcie tak du¿ej liczny wierszy, a pod³aczenie do jakieœ innej opcji nie wchodzi w grê.
+PrzeprowadŸmy testy na niezale¿noœæ zmiennych kategorycznych. Wykonamy test chisq w zelu zbadania niezale¿noœci miêdzy 2 zmiennymi.
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
+
+{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-20-1} 
+
+}
+
+\caption[Barplot typu a) przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od ju<U+623C><U+3E66> posiadanej po<U+623C><U+3E66>yczki]{Barplot typu a) przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od ju<U+623C><U+3E66> posiadanej po<U+623C><U+3E66>yczki; b) przedstwiaj<U+623C><U+3E39>cy stosunek procentowy os<U+663C><U+3E33>b, kt<U+663C><U+3E33>re za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>y lokat<U+653C><U+3E61> z zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od posiadanej po<U+623C><U+3E66>yczki.}\label{fig:unnamed-chunk-20}
+\end{figure}
+
+
+\end{knitrout}
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{verbatim}
+## 
+## 	Pearson's Chi-squared test
+## 
+## data:  df_bank$housing and df_bank$y
+## X-squared = 0.62865, df = 2, p-value = 0.7303
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+Niestety poziom istotnoœci(p-value) na poziomie 73\% œwiadczy o du¿ej zale¿noœci miêdzy danymi, wiêc tej zmiennej ró¿nie¿ nie bêdê bra³ pod uwagê.
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Has credit in default?}
+W tej kolumnie znajduj¹ siê informacje na temat posiadania kredytu. Sytuacja jest ta sama co w przypadku kredytu hipotecznego.
+Nie mo¿emy pozwoliæ sobie na usuniêcie tak du¿ej liczny wierszy (2.5\%), a pod³aczenie do jakieœ innej opcji nie wchodzi w grê.
+Wykonamy test chisq w zelu zbadania niezale¿noœci miêdzy 2 zmiennymi.
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}[H]
+
+{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-23-1} 
+
+}
+
+\caption[Barplot typu a) przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od domy<U+393C><U+3E63>lnie posiadanego kredytu]{Barplot typu a) przedstwiaj<U+623C><U+3E39>cy jak wiele os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>o lokat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od domy<U+393C><U+3E63>lnie posiadanego kredytu; b) przedstwiaj<U+623C><U+3E39>cy stosunek procentowy os<U+663C><U+3E33>b, kt<U+663C><U+3E33>re za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>y lokat<U+653C><U+3E61> z zale<U+623C><U+3E66>no<U+393C><U+3E63>ci od domy<U+393C><U+3E63>lnie posiadanego kredytu.}\label{fig:unnamed-chunk-23}
+\end{figure}
+
+
+\end{knitrout}
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{verbatim}
+## 
+## 	Pearson's Chi-squared test
+## 
+## data:  df_bank$loan and df_bank$y
+## X-squared = 1.123, df = 2, p-value = 0.5703
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+Poziom istotnoœci(p-value) na poziomie 56.8\% œwiadczy o du¿ej zale¿noœci miêdzy danymi, wiêc tej zmiennej ró¿nie¿ nie bêdê bra³ pod uwagê.
 
 
 

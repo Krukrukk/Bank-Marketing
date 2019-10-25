@@ -7,7 +7,7 @@
 \selectlanguage{polish}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage[a4paper, total={6.5in, 9in}]{geometry}
+\usepackage[a4paper, total={6.5in, 9.5in}]{geometry}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage[hidelinks]{hyperref}
@@ -184,12 +184,11 @@ any(is.na(df_bank))
 Jednak¿e wiemy, ¿e w danych wystêpuj¹ wartoœci brakuj¹ce i s¹ one opisa "unknown". W danych znajduje siê 1230  rekordów z wartoœci¹ "unknown" rozmieszczonych w 1029 ró¿nych wierszach. To stanowi $24.98\% $ wszystkich wierszy w naszej badzie danych, wiêc nie mo¿emy pozwoliæ sobie na usuniêcie tych wszystkich informacji. W tabeli 1 znajduj¹ siê informacje na temat liczny nieznanych wartoœci  w ka¿dej z kolumn z osobna.
 
 <<echo=FALSE ,message=FALSE>>= 
-
+number_of_unknown <- sum(df_bank == 'unknown')
 @
 
 
 <<kable ,echo=FALSE ,message=FALSE, warning=FALSE>>= 
-number_of_unknown <- sum(df_bank == 'unknown')
 table_unknown <- df_bank %>%
     summarise_all(list(~sum(. =='unknown'))) %>%
     gather(key = 'Feature', value = 'Number of unknown')  %>%
@@ -394,15 +393,121 @@ df_bank <- df_bank %>%
 \subsection{Job}
 W tej kolumnie mamy 39 wartoœci nieznanych, co stanowi ledwo 1\% ca³ego zbioru, wiêc pozbywamy siê wierszy, które zawieraj¹ tê informacjê.
 
-<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
+<<echo=FALSE, message=FALSE, fig.height=6, fig.width=8, fig.align='center', fig.pos='H', fig.cap= "Barplot typu a)  przedstwiaj¹cy jak wiele osób  za³o¿y³o lokatê w zale¿noœci od zawodu, b) przedstwiaj¹cy stosunek procentowy osób,  które za³o¿y³y lokatê z zale¿noœci od pracy.">>= 
+
 name_of_column <- 'job'
 name_of_label <- 'Job'
 fun_barplot_categorical(name_of_column, name_of_label)
 @
 
+%---------------------------------------------------------------------------------------------------------------------------------------%
+%---------------------------------------------------------------------------------------------------------------------------------------%
 
-<<echo=FALSE, message=FALSE, warning=FALSE>>=
-fun_crosstable(name_of_column)
+\subsection{Marital status}
+Sytuacja taka sama jak przy kolumnie 'job'. Mamy tutaj nieznane wartoœci, ale stanowi¹ one tylko 0.3\% wszystkich danych, wiêc równie¿ usuwamy te wiersze.
+
+<<echo=FALSE, message=FALSE, fig.height=6, fig.width=8, fig.align='center',fig.pos='H', fig.cap='Barplot typu a) przedstwiaj¹cy jak wiele osób za³o¿y³o lokatê w zale¿noœci od stanu cywilnego; b) przedstwiaj¹cy stosunek procentowy osób, które za³o¿y³y lokatê z zale¿noœci od stanu cywilnego.' >>= 
+name_of_column <- 'marital'
+name_of_label <- 'Marital status'
+fun_barplot_categorical(name_of_column, name_of_label)
+@
+
+<<echo=FALSE, message=FALSE, >>= #Wyœwietl obrazek bez kodu
+df_bank <- df_bank %>%
+    filter(marital != "unknown")
+@
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Education}
+Pula klientów bêd¹cymi 'illiterate' zawieta tylko jedn¹ osobê, wiêc statystycznie taka obserwacja nic nam nie daje.
+Natomiast w tym przypadku mamy problem z nieznanymi wartoœciami. Po pierwsze stanowi¹ one 4.1\% wszystkich badanych.
+Najbardziej podobne proporcje danych miêdzy 'yes' i 'no' ma categoria klientów, którzu ukoñczyli uniwersytet, wiêc wszystkich klientów 'unknown'
+dodam do tej puli klientów.
+
+<<echo=FALSE, message=FALSE, fig.height=6, fig.width=8, fig.align='center', fig.pos='H',  fig.cap='Barplot typu a) przedstwiaj¹cy jak wiele osób za³o¿y³o lokatê w zale¿noœci od poziomu wykszta³cenia; b) przedstwiaj¹cy stosunek procentowy osób, które za³o¿y³y lokatê z zale¿noœci od poziomu wykszta³cenia.'>>= 
+name_of_column <- 'education'
+name_of_label <- 'Education level'
+fun_barplot_categorical(name_of_column, name_of_label)
+@
+
+<<echo=FALSE, message=FALSE>>= #Wyœwietl obrazek bez kodu
+df_bank <- df_bank %>% 
+    filter(education != "illiterate") %>%
+    mutate(education = recode(education, "unKnown" = "university.degree"))
+@
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Has credit in default?}
+Ta kolumna nie przedstawia wystarczaj¹cej iloœci danych o osóbach, które domyœlnie wzie³y ten kredyt.
+Z tego powodu ta kolumna nie bêdzie mia³a ¿adnego wiêkszego wp³ywu na nasze modele, dlatego j¹ usuwamy.
+<<echo=FALSE, message=FALSE, fig.height=6, fig.width=8, fig.align='center', fig.pos='H',  fig.cap='Barplot typu a) przedstwiaj¹cy jak wiele osób za³o¿y³o lokatê w zale¿noœci od posiadania kredytu; b) przedstwiaj¹cy stosunek procentowy osób, które za³o¿y³y lokatê z zale¿noœci od posiadania kredytu.'>>= 
+name_of_column <- 'default'
+name_of_label <- 'Has credit in default?'
+fun_barplot_categorical(name_of_column, name_of_label)
+@
+
+<<echo=FALSE, message=FALSE>>= #Wyœwietl obrazek bez kodu
+df_bank <- df_bank %>% 
+    select(-default)
+@
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Has personal loan?}
+W tej kolumnie znajduj¹ siê informacje na temat posiadania kredytu hipotecznego (kredytu na dom). Iloœæ danych nieznanych odpowiada, 2,5\% wszystkich obserwacji,
+Nie mo¿emy pozwoliæ sobie na usuniêcie tak du¿ej liczny wierszy, a pod³aczenie do jakieœ innej opcji nie wchodzi w grê.
+PrzeprowadŸmy testy na niezale¿noœæ zmiennych kategorycznych. Wykonamy test chisq w zelu zbadania niezale¿noœci miêdzy 2 zmiennymi.
+<<echo=FALSE, message=FALSE, fig.height=6, fig.width=8, fig.align='center', fig.pos='H',  fig.cap='Barplot typu a) przedstwiaj¹cy jak wiele osób za³o¿y³o lokatê w zale¿noœci od ju¿ posiadanej po¿yczki; b) przedstwiaj¹cy stosunek procentowy osób, które za³o¿y³y lokatê z zale¿noœci od posiadanej po¿yczki.'>>= 
+name_of_column <- 'housing'
+name_of_label <- 'Has housing loan?'
+fun_barplot_categorical(name_of_column, name_of_label)
+
+@
+
+<<echo=FALSE, message=FALSE>>= #Wyœwietl obrazek bez kodu
+chisq.test(df_bank$housing, df_bank$y)
+@
+Niestety poziom istotnoœci(p-value) na poziomie 73\% œwiadczy o du¿ej zale¿noœci miêdzy danymi, wiêc tej zmiennej ró¿nie¿ nie bêdê bra³ pod uwagê.
+<<echo=FALSE, message=FALSE>>= #Wyœwietl obrazek bez kodu
+df_bank <- df_bank %>% 
+    select(-housing)
+@
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+\subsection{Has credit in default?}
+W tej kolumnie znajduj¹ siê informacje na temat posiadania kredytu. Sytuacja jest ta sama co w przypadku kredytu hipotecznego.
+Nie mo¿emy pozwoliæ sobie na usuniêcie tak du¿ej liczny wierszy (2.5\%), a pod³aczenie do jakieœ innej opcji nie wchodzi w grê.
+Wykonamy test chisq w zelu zbadania niezale¿noœci miêdzy 2 zmiennymi.
+<<echo=FALSE, message=FALSE, fig.height=6, fig.width=8, fig.align='center', fig.pos='H',  fig.cap='Barplot typu a) przedstwiaj¹cy jak wiele osób za³o¿y³o lokatê w zale¿noœci od domyœlnie posiadanego kredytu; b) przedstwiaj¹cy stosunek procentowy osób, które za³o¿y³y lokatê z zale¿noœci od domyœlnie posiadanego kredytu.'>>= 
+
+name_of_column <- 'loan'
+name_of_label <- 'Education level'
+fun_barplot_categorical(name_of_column, name_of_label)
+@
+
+<<echo=FALSE, message=FALSE>>= #Wyœwietl obrazek bez kodu
+chisq.test(df_bank$loan, df_bank$y)
+@
+Poziom istotnoœci(p-value) na poziomie 56.8\% œwiadczy o du¿ej zale¿noœci miêdzy danymi, wiêc tej zmiennej ró¿nie¿ nie bêdê bra³ pod uwagê.
+
+<<echo=FALSE, message=FALSE>>= #Wyœwietl obrazek bez kodu
+df_bank <- df_bank %>% 
+    select(-loan)
 @
 
 
@@ -411,20 +516,6 @@ fun_crosstable(name_of_column)
 
 
 
-
-
-
-<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
-
-@
-
-<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
-
-@
-
-<<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
-
-@
 
 <<echo=FALSE, message=FALSE, fig.height=3,fig.width=8,fig.align='center',fig.pos='H',fig.cap='New Figure'>>= #Wyœwietl obrazek bez kodu
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.21)  25 OCT 2019 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.21)  25 OCT 2019 15:27
 entering extended mode
 **./Bank_Marketing_PL.tex
 (Bank_Marketing_PL.tex
@@ -616,14 +616,14 @@ G,.JBIG2,.JB2,.eps]
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(63.87643pt, 469.75499pt, 63.87645pt)
-* v-part:(T,H,B)=(77.84674pt, 650.43pt, 116.77011pt)
+* v-part:(T,H,B)=(63.39273pt, 686.56499pt, 95.08913pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=469.75499pt
-* \textheight=650.43pt
+* \textheight=686.56499pt
 * \oddsidemargin=-8.39355pt
 * \evensidemargin=-8.39355pt
-* \topmargin=-31.42325pt
+* \topmargin=-45.87726pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -4655,7 +4655,7 @@ Alternatively, save the file in UTF-8 using your editor or another tool
 
 Package color Info: Redefining color shadecolor on input line 244.
 Package color Info: Redefining color shadecolor on input line 253.
-<figure/unnamed-chunk-10-1.pdf, id=84, 578.16pt x 208.78pt>
+<figure/unnamed-chunk-10-1.pdf, id=109, 578.16pt x 208.78pt>
 File: figure/unnamed-chunk-10-1.pdf Graphic file (type pdf)
 <use figure/unnamed-chunk-10-1.pdf>
 Package pdftex.def Info: figure/unnamed-chunk-10-1.pdf  used on input line 255.
@@ -4673,7 +4673,7 @@ Underfull \hbox (badness 5359) in paragraph at lines 259--259
  []
 
 Package color Info: Redefining color shadecolor on input line 266.
-<figure/unnamed-chunk-11-1.pdf, id=85, 578.16pt x 208.78pt>
+<figure/unnamed-chunk-11-1.pdf, id=110, 578.16pt x 208.78pt>
 File: figure/unnamed-chunk-11-1.pdf Graphic file (type pdf)
 <use figure/unnamed-chunk-11-1.pdf>
 Package pdftex.def Info: figure/unnamed-chunk-11-1.pdf  used on input line 268.
@@ -4690,7 +4690,6 @@ Underfull \hbox (badness 5359) in paragraph at lines 272--272
 1>cia lo-
  []
 
-[4 <./figure/unnamed-chunk-10-1.pdf>]
 
 ! Package inputenc Error: Invalid UTF-8 byte 156.
 
@@ -4816,33 +4815,1619 @@ in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
 Package color Info: Redefining color shadecolor on input line 287.
-<figure/unnamed-chunk-13-1.pdf, id=100, 578.16pt x 216.81pt>
+<figure/unnamed-chunk-13-1.pdf, id=111, 578.16pt x 433.62pt>
 File: figure/unnamed-chunk-13-1.pdf Graphic file (type pdf)
 <use figure/unnamed-chunk-13-1.pdf>
 Package pdftex.def Info: figure/unnamed-chunk-13-1.pdf  used on input line 289.
 
-(pdftex.def)             Requested size: 469.75499pt x 176.15768pt.
-Package color Info: Redefining color shadecolor on input line 301.
-[5 <./figure/unnamed-chunk-11-1.pdf> <./figure/unnamed-chunk-13-1.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 393.
+(pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
 
-[6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 393.
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+[]\T1/lmr/m/n/10.95 Rysunek 3: []Barplot typu a) przed-stwiaj<U+623C><U+3E39>cy
+ jak wiele
+ []
+
+
+Overfull \hbox (38.5724pt too wide) in paragraph at lines 293--293
+\T1/lmr/m/n/10.95 os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+62
+3C><U+3E33>o
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/lmr/m/n/10.95 lo-kat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E6
+3>ci
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/lmr/m/n/10.95 od za-wodu, b) przed-stwiaj<U+623C><U+3E39>cy sto-su-nek pro-
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/lmr/m/n/10.95 cen-towy os<U+663C><U+3E33>b, kt<U+663C><U+3E33>re
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/lmr/m/n/10.95 za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>y lo-
+ []
+
+[4 <./figure/unnamed-chunk-10-1.pdf> <./figure/unnamed-chunk-11-1.pdf>]
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.303 ...olumnie 'job'. Mamy tutaj nieznane wartoœ
+                                                  ci, ale stanowi¹ one tylko...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 185.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.303 ...amy tutaj nieznane wartoœci, ale stanowi¹
+                                                   one tylko 0.3\% wszystkic...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.303 ...one tylko 0.3\% wszystkich danych, wiêc r
+                                                  ównie¿ usuwamy te wiersze.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.303 ...tylko 0.3\% wszystkich danych, wiêc równi
+                                                  e¿ usuwamy te wiersze.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.303 ...lko 0.3\% wszystkich danych, wiêc równie¿
+                                                   usuwamy te wiersze.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Package color Info: Redefining color shadecolor on input line 306.
+<figure/unnamed-chunk-14-1.pdf, id=132, 578.16pt x 433.62pt>
+File: figure/unnamed-chunk-14-1.pdf Graphic file (type pdf)
+<use figure/unnamed-chunk-14-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-14-1.pdf  used on input line 308.
+
+(pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+[]\T1/lmr/m/n/10.95 Rysunek 4: []Barplot typu a) przed-stwiaj<U+623C><U+3E39>cy
+ jak wiele
+ []
+
+
+Overfull \hbox (38.5724pt too wide) in paragraph at lines 312--312
+\T1/lmr/m/n/10.95 os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+62
+3C><U+3E33>o
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+\T1/lmr/m/n/10.95 lo-kat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E6
+3>ci
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+\T1/lmr/m/n/10.95 od stanu cy-wil-nego; b) przed-stwiaj<U+623C><U+3E39>cy sto-s
+u-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+\T1/lmr/m/n/10.95 nek pro-cen-towy os<U+663C><U+3E33>b, kt<U+663C><U+3E33>re
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+\T1/lmr/m/n/10.95 za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>y lo-
+ []
+
+[5 <./figure/unnamed-chunk-13-1.pdf>] [6 <./figure/unnamed-chunk-14-1.pdf>]
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.326 Pula klientów bê
+                      d¹cymi 'illiterate' zawieta tylko jedn¹ osobê, wiêc st...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 185.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.326 Pula klientów bêd¹
+                        cymi 'illiterate' zawieta tylko jedn¹ osobê, wiêc st...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 185.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.326 ...bêd¹cymi 'illiterate' zawieta tylko jedn¹
+                                                   osobê, wiêc statystycznie...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.326 ...'illiterate' zawieta tylko jedn¹ osobê, w
+                                                  iêc statystycznie taka obs...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.326 ...terate' zawieta tylko jedn¹ osobê, wiêc s
+                                                  tatystycznie taka obserwac...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...rzypadku mamy problem z nieznanymi wartoœ
+                                                  ciami. Po pierwsze stanowi...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 185.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...znanymi wartoœciami. Po pierwsze stanowi¹
+                                                   one 4.1\% wszystkich bada...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.328 Najbardziej podobne proporcje danych miêdz
+                                                y 'yes' i 'no' ma categoria ...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.328 ...dzy 'yes' i 'no' ma categoria klientów, k
+                                                  tórzu ukoñczyli uniwersyte...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.328 ...yes' i 'no' ma categoria klientów, którzu
+                                                   ukoñczyli uniwersytet, wi...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.328 ...no' ma categoria klientów, którzu ukoñczy
+                                                  li uniwersytet, wiêc wszys...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.328 ...tów, którzu ukoñczyli uniwersytet, wiêc w
+                                                  szystkich klientów 'unknown'
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.328 ... uniwersytet, wiêc wszystkich klientów 'u
+                                                  nknown'
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.330 
+      
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Package color Info: Redefining color shadecolor on input line 332.
+<figure/unnamed-chunk-16-1.pdf, id=155, 578.16pt x 433.62pt>
+File: figure/unnamed-chunk-16-1.pdf Graphic file (type pdf)
+<use figure/unnamed-chunk-16-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-16-1.pdf  used on input line 334.
+
+(pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
+[]\T1/lmr/m/n/10.95 Rysunek 5: []Barplot typu a) przed-stwiaj<U+623C><U+3E39>cy
+ jak wiele
+ []
+
+
+Overfull \hbox (38.5724pt too wide) in paragraph at lines 338--338
+\T1/lmr/m/n/10.95 os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+62
+3C><U+3E33>o
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
+\T1/lmr/m/n/10.95 lo-kat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E6
+3>ci od
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
+\T1/lmr/m/n/10.95 po-ziomu wy-kszta<U+623C><U+3E33>cenia; b) przed-stwiaj<U+623
+C><U+3E39>cy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
+\T1/lmr/m/n/10.95 sto-su-nek pro-cen-towy os<U+663C><U+3E33>b, kt<U+663C><U+3E3
+3>re
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
+\T1/lmr/m/n/10.95 za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>y lo-
+ []
+
+[7 <./figure/unnamed-chunk-16-1.pdf>]
+
+! Package inputenc Error: Invalid UTF-8 byte 185.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.352 Ta kolumna nie przedstawia wystarczaj¹
+                                            cej iloœci danych o osóbach, któ...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.352 ...lumna nie przedstawia wystarczaj¹cej iloœ
+                                                  ci danych o osóbach, które...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.352 ...wia wystarczaj¹cej iloœci danych o osóbac
+                                                  h, które domyœlnie wzie³y ...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.352 ...czaj¹cej iloœci danych o osóbach, które d
+                                                  omyœlnie wzie³y ten kredyt.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.352 ...¹cej iloœci danych o osóbach, które domyœ
+                                                  lnie wzie³y ten kredyt.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 179.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.352 ...i danych o osóbach, które domyœlnie wzie³
+                                                  y ten kredyt.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.353 Z tego powodu ta kolumna nie bêdz
+                                       ie mia³a ¿adnego wiêkszego wp³ywu na ...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 179.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.353 Z tego powodu ta kolumna nie bêdzie mia³
+                                              a ¿adnego wiêkszego wp³ywu na ...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.353 Z tego powodu ta kolumna nie bêdzie mia³a ¿
+                                                 adnego wiêkszego wp³ywu na ...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.353 ...ta kolumna nie bêdzie mia³a ¿adnego wiêks
+                                                  zego wp³ywu na nasze model...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 179.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.353 ...na nie bêdzie mia³a ¿adnego wiêkszego wp³
+                                                  ywu na nasze modele, dlate...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 185.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.353 ...kszego wp³ywu na nasze modele, dlatego j¹
+                                                   usuwamy.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Package color Info: Redefining color shadecolor on input line 355.
+<figure/unnamed-chunk-18-1.pdf, id=168, 578.16pt x 433.62pt>
+File: figure/unnamed-chunk-18-1.pdf Graphic file (type pdf)
+<use figure/unnamed-chunk-18-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-18-1.pdf  used on input line 357.
+
+(pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
+[]\T1/lmr/m/n/10.95 Rysunek 6: []Barplot typu a) przed-stwiaj<U+623C><U+3E39>cy
+ jak wiele
+ []
+
+
+Overfull \hbox (38.5724pt too wide) in paragraph at lines 361--361
+\T1/lmr/m/n/10.95 os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+62
+3C><U+3E33>o
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
+\T1/lmr/m/n/10.95 lo-kat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E6
+3>ci
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
+\T1/lmr/m/n/10.95 od po-sia-da-nia kre-dytu; b) przed-stwiaj<U+623C><U+3E39>cy 
+sto-su-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
+\T1/lmr/m/n/10.95 nek pro-cen-towy os<U+663C><U+3E33>b, kt<U+663C><U+3E33>re
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
+\T1/lmr/m/n/10.95 za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>y lo-
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 361--361
+\T1/lmr/m/n/10.95 kat<U+653C><U+3E61> z zale<U+623C><U+3E66>no<U+393C><U+3E63>c
+i od po-
+ []
+
+[8 <./figure/unnamed-chunk-18-1.pdf>]
+
+! Package inputenc Error: Invalid UTF-8 byte 185.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.375 W tej kolumnie znajduj¹
+                              siê informacje na temat posiadania kredytu hip...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.375 W tej kolumnie znajduj¹ siê in
+                                    formacje na temat posiadania kredytu hip...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.375 ...edytu hipotecznego (kredytu na dom). Iloœ
+                                                  æ danych nieznanych odpowi...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.375 ...u hipotecznego (kredytu na dom). Iloœæ da
+                                                  nych nieznanych odpowiada,...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.376 Nie mo¿
+             emy pozwoliæ sobie na usuniêcie tak du¿ej liczny wierszy, a pod...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.376 Nie mo¿emy pozwoliæ so
+                            bie na usuniêcie tak du¿ej liczny wierszy, a pod...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.376 Nie mo¿emy pozwoliæ sobie na usuniêci
+                                           e tak du¿ej liczny wierszy, a pod...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.376 ...o¿emy pozwoliæ sobie na usuniêcie tak du¿
+                                                  ej liczny wierszy, a pod³a...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 179.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.376 ...suniêcie tak du¿ej liczny wierszy, a pod³
+                                                  aczenie do jakieœ innej op...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.376 ...j liczny wierszy, a pod³aczenie do jakieœ
+                                                   innej opcji nie wchodzi w...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.377 P
+       rzeprowadŸmy testy na niezale¿noœæ zmiennych kategorycznych. Wykonamy...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 159.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.377 PrzeprowadŸ
+                 my testy na niezale¿noœæ zmiennych kategorycznych. Wykonamy...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.377 PrzeprowadŸmy testy na niezale¿
+                                     noœæ zmiennych kategorycznych. Wykonamy...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.377 PrzeprowadŸmy testy na niezale¿noœ
+                                        æ zmiennych kategorycznych. Wykonamy...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.377 PrzeprowadŸmy testy na niezale¿noœæ zm
+                                            iennych kategorycznych. Wykonamy...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.377 ...onamy test chisq w zelu zbadania niezale¿
+                                                  noœci miêdzy 2 zmiennymi.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.377 ...my test chisq w zelu zbadania niezale¿noœ
+                                                  ci miêdzy 2 zmiennymi.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.377 ...chisq w zelu zbadania niezale¿noœci miêdz
+                                                  y 2 zmiennymi.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Package color Info: Redefining color shadecolor on input line 379.
+<figure/unnamed-chunk-20-1.pdf, id=180, 578.16pt x 433.62pt>
+File: figure/unnamed-chunk-20-1.pdf Graphic file (type pdf)
+<use figure/unnamed-chunk-20-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-20-1.pdf  used on input line 381.
+
+(pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\T1/lmr/m/n/10.95 Rysunek 7: []Barplot typu a) przed-stwiaj<U+623C><U+3E39>cy
+ jak wiele
+ []
+
+
+Overfull \hbox (38.5724pt too wide) in paragraph at lines 385--385
+\T1/lmr/m/n/10.95 os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+62
+3C><U+3E33>o
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\T1/lmr/m/n/10.95 lo-kat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E6
+3>ci
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\T1/lmr/m/n/10.95 od ju<U+623C><U+3E66> po-sia-da-nej po<U+623C><U+3E66>yczki; 
+b) przed-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\T1/lmr/m/n/10.95 stwiaj<U+623C><U+3E39>cy sto-su-nek pro-cen-towy os<U+663C><U
++3E33>b,
+ []
+
+
+Overfull \hbox (42.19269pt too wide) in paragraph at lines 385--385
+\T1/lmr/m/n/10.95 kt<U+663C><U+3E33>re za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+6
+23C><U+3E33>y
+ []
+
+Package color Info: Redefining color shadecolor on input line 392.
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 Niestety poziom istotnoœ
+                              ci(p-value) na poziomie 73\% œwiadczy o du¿ej ...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 ...om istotnoœci(p-value) na poziomie 73\% œ
+                                                  wiadczy o du¿ej zale¿noœci...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 ...(p-value) na poziomie 73\% œwiadczy o du¿
+                                                  ej zale¿noœci miêdzy danym...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 ...) na poziomie 73\% œwiadczy o du¿ej zale¿
+                                                  noœci miêdzy danymi, wiêc ...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 ...a poziomie 73\% œwiadczy o du¿ej zale¿noœ
+                                                  ci miêdzy danymi, wiêc tej...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 ...ie 73\% œwiadczy o du¿ej zale¿noœci miêdz
+                                                  y danymi, wiêc tej zmienne...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 ... o du¿ej zale¿noœci miêdzy danymi, wiêc t
+                                                  ej zmiennej ró¿nie¿ nie bê...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 ...ci miêdzy danymi, wiêc tej zmiennej ró¿ni
+                                                  e¿ nie bêdê bra³ pod uwagê.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 ... miêdzy danymi, wiêc tej zmiennej ró¿nie¿
+                                                   nie bêdê bra³ pod uwagê.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 ...anymi, wiêc tej zmiennej ró¿nie¿ nie bêdê
+                                                   bra³ pod uwagê.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 179.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 ..., wiêc tej zmiennej ró¿nie¿ nie bêdê bra³
+                                                   pod uwagê.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.403 
+      
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+[9 <./figure/unnamed-chunk-20-1.pdf>]
+
+! Package inputenc Error: Invalid UTF-8 byte 185.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 W tej kolumnie znajduj¹
+                              siê informacje na temat posiadania kredytu. Sy...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 W tej kolumnie znajduj¹ siê in
+                                    formacje na temat posiadania kredytu. Sy...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.412 Nie mo¿
+             emy pozwoliæ sobie na usuniêcie tak du¿ej liczny wierszy (2.5\%...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.412 Nie mo¿emy pozwoliæ so
+                            bie na usuniêcie tak du¿ej liczny wierszy (2.5\%...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.412 Nie mo¿emy pozwoliæ sobie na usuniêci
+                                           e tak du¿ej liczny wierszy (2.5\%...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.412 ...o¿emy pozwoliæ sobie na usuniêcie tak du¿
+                                                  ej liczny wierszy (2.5\%),...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 179.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.412 ... tak du¿ej liczny wierszy (2.5\%), a pod³
+                                                  aczenie do jakieœ innej op...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.412 ... wierszy (2.5\%), a pod³aczenie do jakieœ
+                                                   innej opcji nie wchodzi w...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.413 W
+       ykonamy test chisq w zelu zbadania niezale¿noœci miêdzy 2 zmiennymi.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.413 Wykonamy test chisq w zelu zbadania niezale¿
+                                                  noœci miêdzy 2 zmiennymi.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.413 ...my test chisq w zelu zbadania niezale¿noœ
+                                                  ci miêdzy 2 zmiennymi.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.413 ...chisq w zelu zbadania niezale¿noœci miêdz
+                                                  y 2 zmiennymi.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Package color Info: Redefining color shadecolor on input line 415.
+<figure/unnamed-chunk-23-1.pdf, id=192, 578.16pt x 433.62pt>
+File: figure/unnamed-chunk-23-1.pdf Graphic file (type pdf)
+<use figure/unnamed-chunk-23-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-23-1.pdf  used on input line 417.
+
+(pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+[]\T1/lmr/m/n/10.95 Rysunek 8: []Barplot typu a) przed-stwiaj<U+623C><U+3E39>cy
+ jak wiele
+ []
+
+
+Overfull \hbox (38.5724pt too wide) in paragraph at lines 421--421
+\T1/lmr/m/n/10.95 os<U+663C><U+3E33>b za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+62
+3C><U+3E33>o
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+\T1/lmr/m/n/10.95 lo-kat<U+653C><U+3E61> w zale<U+623C><U+3E66>no<U+393C><U+3E6
+3>ci od
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+\T1/lmr/m/n/10.95 sto-su-nek pro-cen-towy os<U+663C><U+3E33>b, kt<U+663C><U+3E3
+3>re
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+\T1/lmr/m/n/10.95 za<U+623C><U+3E33>o<U+623C><U+3E66>y<U+623C><U+3E33>y lo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+\T1/lmr/m/n/10.95 kat<U+653C><U+3E61> z zale<U+623C><U+3E66>no<U+393C><U+3E63>c
+i od
+ []
+
+Package color Info: Redefining color shadecolor on input line 428.
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.438 Poziom istotnoœ
+                     ci(p-value) na poziomie 56.8\% œwiadczy o du¿ej zale¿no...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.438 ... istotnoœci(p-value) na poziomie 56.8\% œ
+                                                  wiadczy o du¿ej zale¿noœci...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.438 ...-value) na poziomie 56.8\% œwiadczy o du¿
+                                                  ej zale¿noœci miêdzy danym...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.438 ...na poziomie 56.8\% œwiadczy o du¿ej zale¿
+                                                  noœci miêdzy danymi, wiêc ...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 156.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.438 ...poziomie 56.8\% œwiadczy o du¿ej zale¿noœ
+                                                  ci miêdzy danymi, wiêc tej...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.438 ... 56.8\% œwiadczy o du¿ej zale¿noœci miêdz
+                                                  y danymi, wiêc tej zmienne...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.438 ... o du¿ej zale¿noœci miêdzy danymi, wiêc t
+                                                  ej zmiennej ró¿nie¿ nie bê...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.438 ...ci miêdzy danymi, wiêc tej zmiennej ró¿ni
+                                                  e¿ nie bêdê bra³ pod uwagê.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 191.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.438 ... miêdzy danymi, wiêc tej zmiennej ró¿nie¿
+                                                   nie bêdê bra³ pod uwagê.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.438 ...anymi, wiêc tej zmiennej ró¿nie¿ nie bêdê
+                                                   bra³ pod uwagê.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 179.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.438 ..., wiêc tej zmiennej ró¿nie¿ nie bêdê bra³
+                                                   pod uwagê.
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.439 
+      
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 465.
+[10 <./figure/unnamed-chunk-23-1.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 465.
  (Bank_Marketing_PL.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 393.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 393.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 465.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 465.
 Package rerunfilecheck Info: File `Bank_Marketing_PL.out' has not changed.
-(rerunfilecheck)             Checksum: A38188F864561CF2B626A9B9AF6F8C2F;410.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 393.
+(rerunfilecheck)             Checksum: 70815B1F4D7470D4F3E1C37E6ECD867D;748.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 465.
  ) 
 Here is how much of TeX's memory you used:
- 8228 strings out of 492970
- 118243 string characters out of 3135845
- 231867 words of memory out of 3000000
- 11889 multiletter control sequences out of 15000+200000
+ 8295 strings out of 492970
+ 119589 string characters out of 3135845
+ 226567 words of memory out of 3000000
+ 11937 multiletter control sequences out of 15000+200000
  56951 words of font info for 59 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,11n,43p,1227b,398s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,11n,43p,1227b,393s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Fil
 es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
@@ -4854,9 +6439,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/lm/lmro10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/lm/lmtk10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.
 pfb>
-Output written on Bank_Marketing_PL.pdf (6 pages, 276572 bytes).
+Output written on Bank_Marketing_PL.pdf (10 pages, 315983 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
- 72 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 253 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
