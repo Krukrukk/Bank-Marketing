@@ -767,138 +767,28 @@ summary(getLearnerModel(xgb_model))
 xgb_pred <- predict(xgb_model, testTask)
 
 
-####################################################### ROC Curve & PR Curve ########################################
+####################################################### Benchmark experiment #######################################
 
+list_of_models <- list(logistic_learner, 
+                     rf_tuned_learner,
+                     ksvm_tuner_learner, 
+                     xgb_tuned_learner)
+rdesc = makeResampleDesc("CV", iters = 10)
+list_of_measures = list(acc, ppv, tpr, tnr, auc, f1)
+
+set.seed(2019)
+table_of_measure = benchmark(list_of_models, testTask, rdesc, measures = list_of_measures)
+
+####################################################### ROC Curve & PR Curve ########################################
 list_of_pred <- list(logistic = log_pred, 
                      random_forest = rf_pred,
                      SVM = ksvm_pred, 
                      XGBoost = xgb_pred)
-
-list_of_measures = list(ppv, tpr, tnr)
-
+list_of_measures = list(acc, ppv, tpr, tnr)
+set.seed(2019)
 score_test = generateThreshVsPerfData(obj = list_of_pred, measures = list_of_measures)
-
 score_test$data
-
 fun_ROC_PR_curve_ggplot(score_test)
-
-
-#---- 2.1 Logistic regresion ---- @
-
-
-
-#logistic regression
-
-
-
-logistic.regression <- makeLearner("classif.logreg",
-                                   predict.type = "response")
-
-cv.logistic <- crossval(learner = logistic.learner,
-                        task = trainTask,
-                        iters = 5,
-                        stratify = TRUE,
-                        measures = f1,
-                        show.info = F)
-
-cv.logistic$aggr
-cv.logistic$measures.test
-
-logistic_model <- train(logistic.regression, trainTask)
-
-logistic <- getLearnerModel(logistic_model)
-
-summary(logistic)
-
-fun_important_feature_ggplot(logistic)
-
-
-
-
-
-
-measure_train = fun_ggplot_cutoff(logistic_train_score, train_bank$y)
-
-
-logistic_train_score <- predict(logistic_model, trainTask)
-logistic_test_score <- predict(logistic, testTask, type = "response")
-
-
-
-
-
-
-
-
-random.forest <- makeLearner("classif.randomForest", predict.type = "prob", par.vals = list(ntree = 1000, mtry = 3))
-
-cross.valid <- makeResampleDesc("CV", iters = 5)
-set.seed(42)
-r.lr <- resample(logistic.regression, trainTask, cross.valid, 
-                 measures = list(acc, ppv, tpr,tnr, f1, auc), models = TRUE) 
-r.rf <- resample(random.forest, trainTask, cross.valid, 
-                 measures = list(acc, ppv, tpr,tnr, f1, auc))
-#acc - accuracy
-#ppv - precision
-#tpr - recall
-#tnr - specificity
-#f1 - f(1) score
-#auc - AUROC
-
-r.lr$aggr
-r.rf$aggr
-
-summary(r.lr$models)
-
-
-
-bmk <- benchmark(learners = list(logistic.regression, random.forest), 
-                 tasks = list(trainTask),
-                 resamplings = cross.valid,
-                 measures = list(acc, auc, f1, tpr, ppv, mmce))
-
-df <- generateThreshVsPerfData(bmk, 
-                               measures = list(acc, auc, f1, tpr, ppv))
-
-plotROCCurves(df) +
-    scale_color_discrete(name = "Model", labels = c("Regresja logistyczna", "Las losowy")) +
-    labs(title = "Krzywa ROC", x = "1 - specyficznoœæ", y = "czu³oœæ")
-
-
-
-
-
-
-cv.logistic <- crossval(learner = logistic.learner,
-                        task = trainTask,
-                        iters = 10,
-                        stratify = TRUE,
-                        measures = f1,
-                        show.info = F)
-
-
-cv.logistic
-
-fmodel <- train(logistic.learner,trainTask)
-getLearnerModel(fmodel)
-
-fpmodel <- predict(fmodel, testTask)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
