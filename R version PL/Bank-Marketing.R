@@ -270,8 +270,8 @@ name_of_label <- 'Job'
 fun_barplot_categorical(name_of_column, name_of_label)
 fun_crosstable(name_of_column)
 #-----------------------Opis Job ----------------#
-# W tej kolumnie mamy 39 wartoœci nieznanych, co stanowi ledwo 1% ca³ego zbioru, wiêc pozbywamy siê wierszy, które zawieraj¹ tê informacjê.
-#-------------------- END -------------------------@
+'# W tej kolumnie mamy 39 wartoœci nieznanych, co stanowi ledwo 1% ca³ego zbioru, wiêc pozbywamy siê wierszy, które zawieraj¹ tê informacjê.
+'dod#-------------------- END -------------------------@
 df_bank <- df_bank %>%
     filter(job != "unknown")
 
@@ -297,7 +297,7 @@ name_of_label <- 'Education level'
 fun_barplot_categorical(name_of_column, name_of_label)
 fun_crosstable(name_of_column)
 #-----------------------Opis --------------------#
-# Pula klientów bêd¹cymi 'illiterate' zawieta tylko jedn¹ osobê, wiêc statystycznie taka obserwacja nic nam nie daje. 
+# Pula klientów bêd¹cymi 'illiterate' zawieta tylko jedn¹ osobê, wiêc statystycznie taka obserwacja nic nam nie daje.
 # Natomiast w tym przypadku mamy problem z nieznanymi wartoœciami. Po pierwsze stanowi¹ one 4.1% wszystkich badanych.
 # Najbardziej podobne proporcje danych miêdzy 'yes' i 'no' ma categoria klientów, którzu ukoñczyli uniwersytet, wiêc wszystkich klientów 'unknown'
 # dodam do tej puli klientów.
@@ -565,12 +565,6 @@ summary(dummy_norm_df_bank)
 glimpse(df_bank)
 
 set.seed(2019)
-
-
-
-
-
-
 index_train_list = createDataPartition(dummy_norm_df_bank$y,
                           times = 1,
                           p = 0.8,
@@ -581,12 +575,6 @@ test_bank = dummy_norm_df_bank[-index_train_list, ]
 
 CrossTable(train_bank$y)
 CrossTable(test_bank$y)
-
-bank_Y_train <- (train_bank %>%
-    select(y))[[1]]
-
-bank_Y_test <- (test_bank %>%
-    select(y))[[1]]
 
 
 #-------------------------- 2. Measure selection -------------------------#
@@ -604,20 +592,18 @@ bank_Y_test <- (test_bank %>%
 
 
 
-#-------------------------- 3. Function ---------------------------------------------@
-
 ##########################################################################################################
 ###################################  MODELS  #############################################################
 ##################################################################################
 
 # ---------------------------- Opis ----------------------------- @
-# W ramach tej czêsci bêdê wykorzystywa³ bibliotekê \verb+mlr+ do tworzenia modeli:
-# \begin{itemize}
-# \item Logistic regression
-# \item Random forest
-# \item SVM
-# \item XGBoost
-# \end{itemize}
+W ramach tej czêsci bêdê wykorzystywa³ bibliotekê \verb+mlr+ do tworzenia modeli:
+\begin{itemize}
+\item Logistic regression
+\item Random forest
+\item SVM
+\item XGBoost
+\end{itemize}
 #------------------------------------------------------------------#
 
 ###################  Przygotowanie danych dla pakietu "mrl"
@@ -646,7 +632,7 @@ cv.logistic <- crossval(learner = logistic_learner,
 logistic_model <- train(logistic_learner, trainTask)
 summary(getLearnerModel(logistic_model))
 log_pred <- predict(logistic_model, testTask)
-a <- calculateROCMeasures(log_pred)
+calculateROCMeasures(log_pred)
 
 log_pred
 
@@ -682,7 +668,7 @@ rf_tuned_learner <- setHyperPars(learner = rf_learner,
                                  par.vals = rf_tune_params$x)
 #########
 rf_model <- train(rf_tuned_learner, trainTask)
-summary(getLearnerModel(rf_model))
+# summary(getLearnerModel(rf_model))
 
 rf_pred <- predict(rf_model, testTask)
 calculateROCMeasures(rf_pred)
@@ -717,7 +703,7 @@ ksvm_tuner_learner <- setHyperPars(learner = ksvm_learner,
 
 #######
 ksvm_model <- train(ksvm_tuner_learner, trainTask)
-summary(getLearnerModel(ksvm_model))
+# summary(getLearnerModel(ksvm_model))
 
 ksvm_pred <- predict(ksvm_model, testTask)
 calculateROCMeasures(ksvm_pred)
@@ -768,7 +754,7 @@ xgb_tuned_learner <- setHyperPars(
 
 #######
 xgb_model <- train(xgb_tuned_learner, trainTask)
-summary(getLearnerModel(xgb_model))
+# summary(getLearnerModel(xgb_model))
 
 xgb_pred <- predict(xgb_model, testTask)
 calculateROCMeasures(xgb_pred)
