@@ -91,8 +91,8 @@ per_unknown <- round(number_of_empty_row/dim(df_bank)[1]*100, 2)
 
 #--------------------------- Opis -----------------------------@
 
-# A¿ 6 zmiennych posiada nieznane wartoœci. Co gorsza, rzêdu w których znajduj¹ siê brakuj¹ce informacje stanowi¹ prawie
-# 25% ca³ego zbioru, wiêc zanim postanowimy co zrobiæ z tymi danymi, przestudiujmy je.
+# A? 6 zmiennych posiada nieznane warto?ci. Co gorsza, rz?du w kt?rych znajduj? si? brakuj?ce informacje stanowi? prawie
+# 25% ca?ego zbioru, wi?c zanim postanowimy co zrobi? z tymi danymi, przestudiujmy je.
 
 #------------------------ END ---------------------------------@
 
@@ -252,10 +252,10 @@ fun_boxplot(name_of_column, name_of_label)
 summary(df_bank$age)  #table
 
 #------------- Opis Age --------------------#
-# Przedzia³ wiekowy osób bior¹cych kredyt szacuje siê miedzy 18 rokiem ¿ycia, a 88 rokiem ¿ycia. Jednak¿e mo¿na zauwa¿yæ,
-# ¿e osoby które ukoñczy³y 60 rok ¿ycia z wiêksz¹ chêci¹ bra³y lokaty, ni¿ tego nie robi³y. Œredni wiek utrzymuje siê na poziomie 40 lat.
-# Wiedz¹c, ¿e osoby odk³adaj¹ na lokaty fundusze wtedy, kiedy dobrze zaczynaj¹ zarabniaæ to podzieli³bym ludzi ze wzglêdu na wiek.
-#  Miêdzy wiekiem [MIN, 30] <- young, [30,65] <- worker, [65, MAX] <- pensioner. Taki podzia³ powinien u³atwiæ analizê przysz³ych algorytmów.
+# Przedzia? wiekowy os?b bior?cych kredyt szacuje si? miedzy 18 rokiem ?ycia, a 88 rokiem ?ycia. Jednak?e mo?na zauwa?y?,
+# ?e osoby kt?re uko?czy?y 60 rok ?ycia z wi?ksz? ch?ci? bra?y lokaty, ni? tego nie robi?y. ?redni wiek utrzymuje si? na poziomie 40 lat.
+# Wiedz?c, ?e osoby odk?adaj? na lokaty fundusze wtedy, kiedy dobrze zaczynaj? zarabnia? to podzieli?bym ludzi ze wzgl?du na wiek.
+#  Mi?dzy wiekiem [MIN, 30] <- young, [30,65] <- worker, [65, MAX] <- pensioner. Taki podzia? powinien u?atwi? analiz? przysz?ych algorytm?w.
 # 
 #--------------- END -----------------------#
 df_bank <- df_bank %>%
@@ -270,7 +270,7 @@ name_of_label <- 'Job'
 fun_barplot_categorical(name_of_column, name_of_label)
 fun_crosstable(name_of_column)
 #-----------------------Opis Job ----------------#
-'# W tej kolumnie mamy 39 wartoœci nieznanych, co stanowi ledwo 1% ca³ego zbioru, wiêc pozbywamy siê wierszy, które zawieraj¹ tê informacjê.
+'# W tej kolumnie mamy 39 warto?ci nieznanych, co stanowi ledwo 1% ca?ego zbioru, wi?c pozbywamy si? wierszy, kt?re zawieraj? t? informacj?.
 'dod#-------------------- END -------------------------@
 df_bank <- df_bank %>%
     filter(job != "unknown")
@@ -282,7 +282,7 @@ name_of_label <- 'Marital status'
 fun_barplot_categorical(name_of_column, name_of_label)
 fun_crosstable(name_of_column)
 #-----------------------Opis --------------------#
-# Sytuacja taka sama jak przy kolumnie 'job'. Mamy tutaj nieznane wartoœci, ale stanowi¹ one tylko 0.3% wszystkich danych, wiêc równie¿ usuwamy te wiersze.
+# Sytuacja taka sama jak przy kolumnie 'job'. Mamy tutaj nieznane warto?ci, ale stanowi? one tylko 0.3% wszystkich danych, wi?c r?wnie? usuwamy te wiersze.
 
 #-------------------- END -------------------------@
 df_bank <- df_bank %>%
@@ -297,10 +297,10 @@ name_of_label <- 'Education level'
 fun_barplot_categorical(name_of_column, name_of_label)
 fun_crosstable(name_of_column)
 #-----------------------Opis --------------------#
-# Pula klientów bêd¹cymi 'illiterate' zawieta tylko jedn¹ osobê, wiêc statystycznie taka obserwacja nic nam nie daje.
-# Natomiast w tym przypadku mamy problem z nieznanymi wartoœciami. Po pierwsze stanowi¹ one 4.1% wszystkich badanych.
-# Najbardziej podobne proporcje danych miêdzy 'yes' i 'no' ma categoria klientów, którzu ukoñczyli uniwersytet, wiêc wszystkich klientów 'unknown'
-# dodam do tej puli klientów.
+# Pula klient?w b?d?cymi 'illiterate' zawieta tylko jedn? osob?, wi?c statystycznie taka obserwacja nic nam nie daje.
+# Natomiast w tym przypadku mamy problem z nieznanymi warto?ciami. Po pierwsze stanowi? one 4.1% wszystkich badanych.
+# Najbardziej podobne proporcje danych mi?dzy 'yes' i 'no' ma categoria klient?w, kt?rzu uko?czyli uniwersytet, wi?c wszystkich klient?w 'unknown'
+# dodam do tej puli klient?w.
 #-------------------- END -------------------------@
 df_bank <- df_bank %>% 
     filter(education != "illiterate") %>%
@@ -314,8 +314,8 @@ name_of_label <- 'Has credit in default?'
 fun_barplot_categorical(name_of_column, name_of_label)
 fun_crosstable(name_of_column)
 #-----------------------Opis --------------------#
-# Ta kolumna nie przedstawia wystarczaj¹cej iloœci danych o osóbach, które domyœlnie wzie³y ten kredyt. 
-# Z tego powodu ta kolumna nie bêdzie mia³a ¿adnego wiêkszego wp³ywu na nasze modele, dlatego j¹ usuwamy.
+# Ta kolumna nie przedstawia wystarczaj?cej ilo?ci danych o os?bach, kt?re domy?lnie wzie?y ten kredyt. 
+# Z tego powodu ta kolumna nie b?dzie mia?a ?adnego wi?kszego wp?ywu na nasze modele, dlatego j? usuwamy.
 #-------------------- END -------------------------@
 df_bank <- df_bank %>% 
     select(-default)
@@ -329,15 +329,15 @@ fun_barplot_categorical(name_of_column, name_of_label)
 fun_crosstable(name_of_column)
 
 #-----------------------Opis --------------------#
-# W tej kolumnie znajduj¹ siê informacje na temat posiadania kredytu hipotecznego (kredytu na dom). Iloœæ danych nieznanych odpowiada, 2,5% wszystkich obserwacji,
-# Nie mo¿emy pozwoliæ sobie na usuniêcie tak du¿ej liczny wierszy, a pod³aczenie do jakieœ innej opcji nie wchodzi w grê. 
-# PrzeprowadŸmy testy na niezale¿noœæ zmiennych kategorycznych. Wykonamy test chisq w zelu zbadania niezale¿noœci miêdzy 2 zmiennymi.
+# W tej kolumnie znajduj? si? informacje na temat posiadania kredytu hipotecznego (kredytu na dom). Ilo?? danych nieznanych odpowiada, 2,5% wszystkich obserwacji,
+# Nie mo?emy pozwoli? sobie na usuni?cie tak du?ej liczny wierszy, a pod?aczenie do jakie? innej opcji nie wchodzi w gr?. 
+# Przeprowad?my testy na niezale?no?? zmiennych kategorycznych. Wykonamy test chisq w zelu zbadania niezale?no?ci mi?dzy 2 zmiennymi.
 #-------------------- END -------------------------@
 
 chisq.test(df_bank$housing, df_bank$y)
 
 #-----------------------Opis --------------------#
-# Niestety poziom istotnoœci(p-value) na poziomie 73% œwiadczy o du¿ej zale¿noœci miêdzy danymi, wiêc tej zmiennej ró¿nie¿ nie bêdê bra³ pod uwagê.
+# Niestety poziom istotno?ci(p-value) na poziomie 73% ?wiadczy o du?ej zale?no?ci mi?dzy danymi, wi?c tej zmiennej r??nie? nie b?d? bra? pod uwag?.
 #-------------------- END -------------------------@
 df_bank <- df_bank %>% 
     select(-housing)
@@ -350,10 +350,10 @@ fun_barplot_categorical(name_of_column, name_of_label)
 fun_crosstable(name_of_column)
 chisq.test(df_bank$loan, df_bank$y)
 #-----------------------Opis --------------------#
-# W tej kolumnie znajduj¹ siê informacje na temat posiadania kredytu. Sytuacja jest ta sama co w przypadku kredytu hipotecznego.
-# Nie mo¿emy pozwoliæ sobie na usuniêcie tak du¿ej liczny wierszy (2.5%), a pod³aczenie do jakieœ innej opcji nie wchodzi w grê. 
-# Wykonamy test chisq w zelu zbadania niezale¿noœci miêdzy 2 zmiennymi.
-# Poziom istotnoœci(p-value) na poziomie 56.8% œwiadczy o du¿ej zale¿noœci miêdzy danymi, wiêc tej zmiennej ró¿nie¿ nie bêdê bra³ pod uwagê.
+# W tej kolumnie znajduj? si? informacje na temat posiadania kredytu. Sytuacja jest ta sama co w przypadku kredytu hipotecznego.
+# Nie mo?emy pozwoli? sobie na usuni?cie tak du?ej liczny wierszy (2.5%), a pod?aczenie do jakie? innej opcji nie wchodzi w gr?. 
+# Wykonamy test chisq w zelu zbadania niezale?no?ci mi?dzy 2 zmiennymi.
+# Poziom istotno?ci(p-value) na poziomie 56.8% ?wiadczy o du?ej zale?no?ci mi?dzy danymi, wi?c tej zmiennej r??nie? nie b?d? bra? pod uwag?.
 #-------------------- END -------------------------@
 df_bank <- df_bank %>% 
     select(-loan)
@@ -370,7 +370,7 @@ name_of_label <- 'Contact'
 fun_barplot_categorical(name_of_column, name_of_label)
 fun_crosstable(name_of_column)
 #-----------------------Opis --------------------#
-# Osoby, z którymi próbowano siê skontaktowaæ na telefon komórkowy stanowi¹ 64.4% ca³ej badanej spo³ecznoœci i co 6 osoba z nich wzie³a lokatê d³ugoterminow¹.
+# Osoby, z kt?rymi pr?bowano si? skontaktowa? na telefon kom?rkowy stanowi? 64.4% ca?ej badanej spo?eczno?ci i co 6 osoba z nich wzie?a lokat? d?ugoterminow?.
 #-------------------- END -------------------------@
 
 
@@ -382,7 +382,7 @@ name_of_label <- 'Month'
 fun_barplot_categorical(name_of_column, name_of_label)
 fun_crosstable(name_of_column)
 #-----------------------Opis --------------------#
-# Ciekaw¹ sutuacj¹ jest fact, ¿e w zestawieniu w ogóle nie mamy tranzakcji ze stycznia oraz z lutego. 
+# Ciekaw? sutuacj? jest fact, ?e w zestawieniu w og?le nie mamy tranzakcji ze stycznia oraz z lutego. 
 #-------------------- END -------------------------@
 
 
@@ -394,8 +394,8 @@ name_of_label <- 'Day of week'
 fun_barplot_categorical(name_of_column, name_of_label)
 fun_crosstable(name_of_column)
 #-----------------------Opis --------------------#
-# W ka¿dym roboczym dniu tygodnia jest wykonywane mniej wiêcej tyle samo po³¹czeñ z klientami, 
-# wiêc nie jesteœmy w stanie wyci¹gn¹æ ¿adnych wiêkszych wniosków, z obserwacji samych wykresów.
+# W ka?dym roboczym dniu tygodnia jest wykonywane mniej wi?cej tyle samo po??cze? z klientami, 
+# wi?c nie jeste?my w stanie wyci?gn?? ?adnych wi?kszych wniosk?w, z obserwacji samych wykres?w.
 
 #-------------------- END -------------------------@
 
@@ -405,9 +405,9 @@ fun_crosstable(name_of_column)
 
 ### 11. Last contact duration, in seconds (numeric) - 
 #-----------------------Opis --------------------#
-# Czas trwania ostatniego kontaktu jest atrybutem, który ma du¿y wp³yw na cel wyjœciowy (y)
-# Wa¿na uwaga: ten atrybut ma du¿y wp³yw na cel wyjœciowy. Jednak czas trwania nie jest znany przed wykonaniem po³¹czenia. 
-# Ponadto po zakoñczeniu po³¹czenia "y" jest oczywiœcie znane. W zwi¹zku z tym  nale¿y j¹ odrzuciæ, jeœli chcemy stworzenie realistycznego modelu predykcyjnego.
+# Czas trwania ostatniego kontaktu jest atrybutem, kt?ry ma du?y wp?yw na cel wyj?ciowy (y)
+# Wa?na uwaga: ten atrybut ma du?y wp?yw na cel wyj?ciowy. Jednak czas trwania nie jest znany przed wykonaniem po??czenia. 
+# Ponadto po zako?czeniu po??czenia "y" jest oczywi?cie znane. W zwi?zku z tym  nale?y j? odrzuci?, je?li chcemy stworzenie realistycznego modelu predykcyjnego.
 #-------------------- END -------------------------@
 df_bank = df_bank %>% 
     select(-duration)
@@ -425,9 +425,9 @@ count(df_bank %>%
       select(campaign) %>%
       filter(campaign>=7))
 #-----------------------Opis --------------------#
-# W tej kolumnie zawieraj¹ siê informacje dotycz¹ce liczby po³¹czeñ do danego klienta w ramach kampani. 
-# Przygl¹daj¹c siê boxplotowi mo¿emy zauwa¿yæ, ¿e obserwacje od 7 s¹ ju¿ uwa¿ane jako wartoœci odstaj¹ce. 
-# W zwi¹zku z czym wszystkie watroœci, które s¹ wiêksze ni¿ 7, ale mniejsze ni¿ 12 zamieniê na 7+, a nastêpnie zamienie na zmienn¹ kategoryczn¹.
+# W tej kolumnie zawieraj? si? informacje dotycz?ce liczby po??cze? do danego klienta w ramach kampani. 
+# Przygl?daj?c si? boxplotowi mo?emy zauwa?y?, ?e obserwacje od 7 s? ju? uwa?ane jako warto?ci odstaj?ce. 
+# W zwi?zku z czym wszystkie watro?ci, kt?re s? wi?ksze ni? 7, ale mniejsze ni? 12 zamieni? na 7+, a nast?pnie zamienie na zmienn? kategoryczn?.
 # Zmienne powyzej 12 odrzucam.
 #-------------------- END -------------------------@
 df_bank <- df_bank %>%
@@ -453,8 +453,8 @@ name_of_label <- 'Pdays'
 summary(df_bank$pdays)  #table
 table(df_bank$pdays)
 #-----------------------Opis --------------------#
-# Kolumna 'pdays' znajduj¹ siê informacje o iloœci dni od ostatniego kontaktu z klientem podczas poprzedniej kampanii. Jeœli wartoœc wynosi "999" to oznacza, ze nigdy siê z dan¹ osob¹ nie skontaktowane.
-# Informacja zawarta w tej kolumnie jest zbyt rozproszona i niejednoznaczna. W zwi¹zku z tym t¹ informacjê zamienimy w taki sposób, zeby odpowiada³a na pytanie: czy kontaktowano siê z dan¹ osob¹ w poprzedniej kampani?
+# Kolumna 'pdays' znajduj? si? informacje o ilo?ci dni od ostatniego kontaktu z klientem podczas poprzedniej kampanii. Je?li warto?c wynosi "999" to oznacza, ze nigdy si? z dan? osob? nie skontaktowane.
+# Informacja zawarta w tej kolumnie jest zbyt rozproszona i niejednoznaczna. W zwi?zku z tym t? informacj? zamienimy w taki spos?b, zeby odpowiada?a na pytanie: czy kontaktowano si? z dan? osob? w poprzedniej kampani?
 #-------------------- END -------------------------@
 df_bank <- df_bank %>%
     mutate(pdays_call = if_else(pdays == 999,"no","yes")) %>%
@@ -467,9 +467,9 @@ table(df_bank$previous)
 df_bank <-  df_bank %>% 
     mutate(previous = if_else(previous >=  2, "2+", if_else(previous == 1, "1", "0")))
 #-----------------------Opis --------------------#
-#Zmienna 'previous' zawiera informacje dotycz¹ce liczby kontaktów wykonanych przed t¹ kampani¹ do tego klienta. W obecnym stanie, ta zmienna zwraca bardzo podobne wyniki co zmienna "pdays_binary". 
-#Poniewa¿ liczba klientów, ¿ którymi kontaktowano siê 2 i wiêcej razy jest wyj¹tkowa ma³a w stosunku do osób, z którymi siê nie kontaktowano to propnujê po³¹czyæ te zmienne w wiêksz¹ ca³oœæ.
-# Tak przygotowana zmienna powie nam, czy nêkanie osób poprzez czêstrze kontakty telefoniczne daje wymierne skutki.
+#Zmienna 'previous' zawiera informacje dotycz?ce liczby kontakt?w wykonanych przed t? kampani? do tego klienta. W obecnym stanie, ta zmienna zwraca bardzo podobne wyniki co zmienna "pdays_binary". 
+#Poniewa? liczba klient?w, ? kt?rymi kontaktowano si? 2 i wi?cej razy jest wyj?tkowa ma?a w stosunku do os?b, z kt?rymi si? nie kontaktowano to propnuj? po??czy? te zmienne w wi?ksz? ca?o??.
+# Tak przygotowana zmienna powie nam, czy n?kanie os?b poprzez cz?strze kontakty telefoniczne daje wymierne skutki.
 #-------------------- END -------------------------@
 
 ### 15. Poutcome (categorical)
@@ -478,9 +478,9 @@ name_of_label <- 'Poutcome'
 fun_barplot_categorical(name_of_column, name_of_label)
 fun_crosstable(name_of_column)
 #-----------------------Opis --------------------#
-# Czy sukces lub pora¿ka podczas poprzedniej kampani da³y siê odczyæ w obecnej kampani??
-# Jak najbardziej. A¿ 64.8% osób chcia³bo przed³u¿yæ swoj¹ lokatê. 14.8% osób , mimo ¿e ostatnio nie wzieli lokaty to czas to czas miêdzy kampaniami da³ im sporo do myœlenia i spowodowa³,
-# ¿e osoby, z którymi siê kontaktowano w poprzedniej kampani chêtniej bra³y lokatê d³ugoterminow¹ ni¿ osoby, z kótrymi kontaktowano siê pierwszy raz.
+# Czy sukces lub pora?ka podczas poprzedniej kampani da?y si? odczy? w obecnej kampani??
+# Jak najbardziej. A? 64.8% os?b chcia?bo przed?u?y? swoj? lokat?. 14.8% os?b , mimo ?e ostatnio nie wzieli lokaty to czas to czas mi?dzy kampaniami da? im sporo do my?lenia i spowodowa?,
+# ?e osoby, z kt?rymi si? kontaktowano w poprzedniej kampani ch?tniej bra?y lokat? d?ugoterminow? ni? osoby, z k?trymi kontaktowano si? pierwszy raz.
 #-------------------- END -------------------------@
 
 
@@ -488,8 +488,8 @@ fun_crosstable(name_of_column)
 #                                      Social and economic context attributes
 #-------------------------------------------------------------------------------------------------------------@
 #----------------- Opis ----------------- @
-# Ostatnie 5 wspó³czynników to wskaŸniki spo³eczne oraz ekonomiczne. Analiza ka¿dej z osobna jest nie pokaz³a ¿adnej charakterystycznej cech. 
-# Jednak¿e te zmienne powinny byæ jakoœ skorelowane ze sob¹, wiêc obliczmy macierz korelacji.
+# Ostatnie 5 wsp??czynnik?w to wska?niki spo?eczne oraz ekonomiczne. Analiza ka?dej z osobna jest nie pokaz?a ?adnej charakterystycznej cech. 
+# Jednak?e te zmienne powinny by? jako? skorelowane ze sob?, wi?c obliczmy macierz korelacji.
 
 ############################################# Corrplot #######################################################
 
@@ -506,17 +506,17 @@ df_bank %>%
 
 
 #------------------- Opis ---------------------------#
-# Zgodnie z oczekiwaniami, zmienne spo³eczne i ekonomiczne s¹ silnie ze sob¹ skorelowane. Szczególnym przypadkiem silnego skorelowania charakteryzuje siê zmienna 
-# eps.price.rate, która jest wska¿nikiem zmiennoœci zatrudnienia. W zwi¹zku z czym ta zmienna zostaje usuniêta.
+# Zgodnie z oczekiwaniami, zmienne spo?eczne i ekonomiczne s? silnie ze sob? skorelowane. Szczeg?lnym przypadkiem silnego skorelowania charakteryzuje si? zmienna 
+# eps.price.rate, kt?ra jest wska?nikiem zmienno?ci zatrudnienia. W zwi?zku z czym ta zmienna zostaje usuni?ta.
 #-----------------------------------------------------#
 df_bank <- df_bank %>%
             select(-emp.var.rate)
 
 
 
-### 21. y - czy klient subskrybowa³ lokatê? (dwójkowy: „tak”, „nie”)
+### 21. y - czy klient subskrybowa? lokat?? (dw?jkowy: ?tak?, ?nie?)
 #----- Opis-------#
-# POniewa¿ nie mozeby zostawiæ tej zmiennej w postaci zmiennej characterystycznej, musimy zamieniæ go na zmienn¹ liczbow¹.
+# POniewa? nie mozeby zostawi? tej zmiennej w postaci zmiennej characterystycznej, musimy zamieni? go na zmienn? liczbow?.
 #-----------------
 df_bank <- df_bank %>%
     mutate(y = as.factor(if_else(y == "yes", 1,0)))
@@ -530,7 +530,7 @@ norm_df_bank <- normalizeFeatures(df_bank, target = 'y')
 
 ############################################ Convert Categorical -> Dummy variable ######################################
 #-------------------------- Opis ---------------------------#
-# ¯eby model regresji logistyczne oraz XGBoost mog³y prawid³owo dzia³aæ nale¿y zmieniæ zmienne kategoryczne na zmiennej fikcyjne (dummy variable).
+# ?eby model regresji logistyczne oraz XGBoost mog?y prawid?owo dzia?a? nale?y zmieni? zmienne kategoryczne na zmiennej fikcyjne (dummy variable).
 #-----------------------------------------------------------#
 norm_df_bank <- mutate_if(norm_df_bank, is.character, as.factor)
 factor_column <- names(which(sapply(norm_df_bank, is.factor)))
@@ -556,13 +556,13 @@ summary(dummy_norm_df_bank)
 #----------------------- 1. Split and Create Datasets -------------------------2
 
 #----- Opis ------- @
-# Nasze dane s¹ ju¿ prawie gotowe do dzielenia na zbiór treningowy oraz zbiór walidacyjny. W pierwszej kolejnoœci chcia³bym znormalizowaæ nasze dane.
-# Tak zabieg mo¿e poprawiæ jakoœ niektórych modeli np. logistic regresion. Nastêpnie dane zostan¹ podzielone w stosunku 80/20.
-# Dane treningowe pos³u¿¹ do wytrenowania naszego modelu, natomiast dane testowe zostan¹ wykorzystane podczas walidacji modelu.
+# Nasze dane s? ju? prawie gotowe do dzielenia na zbi?r treningowy oraz zbi?r walidacyjny. W pierwszej kolejno?ci chcia?bym znormalizowa? nasze dane.
+# Tak zabieg mo?e poprawi? jako? niekt?rych modeli np. logistic regresion. Nast?pnie dane zostan? podzielone w stosunku 80/20.
+# Dane treningowe pos?u?? do wytrenowania naszego modelu, natomiast dane testowe zostan? wykorzystane podczas walidacji modelu.
 #------------------ @
 
 
-glimpse(df_bank)
+glimpse(dummy_norm_df_bank)
 
 set.seed(2019)
 index_train_list = createDataPartition(dummy_norm_df_bank$y,
@@ -579,15 +579,15 @@ CrossTable(test_bank$y)
 
 #-------------------------- 2. Measure selection -------------------------#
 
-# Na tym etapie przystêpujemy do generalnego opisu danych i co hcemy wyci¹gn¹æ z danych:
+# Na tym etapie przyst?pujemy do generalnego opisu danych i co hcemy wyci?gn?? z danych:
 # \begin{enumerate}
-# \item Nasze dane s¹ mocno niezrównowa¿one (stosunek 89/11). To powoduje, ze ³atwo bêdzie nam osi¹gn¹æ wysobie accuracy, które w rzeczywistoœci mo¿e nie oddawaæ dok³adnie tego co chcemy;
-# \item Nasz model ma przewidywaæ, który klient rzeczywiœcie za³o¿y lokatê d³ugoterminow¹. Patrz¹c na "Confusion matrix", ta miara jest opisana przez True Positive (TP).
-# \item Pod miar¹ "False Positive" (FP) bêd¹ kryli siê klienci, którzy jeszcze nie bêd¹ gotowi na za³o¿enie lokaty d³ugoterminowej
-# \item Pod miar¹ "False Negative" (FN) bêd¹ kryli siê klienci, którzy s¹ chêtni za³ozyæ lokatê, jednak¿e ban siê z nimi nie skontaktowa³. Ta miara w naszym przypadku bêdzie przynosiæ najwiêksze straty dla banku.
-# \item A pod ostatni¹ miar¹ "True negative" (TN) bêd¹ wszyscy klienci banku, którzy rzeczywiœcie nie chc¹ za³o¿yæ lokaty.
-# \item Czyli, ¿eby maksymalizowaæ zyski musimy skupiæ siê na maksymalizacji miar "Recall", "Precision" oraz F_1 score z g³ównym skupieniem siê na f_1 score, poniewa¿ jest to œrednia harmoniczna z "Recall" oraz "Precision".
-# \item W dalszym etapie porównywania modeli skupimy siê na porównaniach  krzywych ROC i krzywych PR.
+# \item Nasze dane s? mocno niezr?wnowa?one (stosunek 89/11). To powoduje, ze ?atwo b?dzie nam osi?gn?? wysobie accuracy, kt?re w rzeczywisto?ci mo?e nie oddawa? dok?adnie tego co chcemy;
+# \item Nasz model ma przewidywa?, kt?ry klient rzeczywi?cie za?o?y lokat? d?ugoterminow?. Patrz?c na "Confusion matrix", ta miara jest opisana przez True Positive (TP).
+# \item Pod miar? "False Positive" (FP) b?d? kryli si? klienci, kt?rzy jeszcze nie b?d? gotowi na za?o?enie lokaty d?ugoterminowej
+# \item Pod miar? "False Negative" (FN) b?d? kryli si? klienci, kt?rzy s? ch?tni za?ozy? lokat?, jednak?e ban si? z nimi nie skontaktowa?. Ta miara w naszym przypadku b?dzie przynosi? najwi?ksze straty dla banku.
+# \item A pod ostatni? miar? "True negative" (TN) b?d? wszyscy klienci banku, kt?rzy rzeczywi?cie nie chc? za?o?y? lokaty.
+# \item Czyli, ?eby maksymalizowa? zyski musimy skupi? si? na maksymalizacji miar "Recall", "Precision" oraz F_1 score z g??wnym skupieniem si? na f_1 score, poniewa? jest to ?rednia harmoniczna z "Recall" oraz "Precision".
+# \item W dalszym etapie por?wnywania modeli skupimy si? na por?wnaniach  krzywych ROC i krzywych PR.
 # \end{enumerate}
 
 
@@ -597,13 +597,13 @@ CrossTable(test_bank$y)
 ##################################################################################
 
 # ---------------------------- Opis ----------------------------- @
-W ramach tej czêsci bêdê wykorzystywa³ bibliotekê \verb+mlr+ do tworzenia modeli:
-\begin{itemize}
-\item Logistic regression
-\item Random forest
-\item SVM
-\item XGBoost
-\end{itemize}
+# W ramach tej cz?sci b?d? wykorzystywa? bibliotek? \verb+mlr+ do tworzenia modeli:
+# \begin{itemize}
+# \item Logistic regression
+# \item Random forest
+# \item SVM
+# \item XGBoost
+# \end{itemize}
 #------------------------------------------------------------------#
 
 ###################  Przygotowanie danych dla pakietu "mrl"
@@ -636,6 +636,7 @@ calculateROCMeasures(log_pred)
 
 log_pred
 
+fun_important_feature_ggplot(getLearnerModel(logistic_model))
 
 #-------------------------------------------------------------------------- @
 #---------------------------- 2.2 Random Forest --------------------------- @
@@ -643,17 +644,17 @@ log_pred
 
 rf_learner <- makeLearner("classif.randomForest", 
                           predict.type = "prob", 
-                          par.vals = list(ntree = 200, mtry = 3))
+                          par.vals = list(ntree = 500, mtry = 3))
 
 getParamSet("classif.randomForest")
 
 rf_params <- makeParamSet(
     makeIntegerParam("ntree", lower = 50, upper = 500),
-    makeIntegerParam("mtry", lower = 3, upper = 10),
+    makeIntegerParam("mtry", lower = 3, upper = 20),
     makeIntegerParam("nodesize", lower = 10, upper = 50)
 )
 
-rf_control <- makeTuneControlRandom(maxit = 10)
+rf_control <- makeTuneControlRandom(maxit = 20)
 
 resample_desc <- makeResampleDesc("CV", iters = 5)
 
@@ -669,7 +670,7 @@ rf_tuned_learner <- setHyperPars(learner = rf_learner,
 #########
 rf_model <- train(rf_tuned_learner, trainTask)
 # summary(getLearnerModel(rf_model))
-
+fun_important_feature_ggplot(getLearnerModel(rf_model))
 rf_pred <- predict(rf_model, testTask)
 calculateROCMeasures(rf_pred)
 
@@ -684,8 +685,8 @@ ksvm_learner <- makeLearner("classif.ksvm",
 getParamSet("classif.ksvm")
 
 ksvm_params <- makeParamSet(
-    makeDiscreteParam("C", values = 2^c(-8,-4,-2,0)), #cost parameters
-    makeDiscreteParam("sigma", values = 2^c(-8,-4,0,4)) #RBF Kernel Parameter
+    makeDiscreteParam("C", values = 2^c(-8,-4,-2,0)), 
+    makeDiscreteParam("sigma", values = 2^c(-8,-4,0,4)) 
 )
 ctrl <- makeTuneControlGrid()
 
@@ -704,10 +705,11 @@ ksvm_tuner_learner <- setHyperPars(learner = ksvm_learner,
 #######
 ksvm_model <- train(ksvm_tuner_learner, trainTask)
 # summary(getLearnerModel(ksvm_model))
-
+fun_important_feature_ggplot(getLearnerModel(ksvm_model))
 ksvm_pred <- predict(ksvm_model, testTask)
 calculateROCMeasures(ksvm_pred)
 
+ksvm_model
 
 #-------------------------------------------------------------------------- @
 #------------------------------ 2.4 XGBoost ------------------------------- @
@@ -754,7 +756,7 @@ xgb_tuned_learner <- setHyperPars(
 
 #######
 xgb_model <- train(xgb_tuned_learner, trainTask)
-# summary(getLearnerModel(xgb_model))
+summary(getLearnerModel(xgb_model))
 
 xgb_pred <- predict(xgb_model, testTask)
 calculateROCMeasures(xgb_pred)
@@ -766,7 +768,7 @@ list_of_models <- list(logistic_learner,
                      ksvm_tuner_learner, 
                      xgb_tuned_learner)
 rdesc = makeResampleDesc("CV", iters = 10)
-list_of_measures = list(acc, ppv, tpr, tnr, auc, aucpr, f1)
+list_of_measures = list(acc, ppv, tpr, tnr, auc, f1)
 
 set.seed(2019)
 table_of_measure = benchmark(list_of_models, testTask, rdesc, measures = list_of_measures)
@@ -780,8 +782,9 @@ AUCPR = c( pr.curve(testTask$env$data$y, log_pred$data$response)[[2]],
           pr.curve(testTask$env$data$y, ksvm_pred$data$response)[[2]],
           pr.curve(testTask$env$data$y, xgb_pred$data$response)[[2]])
 
-table_of_measure %>%
+table_of_measure <- table_of_measure %>%
     mutate(aucpr = AUCPR)
+kable(t(table_of_measure), 'latex')
 ####################################################### ROC Curve & PR Curve ########################################
 list_of_pred <- list(logistic = log_pred, 
                      random_forest = rf_pred,
